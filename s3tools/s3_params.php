@@ -25,7 +25,7 @@ $logoName = $this->params->get('logo');
 	if($logoName){
 		$logo = '<img src="'. JURI::root() . $logoName .'" alt="'. $sitetitle .'">';
 	}else{
-		$logo = '<img src="'.$dcTemplatePath.'/themes/'. $this->params->get('style') .'/logo.png'.'" alt="'.$sitetitle.'">';
+		$logo = '<img src="'.$dcTemplatePath.'/themes/'. $this->params->get('style') .'/images/logo.png'.'" alt="'.$sitetitle.'">';
 	}
 
 ?>

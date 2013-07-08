@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>S3_Blank</name>
+	<version>1.0</version>
+	<creationDate>07/06/2013</creationDate>
+	<author>Team DC - Shaz3e</author>
+	<authorEmail>iam@shaz3e.com</authorEmail>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.</copyright>
+	<description>S3 Responsive Framework with Upto 184 Module Positions for Joomla 2.5 / 3.0</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>blocks</folder>
+		<folder>fonts</folder>
+		<folder>css</folder>
+		<folder>less</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>layout</folder>
+		<folder>s3tools</folder>
+		<folder>themes</folder>
+	</files>
+	<positions>
+		<!-- Top Left Right Modules (2) -->
+		<position>top-left</position>
+		<position>top-right</position>
+	
+		<!-- Absolute Modules (6)-->
+		<position>right-panel</position>
+		<position>left-panel</position>
+		
+		<position>top-left-panel</position>
+		<position>top-right-panel</position>
+		<position>bottom-left-panel</position>
+		<position>bottom-right-panel</position>
+		
+		<!-- Top Modules -->
+		<position>top-1</position>
+		<position>top-2</position>
+		<position>top-3</position>
+		<position>top-4</position>
+		<position>top-5</position>
+		<position>top-6</position>
+		
+		<!-- mod-top Modules -->
+		<position>mod-top-1</position>
+		<position>mod-top-2</position>
+		<position>mod-top-3</position>
+		<position>mod-top-4</position>
+		<position>mod-top-5</position>
+		<position>mod-top-6</position>
+		
+		<!-- Top Header Modules -->
+		<position>header-1</position>
+		<position>header-2</position>
+		<position>header-3</position>
+		<position>header-4</position>
+		
+		<!-- Top mod-header Modules -->
+		<position>mod-header-1</position>
+		<position>mod-header-2</position>
+		<position>mod-header-3</position>
+		<position>mod-header-4</position>
+		<position>mod-header-5</position>
+		<position>mod-header-6</position>
+		
+		<!-- Menu Modules -->
+		<position>menu-1</position>
+		<position>menu-2</position>
+		<position>menu-3</position>
+		<position>menu-4</position>
+		<position>menu-5</position>
+		<position>menu-6</position>
+		
+		<!-- mod-menu Modules -->
+		<position>mod-menu-1</position>
+		<position>mod-menu-2</position>
+		<position>mod-menu-3</position>
+		<position>mod-menu-4</position>
+		<position>mod-menu-5</position>
+		<position>mod-menu-6</position>
+		
+		<!-- Slideshow Modules -->
+		<position>slideshow-1</position>
+		<position>slideshow-2</position>
+		<position>slideshow-3</position>
+		<position>slideshow-4</position>
+		<position>slideshow-5</position>
+		<position>slideshow-6</position>
+		
+		<!-- span-slideshow Modules -->
+		<position>mod-slideshow-1</position>
+		<position>mod-slideshow-2</position>
+		<position>mod-slideshow-3</position>
+		<position>mod-slideshow-4</position>
+		<position>mod-slideshow-5</position>
+		<position>mod-slideshow-6</position>
+		
+		<!-- Showcase Modules -->
+		<position>showcase-1</position>
+		<position>showcase-2</position>
+		<position>showcase-3</position>
+		<position>showcase-4</position>
+		<position>showcase-5</position>
+		<position>showcase-6</position>
+		
+		<!-- mod-showcase Modules -->
+		<position>mod-showcase-1</position>
+		<position>mod-showcase-2</position>
+		<position>mod-showcase-3</position>
+		<position>mod-showcase-4</position>
+		<position>mod-showcase-5</position>
+		<position>mod-showcase-6</position>
+		
+		<!-- Feature Modules -->
+		<position>feature-1</position>
+		<position>feature-2</position>
+		<position>feature-3</position>
+		<position>feature-4</position>
+		<position>feature-5</position>
+		<position>feature-6</position>
+		
+		<!-- mod-feature Modules -->
+		<position>mod-feature-1</position>
+		<position>mod-feature-2</position>
+		<position>mod-feature-3</position>
+		<position>mod-feature-4</position>
+		<position>mod-feature-5</position>
+		<position>mod-feature-6</position>
+		
+		<!-- Feature Modules -->
+		<position>bottom-feature-1</position>
+		<position>bottom-feature-2</position>
+		<position>bottom-feature-3</position>
+		<position>bottom-feature-4</position>
+		<position>bottom-feature-5</position>
+		<position>bottom-feature-6</position>
+		
+		<!-- Feature Modules -->
+		<position>mod-bottom-feature-1</position>
+		<position>mod-bottom-feature-2</position>
+		<position>mod-bottom-feature-3</position>
+		<position>mod-bottom-feature-4</position>
+		<position>mod-bottom-feature-5</position>
+		<position>mod-bottom-feature-6</position>
+		
+		<!-- Breadcrumb Modules -->
+		<position>breadcrumb-1</position>
+		<position>breadcrumb-2</position>
+		<position>breadcrumb-3</position>
+		<position>breadcrumb-4</position>
+		<position>breadcrumb-5</position>
+		<position>breadcrumb-6</position>
+		
+		<!-- mod-breadcrumb Modules -->
+		<position>mod-breadcrumb-1</position>
+		<position>mod-breadcrumb-2</position>
+		<position>mod-breadcrumb-3</position>
+		<position>mod-breadcrumb-4</position>
+		<position>mod-breadcrumb-5</position>
+		<position>mod-breadcrumb-6</position>
+		
+		<!-- Content-top Modules -->
+		<position>left</position>
+		<position>right</position>
+		
+		<!-- Content-top Modules -->
+		<position>content-top-1</position>
+		<position>content-top-2</position>
+		<position>content-top-3</position>
+		
+		<!-- Content-bottom Modules -->
+		<position>content-bottom-1</position>
+		<position>content-bottom-2</position>
+		<position>content-bottom-3</position>
+		
+		
+		<!-- Utility Modules -->
+		<position>utility-1</position>
+		<position>utility-2</position>
+		<position>utility-3</position>
+		<position>utility-4</position>
+		<position>utility-5</position>
+		<position>utility-6</position>
+		
+		<!-- mod-utility Modules -->
+		<position>mod-utility-1</position>
+		<position>mod-utility-2</position>
+		<position>mod-utility-3</position>
+		<position>mod-utility-4</position>
+		<position>mod-utility-5</position>
+		<position>mod-utility-6</position>
+		
+		<!-- Scroller Modules -->
+		<position>scroller-1</position>
+		<position>scroller-2</position>
+		<position>scroller-3</position>
+		<position>scroller-4</position>
+		<position>scroller-5</position>
+		<position>scroller-6</position>
+		
+		<!-- mod-scroller Modules -->
+		<position>mod-scroller-1</position>
+		<position>mod-scroller-2</position>
+		<position>mod-scroller-3</position>
+		<position>mod-scroller-4</position>
+		<position>mod-scroller-5</position>
+		<position>mod-scroller-6</position>
+		
+		<!-- Extension Modules -->
+		<position>extension-1</position>
+		<position>extension-2</position>
+		<position>extension-3</position>
+		<position>extension-4</position>
+		<position>extension-5</position>
+		<position>extension-6</position>
+		
+		<!-- mod-extension Modules -->
+		<position>mod-extension-1</position>
+		<position>mod-extension-2</position>
+		<position>mod-extension-3</position>
+		<position>mod-extension-4</position>
+		<position>mod-extension-5</position>
+		<position>mod-extension-6</position>
+		
+		<!-- Bottom Modules -->
+		<position>bottom-1</position>
+		<position>bottom-2</position>
+		<position>bottom-3</position>
+		<position>bottom-4</position>
+		<position>bottom-5</position>
+		<position>bottom-6</position>
+		
+		<!-- mod-bottom Modules -->
+		<position>mod-bottom-1</position>
+		<position>mod-bottom-2</position>
+		<position>mod-bottom-3</position>
+		<position>mod-bottom-4</position>
+		<position>mod-bottom-5</position>
+		<position>mod-bottom-6</position>
+		
+		<!-- Footer Modules -->
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		
+		<!-- mod-footer Modules -->
+		<position>mod-footer-1</position>
+		<position>mod-footer-2</position>
+		<position>mod-footer-3</position>
+		<position>mod-footer-4</position>
+		<position>mod-footer-5</position>
+		<position>mod-footer-6</position>
+		
+		<!-- Footer Modules -->
+		<position>bottom-footer-1</position>
+		<position>bottom-footer-2</position>
+		<position>bottom-footer-3</position>
+		<position>bottom-footer-4</position>
+		<position>bottom-footer-5</position>
+		<position>bottom-footer-6</position>
+		
+		<!-- Footer Modules -->
+		<position>mod-bottom-footer-1</position>
+		<position>mod-bottom-footer-2</position>
+		<position>mod-bottom-footer-3</position>
+		<position>mod-bottom-footer-4</position>
+		<position>mod-bottom-footer-5</position>
+		<position>mod-bottom-footer-6</position>
+		
+		<!-- Google Analytics -->
+		<position>analytics</position>
+		
+		<!-- Copyright -->
+		<position>copyright</position>
+		
+		<!-- Powered by DILIGENTCREATORS -->
+		<position>credits</position>
+		
+		<!-- debug -->
+		<position>debug</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="sitetitle" class="" type="text" default="" 
+				label="Site Name" description="Type your sitename here, if its black the default will be use" />
+				
+				<field name="logo" class="" type="media" default="" 
+				label="Logo Image" 
+				description="You can use any image format as your logo" />
+
+				<field name="templateBackgroundColor" class="" type="color" default="none"
+					label="Background Color"
+					description="Here you can update template background color according to your desire." />	
+				
+				<field name="style" class="" type="list" default="style1" label="Choose Style" description="You can choose your default style here">
+					<option value="style1">Style1</option>
+					<option value="style2">Style2</option>
+					<option value="style3">Style3</option>
+				</field>
+								
+			</fieldset>	
+			<fieldset name="advanced">
+				<field name="analytics" class="" type="text" default="" 
+				label="Google Analytic" description="Type your Google Analytic code (UA-XXXXXXXX-X) here." />
+				
+
+				<field name="credit" class="" type="list" default="1" label="Show Credit" description="You can Show or Hide credit information here.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="copyright" class="" type="list" default="1" label="Show Copyright" description="You can Show or Hide copyright information here.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+
+				<field name="shaz3e" class="" type="list" default="1" label="Show Framework Logo" description="You can Show or Hide Framework Logo here.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>					
+			</fieldset>
+		</fields>
+	</config>
+</extension>

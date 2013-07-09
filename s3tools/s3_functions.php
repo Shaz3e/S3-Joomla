@@ -17,9 +17,22 @@
 // S3 Functions
 
 function s3Component(){
+	if (JRequest::getVar('view') != 'frontpage'):
 ?>
-	<jdoc:include type="message" />
-	<jdoc:include type="component" />
-<?php 
+    <div id="dc-component dc-hidden">
+        <article>
+            <jdoc:include type="message" />
+            <jdoc:include type="component" />
+        </article>
+    </div>
+<?php else: ?>
+    <div id="dc-component">
+        <article>
+            <jdoc:include type="message" />
+            <jdoc:include type="component" />
+        </article>
+    </div>
+<?php
+	endif;
 } // s3Component() ends
 ?>

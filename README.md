@@ -1,4 +1,4 @@
-## S3 Blank Template for Joomla - V 1.0b
+## S3 Responsive Template System for Joomla - V 1.0b
 
 S3 Responsive Framework for Joomla 2.5 & Joomla 3.x intigrated with Bootstrap Responsive Images and Less
  - 6 Columnd Grid
@@ -25,4 +25,4 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x intigrated with Bootstrap Re
 
 ## Licence
 
-The S3 Joomla Blank Template is opensource software released under the [GPL](http://www.gnu.org/licenses/gpl-2.0.txt).
+The S3 Responsive Template System for Joomla 2.5 / 3.x is opensource software released under the [GPL](http://www.gnu.org/licenses/gpl-2.0.txt).

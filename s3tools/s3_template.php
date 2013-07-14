@@ -48,18 +48,22 @@
 
 <?php if($left_right): ?>
 <section class="dc-left-right">
-  <div id="dc-left-right">
+	<div id="dc-left-right">
     	<div class="modules">
         	<div id="modules">
             	<div class="dc-clear"></div>
                 	<?php if($this->countModules('top-right')): ?>
-                	<div class="dc-right">
-                    	<jdoc:include type="modules" name="top-right" style="shaz3e" />
+                    <div class="dc-modules2">
+                        <div class="dc-right">
+                            <jdoc:include type="modules" name="top-right" style="shaz3e" />
+                        </div>
                     </div>
                     <?php endif; ?>
                 	<?php if($this->countModules('top-left')): ?>
-                    <div class="dc-left">
-                    	<jdoc:include type="modules" name="top-left" style="shaz3e" />
+                    <div class="dc-modules2">
+                        <div class="dc-left">
+                            <jdoc:include type="modules" name="top-left" style="shaz3e" />
+                        </div>
                     </div>
                     <?php endif; ?>
             	<div class="dc-clear"></div>

@@ -864,7 +864,7 @@
   .controls-row [class*="span"] + [class*="span"] {
     margin-left: 0;
   }
-  .modal {
+  .DCmodal {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -872,10 +872,10 @@
     width: auto;
     margin: 0;
   }
-  .modal.fade {
+  .DCmodal.fade {
     top: -100px;
   }
-  .modal.fade.in {
+  .DCmodal.fade.in {
     top: 20px;
   }
 }
@@ -918,12 +918,12 @@
     margin-right: 0;
     margin-left: 0;
   }
-  .modal {
+  .DCmodal {
     top: 10px;
     right: 10px;
     left: 10px;
   }
-  .modal-header .close {
+  .DCmodal-header .close {
     padding: 10px;
     margin: -10px;
   }

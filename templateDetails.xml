@@ -3,11 +3,11 @@
 <extension version="2.5" type="template" client="site">
 	<name>S3_Blank</name>
 	<version>1.0</version>
-	<creationDate>07/06/2013</creationDate>
+	<creationDate>07/14/2013</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
 	<copyright>Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.</copyright>
-	<description>S3 Responsive Framework with Upto 184 Module Positions for Joomla 2.5 / 3.0</description>
+	<description>S3 Responsive Framework with Upto 150+ Module Positions for Joomla 2.5 / 3.0</description>
 	<files>
 		<filename>component.php</filename>
 		<filename>favicon.ico</filename>

@@ -17,7 +17,17 @@
 // S3 Functions
 
 function s3Component(){
+$app = JFactory::getApplication();
+$menu = $app->getMenu();
+if ($menu->getActive() == $menu->getDefault()):
 ?>
+    <div id="dc-component" class="dc-hidden">
+        <article>
+            <jdoc:include type="message" />
+            <jdoc:include type="component" />
+        </article>
+    </div>
+<?php else: ?>
     <div id="dc-component">
         <article>
             <jdoc:include type="message" />
@@ -25,5 +35,6 @@ function s3Component(){
         </article>
     </div>
 <?php
+	endif;
 } // s3Component() ends
 ?>

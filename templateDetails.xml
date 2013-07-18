@@ -2,8 +2,8 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" client="site">
 	<name>S3_Blank</name>
-	<version>1.0</version>
-	<creationDate>18 - July - 2013</creationDate>
+	<version>1.1</version>
+	<creationDate>07 July 2013</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
 	<copyright>Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.</copyright>
@@ -17,7 +17,6 @@
 		<filename>offline.php</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
-		<folder>admin</folder>
 		<folder>blocks</folder>
 		<folder>fonts</folder>
 		<folder>css</folder>
@@ -306,6 +305,13 @@
 					<option value="style1">Style1</option>
 					<option value="style2">Style2</option>
 					<option value="style3">Style3</option>
+				</field>
+				
+				<field name="showFrontPage" type="radio" default="1" 
+					label="Show Frontpage Articles" 
+					description="Set this value to Y to show the frontpage, otherwise it will be hidden"> 
+					<option value="0">No - Hide it</option>
+					<option value="1">Yes - Show it</option>
 				</field>
 				
 			</fieldset>	

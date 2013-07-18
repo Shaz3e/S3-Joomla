@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" client="site">
-	<name>DiligentCreators</name>
+	<name>S3_Blank</name>
 	<version>1.0</version>
-	<creationDate>07/14/2013</creationDate>
+	<creationDate>18 - July - 2013</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
 	<copyright>Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.</copyright>
@@ -15,7 +15,6 @@
 		<filename>index.html</filename>
 		<filename>error.php</filename>
 		<filename>offline.php</filename>
-		<filename>template-options.xml</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<folder>admin</folder>

@@ -310,7 +310,7 @@
 				
 				<field name="showFrontPage" type="radio" default="1" 
 					label="Show Frontpage Articles" 
-					description="Set this value to Y to show the frontpage, otherwise it will be hidden"> 
+					description="Show or Hide Front Page Article on Main Page"> 
 					<option value="0">No - Hide it</option>
 					<option value="1">Yes - Show it</option>
 				</field>

@@ -1,4 +1,4 @@
-## S3 Responsive Template System for Joomla - V 1.1
+## S3 Responsive Template System for Joomla - V 1.0c
 
 S3 Responsive Framework for Joomla 2.5 & Joomla 3.x intigrated with Bootstrap Responsive Images and Less
  - 6 Columnd Grid
@@ -6,6 +6,7 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x intigrated with Bootstrap Re
  - Suiteable with sorf of layout
  - IE7 and IE8 Supported
  - Template Manager
+ - Hidden component area on front page when there is not article marked as featured
  - Custom template_modules.less where you customized modules can be updated
 
 ## Basic Options

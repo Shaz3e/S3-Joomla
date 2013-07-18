@@ -30,7 +30,7 @@
                 </section>
             <?php endif; ?>
 
-			<?php require_once("component.php"); ?>
+			<?php s3Component(); ?>
             
 			<?php if($this->countModules('content-bottom-1') || $this->countModules('content-bottom-2') || $this->countModules('content-bottom-3')) : ?>
                 <section class="dc-content-bottom">

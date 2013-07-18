@@ -21,10 +21,11 @@ $pageclass = $app->getParams('com_content');
 // Logo Params
 $logoName = $this->params->get('logo');
 
-// Logo Image
-if($logoName){
-	$logo = '<img src="'. JURI::root() . $logoName .'" alt="'. $sitetitle .'">';
-}else{
-	$logo = '<img src="'.$dcTemplatePath.'/themes/'. $this->params->get('style') .'/images/logo.png'.'" alt="'.$sitetitle.'">';
-}
+	// Logo Image
+	if($logoName){
+		$logo = '<img src="'. JURI::root() . $logoName .'" alt="'. $sitetitle .'">';
+	}else{
+		$logo = '<img src="'.$dcTemplatePath.'/themes/'. $this->params->get('style') .'/images/logo.png'.'" alt="'.$sitetitle.'">';
+	}
+
 ?>

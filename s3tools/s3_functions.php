@@ -15,14 +15,15 @@
 \*======================================================================*/
 
 // S3 Functions
+
 function s3Component(){
 ?>
-	<div id="dc-component">
-		<article>
-			<jdoc:include type="message" />
-			<jdoc:include type="component" />
-		</article>
-	</div>
+    <div id="dc-component">
+        <article>
+            <jdoc:include type="message" />
+            <jdoc:include type="component" />
+        </article>
+    </div>
 <?php
 } // s3Component() ends
 ?>

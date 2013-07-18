@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" client="site">
-	<name>S3_Blank</name>
+	<name>DiligentCreators</name>
 	<version>1.0</version>
 	<creationDate>07/14/2013</creationDate>
 	<author>Team DC - Shaz3e</author>
@@ -15,9 +15,10 @@
 		<filename>index.html</filename>
 		<filename>error.php</filename>
 		<filename>offline.php</filename>
-		<filename>templateDetails.xml</filename>
+		<filename>template-options.xml</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
+		<folder>admin</folder>
 		<folder>blocks</folder>
 		<folder>fonts</folder>
 		<folder>css</folder>
@@ -300,23 +301,19 @@
 				
 				<field name="logo" class="" type="media" default="" 
 				label="Logo Image" 
-				description="You can use any image format as your logo" />
-
-				<field name="templateBackgroundColor" class="" type="color" default="none"
-					label="Background Color"
-					description="Here you can update template background color according to your desire." />	
+				description="You can use any image format as your logo" />	
 				
 				<field name="style" class="" type="list" default="style1" label="Choose Style" description="You can choose your default style here">
 					<option value="style1">Style1</option>
 					<option value="style2">Style2</option>
 					<option value="style3">Style3</option>
 				</field>
-								
+				
 			</fieldset>	
-			<fieldset name="advanced">
+			
+			<fieldset name="advanced">				
 				<field name="analytics" class="" type="text" default="" 
 				label="Google Analytic" description="Type your Google Analytic code (UA-XXXXXXXX-X) here." />
-				
 
 				<field name="credit" class="" type="list" default="1" label="Show Credit" description="You can Show or Hide credit information here.">
 					<option value="0">No</option>
@@ -333,6 +330,7 @@
 					<option value="1">Yes</option>
 				</field>					
 			</fieldset>
+					
 		</fields>
 	</config>
 </extension>

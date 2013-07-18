@@ -15,32 +15,14 @@
 \*======================================================================*/
 
 // S3 Functions
-
 function s3Component(){
-	
-	// hide component area on front page
-	$app = JFactory::getApplication();
-	$menu = $app->getMenu();
-	$lang = JFactory::getLanguage();
-	
-	if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
 ?>
-    <div id="dc-component" class="dc-hidden">
-        <article>
-            <jdoc:include type="message" />
-            <jdoc:include type="component" />
-        </article>
-    </div>
+	<div id="dc-component">
+		<article>
+			<jdoc:include type="message" />
+			<jdoc:include type="component" />
+		</article>
+	</div>
 <?php
-	}else{
-?>
-    <div id="dc-component">
-        <article>
-            <jdoc:include type="message" />
-            <jdoc:include type="component" />
-        </article>
-    </div>
-<?php
-	}
 } // s3Component() ends
 ?>

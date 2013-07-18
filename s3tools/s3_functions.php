@@ -17,9 +17,13 @@
 // S3 Functions
 
 function s3Component(){
-$app = JFactory::getApplication();
-$menu = $app->getMenu();
-if ($menu->getActive() == $menu->getDefault()):
+	
+	// hide component area on front page
+	$app = JFactory::getApplication();
+	$menu = $app->getMenu();
+	$lang = JFactory::getLanguage();
+	
+	if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
 ?>
     <div id="dc-component" class="dc-hidden">
         <article>
@@ -27,7 +31,9 @@ if ($menu->getActive() == $menu->getDefault()):
             <jdoc:include type="component" />
         </article>
     </div>
-<?php else: ?>
+<?php
+	}else{
+?>
     <div id="dc-component">
         <article>
             <jdoc:include type="message" />
@@ -35,6 +41,6 @@ if ($menu->getActive() == $menu->getDefault()):
         </article>
     </div>
 <?php
-	endif;
+	}
 } // s3Component() ends
 ?>

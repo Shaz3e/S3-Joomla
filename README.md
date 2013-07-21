@@ -18,6 +18,7 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x intigrated with Bootstrap Re
 
 ## Advance Options
 
+ - Enable or Disable development mode
  - Google Analytics
  - Show Credit "Default Show" (Hide or Show) when its hide the module still be available for this postion
  - Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion

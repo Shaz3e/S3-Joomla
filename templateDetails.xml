@@ -2,7 +2,7 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" client="site">
 	<name>S3_Blank</name>
-	<version>1.0</version>
+	<version>1.1</version>
 	<creationDate>7 July 2013</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
@@ -317,7 +317,14 @@
 				
 			</fieldset>	
 			
-			<fieldset name="advanced">				
+			<fieldset name="advanced">
+				<field name="developmentMode" type="list" default="1" 
+					label="Development Mode?" 
+					description="Enable or Disable development mode for this website."> 
+					<option value="0">Off</option>
+					<option value="1">On</option>
+				</field>
+							
 				<field name="analytics" class="" type="text" default="" 
 				label="Google Analytic" description="Type your Google Analytic code (UA-XXXXXXXX-X) here." />
 

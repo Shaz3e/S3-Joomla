@@ -17,6 +17,12 @@
 <jdoc:include type="head" />
 <?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_styles.php'); ?>
 <script type="text/javascript" src="<?php echo $dcTemplatePath;?>/js/less.js"></script>
+<?php if($this->params->get('developmentMode')): ?>
+	<script type="text/javascript">
+         less.env = "development";
+         less.watch();
+    </script>
+<?php endif; ?>
 <?php
 // Google Analytics
 if($this->params->get('analytics')): ?>

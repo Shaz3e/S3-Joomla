@@ -6,7 +6,8 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x intigrated with Bootstrap Re
  - Suiteable with sorf of layout
  - IE7 and IE8 Supported
  - Template Manager
- - Show hide component area on front page
+ - Show or hide component area on front page
+ - Show or hide main body container
  - Custom template_modules.less where you customized modules can be updated
 
 ## Basic Options
@@ -15,6 +16,7 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x intigrated with Bootstrap Re
  - Custom Logo
  - Choose from different Styles
  - Show Frontpage Articles or Hide it
+ - Show Main Body
 
 ## Advance Options
 

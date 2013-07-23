@@ -186,7 +186,18 @@
 </section>
 <?php endif; ?>
 
-<?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/layout/layout.php"); ?>
+<?php 
+	$app = JFactory::getApplication();
+	$menu = $app->getMenu();
+	$lang = JFactory::getLanguage();
+	if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
+		if($this->params->get('showMainBody')){
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/layout/layout.php"); 
+		}
+	}else{
+		include_once(JPATH_ROOT . "/templates/" . $this->template . "/layout/layout.php"); 
+	}
+?>
 
 <?php if($utilityModules || $modUtilityModules): ?>
 <section class="dc-utility">

@@ -3,7 +3,7 @@
 S3 Responsive Framework for Joomla 2.5 & Joomla 3.x intigrated with Bootstrap Responsive Images and Less
  - 6 Columnd Grid
  - 150+ Modlue Positions
- - Suiteable with sorf of layout
+ - Suiteable with any design
  - IE7 and IE8 Supported
  - Template Manager
  - Show or hide component area on front page

@@ -28,4 +28,4 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x intigrated with Bootstrap Re
 
 ## Licence
 
-The S3 Responsive Template System for Joomla 2.5 / 3.x is opensource software released under the [GPL](http://www.gnu.org/licenses/gpl-2.0.txt).
+The S3 Responsive Template System is opensource software released under the [GPL](http://www.gnu.org/licenses/gpl-2.0.txt).

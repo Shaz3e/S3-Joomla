@@ -2,6 +2,7 @@
 Custom Modules Styles
 ************************************************/
 div.dc-block{
+	position:relative;
 	 h3{
 		 span{}
 	}
@@ -88,6 +89,42 @@ div.dc-block.s3-box4{
 Different Module Icon Styles
 ************************************************/
 div.dc-block.s3-icon{}
+
+/************************************************
+Different Module Badges Styles
+************************************************/
+.dc-block.s3-badge-notavailable:before,
+.dc-block.s3-badge-comingsoon:before,
+.dc-block.s3-badge-hot:before,
+.dc-block.s3-badge-free:before,
+.dc-block.s3-badge-cool:before,
+.dc-block.s3-badge-special:before,
+.dc-block.s3-badge-new:before{
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:1;
+}
+.dc-block.s3-badge-notavailable:before {
+    content:url(../../images/badges/badge-notavailable.png);
+}
+.dc-block.s3-badge-comingsoon:before {
+    content:url(../../images/badges/badge-comingsoon.png);
+}
+.dc-block.s3-badge-hot:before {
+    content:url(../../images/badges/badge-hot.png);
+}
+.dc-block.s3-badge-free:before {
+    content:url(../../images/badges/badge-free.png);
+}
+.dc-block.s3-badge-cool:before {
+    content:url(../../images/badges/badge-cool.png);
+}
+.dc-block.s3-badge-special:before {
+    content:url(../../images/badges/badge-special.png);
+}
+.dc-block.s3-badge-new:before {
+    content:url(../../images/badges/badge-new.png);
 
 /************************************************
 Different Module Color Boxes

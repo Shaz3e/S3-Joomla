@@ -33,7 +33,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-responsive.css');
 
 // Add Javascripts
-$doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
+// $doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
 $doc->addScript($dcTemplatePath.'/js/jquery-noconflict.js', 'text/javascript');
 $doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
 $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');

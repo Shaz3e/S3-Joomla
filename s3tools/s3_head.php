@@ -14,6 +14,7 @@
 || #################################################################### ||
 \*======================================================================*/
 ?>
+<script type="text/javascript" src="<?php echo $dcTemplatePath;?>/js/jquery.min.js"></script>
 <jdoc:include type="head" />
 <?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_styles.php'); ?>
 <script type="text/javascript" src="<?php echo $dcTemplatePath;?>/js/less.js"></script>

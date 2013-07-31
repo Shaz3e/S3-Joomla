@@ -19,6 +19,7 @@
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<folder>blocks</folder>
+		<folder>compiler</folder>
 		<folder>fonts</folder>
 		<folder>css</folder>
 		<folder>less</folder>

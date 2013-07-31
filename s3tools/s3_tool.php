@@ -41,4 +41,24 @@ $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');
 include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_functions.php');
 include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_params.php');
 include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_blocks.php');
+
+require "lessc.inc.php";
+$less = new lessc;
+$less->setFormatter("compressed");
+$less->checkedCompile(JPATH_ROOT . "/templates/" . $this->template ."/themes/". $this->params->get('style') ."/style.less", JPATH_ROOT . "/templates/" . $this->template ."/compiler/style.css");
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-## S3 Responsive Template System for Joomla - V 1.1a
+## S3 Responsive Template System for Joomla - V 1.2
 
 S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap Responsive Images and Less
  - 6 Columns Grid System
@@ -9,6 +9,8 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap Re
  - Show or hide component area on front page
  - Show or hide main body container
  - Custom template_modules.less where you customized modules can be updated
+ - Less Development Enable / Disable
+ - Less compiler as lessphp
 
 ## Basic Options
 

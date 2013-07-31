@@ -45,20 +45,5 @@ include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_blocks.
 require "lessc.inc.php";
 $less = new lessc;
 $less->setFormatter("compressed");
-$less->checkedCompile(JPATH_ROOT . "/templates/" . $this->template ."/themes/". $this->params->get('style') ."/style.less", JPATH_ROOT . "/templates/" . $this->template ."/compiler/style.css");
+$less->checkedCompile(JPATH_ROOT . "/templates/" . $this->template ."/themes/". $this->params->get('style') ."/style.less", JPATH_ROOT . "/templates/" . $this->template ."/compile/style.css");
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

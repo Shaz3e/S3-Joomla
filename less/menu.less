@@ -1,3 +1,71 @@
 /************************************************
 				Drop Down Menu
 ************************************************/
+.s3-menu ul li.current a{
+	color:@white;
+	background-color:@default-orange;
+}
+.s3-menu{
+	ul{
+		margin:0;
+		padding:0;
+		li{
+			float:left;
+			display:block;
+			height:100%;
+			padding:0;
+			margin:0;
+			.current{
+				a{
+					color:@white;
+					background-color:@default-orange;
+				}
+			}
+			a{
+				font-size:120%;
+				color:@black;
+				
+				&:hover{
+					color:@white;
+					background-color:@default-orange;
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .s3-menu ul	li{
+        width:100%;
+        text-align:center;
+    }
+    .s3-menu ul li a{
+        padding:0.5em 0 !important;
+    }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .s3-menu ul	li{
+        width:100% !important;
+        text-align:center;
+    }
+    .s3-menu ul li a{
+        padding:0.5em 0 !important;
+    }
+}
+/* desktop */
+
+@media (min-width: 980px){
+    .s3-menu ul li a{
+    	padding:1.9em 1em;
+    }
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+    .s3-menu ul li a{
+    	padding:1.9em 1em;
+    }
+}

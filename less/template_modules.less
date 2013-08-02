@@ -13,14 +13,6 @@ div.dc-block.s3-uppercase{text-transform:uppercase !important;}
 div.dc-block.s3-capitalize{text-transform:capitalize !important;}
 div.dc-block.s3-padding{padding:1em;}
 div.dc-block.s3-margin{margin:1em;}
-div.dc-block.s3-padding-top{padding:1em 0 0 0;}
-div.dc-block.s3-padding-right{padding:0 1em 0 0;}
-div.dc-block.s3-padding-bottom{padding:0 0 1em 0;}
-div.dc-block.s3-padding-left{padding:0 0 0 1em;}
-div.dc-block.s3-margin-top{margin:1em 0 0 0;}
-div.dc-block.s3-margin-right{margin:0 1em 0 0;}
-div.dc-block.s3-margin-bottom{margin:0 0 1em 0;}
-div.dc-block.s3-margin-left{margin:0 0 0 1em;}
 
 /************************************************
 Different Module Title Styles
@@ -97,20 +89,6 @@ div.dc-block.s3-box4{
 Different Module Icon Styles
 ************************************************/
 div.dc-block.s3-icon{}
-div.dc-block.s3-icon-newsletter a:before{
-    content:url(../../images/modules-icon/newsletter.png);
-    display:inline-block;
-    margin-right:0.5em;
-}
-div.dc-block.s3-icon-newsletter a{
-    background-color:#000;
-    color:#fff;
-    padding:0.5em;
-    margin-right:-70px;
-}
-div.dc-block.s3-icon-newsletter a:hover{
-    margin-right:0;
-}
 
 /************************************************
 Different Module Badges Styles
@@ -167,9 +145,7 @@ div.dc-block.s3-box-green{
 }
 
 div.dc-block.s3-box-white{
-	background-color:@white;
 	 h3{
-		 border-bottom:solid 1px #f1f1f1;
 		 span{}
 	}
 }
@@ -281,140 +257,6 @@ div.dc-block.s3-box-shadow5{
 
 
 
-/********************************************
-Template Modules
-*********************************************/
-/* Slideshow */
-.slideshow{
-    padding:2.5em 0;
-    text-align:center;
-	h1,h2,h3{
-		line-height:100%;
-	}
-	h1{}
-	h2{}
-	p{
-		margin:1em 0;
-		line-height:100%;
-			a{
-				&:hover{}
-			}
-	}
-}
-/* source icons */
-.source-icons{
-	.image{
-			width:100px;
-			height:100px;
-			display:block;
-			margin:auto;
-			padding:0.5em;
-			border:solid 5px #f89382;
-			   
-			.rounded-corners(100px);
-
-			.transition;
-				
-			transform:rotate(0deg);
-			-ms-transform:rotate(0deg);
-			-webkit-transform:rotate(0deg);		
-		img{
-			background-color:#fff;
-			width:80%;
-			padding:10%;
-			
-			.rounded-corners(100px);
-			.transition;
-		}
-	}
-	
-	&:hover{
-		.image{
-			border:dotted 5px #fff;
-			
-			.transition;
-			
-			transform:rotate(360deg);
-			-ms-transform:rotate(360deg);
-			-webkit-transform:rotate(360deg);
-
-			img{
-				width:70%;
-				padding:15%;
-				background-color:#f89382;
-				.transition;
-			}
-		}
-	}
-	
-	h3{}
-	p{}
-	a{
-		display:inline-block;
-		background-color:@white;
-		color:@black !important;
-		padding:0.5em 2em;
-		&:hover{
-			background-color:@black;
-			color:@white !important;
-		}
-	}
-}
-/* responsive framework images */
-.framework-icons{
-	margin:3em 0;
-    border-bottom:solid 1px #f1f1f1;
-    padding-bottom:1em;
-	
-	.image{
-			border:solid 5px #9fd6ff;
-			width:70px;
-			height:70px;
-			display:block;
-			margin:auto;
-			padding:0.5em;
-			   
-			.rounded-corners(100px);
-
-			.transition;
-				
-			transform:rotate(0deg);
-			-ms-transform:rotate(0deg);
-			-webkit-transform:rotate(0deg);	
-		img{
-			background-color:#cfeaff;
-			width:80%;
-			padding:10%;
-			
-			.rounded-corners(100px);
-			.transition;
-		}
-	}
-	
-	p{
-		a{
-			&:hover{}
-		}
-	}
-	
-	&:hover{
-		.image{
-			border:dotted 5px #2e78b1;
-						
-			.transition;
-			
-			transform:rotate(360deg);
-			-ms-transform:rotate(360deg);
-			-webkit-transform:rotate(360deg);
-			img{
-				width:70%;
-				padding:15%;
-				background-color:#9fd6ff;
-				.transition;
-			}
-		}
-	}
-}
 
 /* Media Queries
 *********************************************/
@@ -428,103 +270,20 @@ Template Modules
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	/* Slideshow */
-	.slideshow{
-		h1{
-			font-size:200%;
-		}
-		h2{
-			font-size:175%;
-		}
-		h3{
-			font-size:90%;
-		}
-		p{
-			a{
-				&:hover{}
-			}
-		}
-	} // .slideshow ends
 	
-	/* responsive framework images */
-	.framework-icons{
-		.image{
-			float:none;
-		}
-		h3{
-			text-align:center;
-		}
-		p{
-			text-align:center;
-		}
-	} // .framework-icons
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-	/* Slideshow */
-	.slideshow{
-		h1{
-			font-size:350%;
-		}
-		h2{
-			font-size:300%;
-		}
-		h3{
-			font-size:150%;
-		}
-		p{
-			a{
-				&:hover{}
-			}
-		}
-	} // .slideshow ends
 	
-	/* responsive framework images */
-	.framework-icons{
-		.image{
-			float:none;
-		}
-		h3{
-			text-align:center;
-		}
-		p{
-			text-align:center;
-		}
-	} // .framework-icons
-
 }
 /* desktop */
 @media (max-width: 979px) {
 	
 }
 @media (min-width: 980px){
-	/* Slideshow */
-	.slideshow{
-		h1{
-			font-size:450%;
-		}
-		h2{
-			font-size:350%;
-		}
-		h3{
-			font-size:150%;
-		}
-		p{
-			a{
-				&:hover{}
-			}
-		}
-	} // .slideshow ends
 	
-	/* responsive framework images */
-	.framework-icons{
-		.image{
-			margin:0 1em 0 0;
-			float:left;
-		}
-	}
 }
 /* Large desktop */
 @media (min-width: 1200px) {
-
+	
 }

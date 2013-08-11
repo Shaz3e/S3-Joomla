@@ -1,5 +1,5 @@
-@import "../../less/default";
-@import "variables-mixin";
+@import "../../less/default.less";
+@import "variables-mixin.less";
 *{}
 html{}
 body{}
@@ -88,8 +88,7 @@ Top Left or Right Module Default Styles
 ***********************************************/
 .dc-less-left-right{}
 #dc-less-left-right{}
-.dc-less-left{}
-.dc-less-right{}
+.dc-less-left{
 /******************************************
 specific grid style
 i.e.
@@ -280,13 +279,7 @@ or any other styles
 #dc-less-top{}
 
 /* Header Module 6 grid */
-.dc-less-header{}
-#dc-less-header{}
-
-/* Header Module Static 4 */
-.dc-less-header1,.dc-less-header2,.dc-less-header3,.dc-less-header4{}
-
-.dc-less-header1{
+.dc-less-header{
 /******************************************
 specific grid style
 i.e.
@@ -348,8 +341,136 @@ or any other styles
 		/* module specific grid styles */
 	}
 }
-.dc-less-header2{
+#dc-less-header{
 /******************************************
+specific grid style
+i.e.
+background-color
+text-color
+background-image
+or any other styles
+******************************************/
+	
+	h1,h2,h3,h4,h5,h6{
+		/* heading specific grid styles */
+	}
+	
+	P{
+		/* paragraph specific grid styles */
+	}
+	
+	a{
+		/* href specific grid styles */
+		&:hover{
+		}
+	}
+	
+	ul{
+		/* unordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
+	ol{
+		/* ordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
+	.dc-block{
+		/* module specific grid styles */
+	}
+}
+
+/* Header Module Static 4 */
+.dc-less-header1,.dc-less-header2,.dc-less-header3,.dc-less-header4{}
+
+.dc-less-header1{
+	/******************************************
+specific grid style
+i.e.
+background-color
+text-color
+background-image
+or any other styles
+******************************************/
+	
+	h1,h2,h3,h4,h5,h6{
+		/* heading specific grid styles */
+	}
+	
+	P{
+		/* paragraph specific grid styles */
+	}
+	
+	a{
+		/* href specific grid styles */
+		&:hover{
+		}
+	}
+	
+	ul{
+		/* unordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
+	ol{
+		/* ordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
+	.dc-block{
+		/* module specific grid styles */
+	}
+}
+.dc-less-header2{
+	/******************************************
 specific grid style
 i.e.
 background-color
@@ -496,9 +617,43 @@ or any other styles
 		}
 	}
 	
+	ul{
+		/* unordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
+	ol{
+		/* ordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
 	.dc-block{
 		/* module specific grid styles */
-	}
+	}	
 }
 
 /* Logo */
@@ -508,7 +663,68 @@ or any other styles
 }
 
 /* Menu Module 6 grid */
-.dc-less-menu{}
+.dc-less-menu{
+/******************************************
+specific grid style
+i.e.
+background-color
+text-color
+background-image
+or any other styles
+******************************************/
+	
+	h1,h2,h3,h4,h5,h6{
+		/* heading specific grid styles */
+	}
+	
+	P{
+		/* paragraph specific grid styles */
+	}
+	
+	a{
+		/* href specific grid styles */
+		&:hover{
+		}
+	}
+	
+	ul{
+		/* unordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
+	ol{
+		/* ordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
+	.dc-block{
+		/* module specific grid styles */
+	}
+}
 #dc-less-menu{}
 
 /* Slideshow Module 6 grid */
@@ -1312,15 +1528,7 @@ or any other styles
 #dc-less-extension{}
 
 /* Bottom Module 6 grid */
-.dc-less-bottom{}
-/******************************************
-specific grid style
-i.e.
-background-color
-text-color
-background-image
-or any other styles
-******************************************/
+.dc-less-bottom{
 /******************************************
 specific grid style
 i.e.
@@ -1459,7 +1667,7 @@ text-color
 background-image
 or any other styles
 ******************************************/
-	
+
 	h1,h2,h3,h4,h5,h6{
 		/* heading specific grid styles */
 	}
@@ -1541,3 +1749,4 @@ or any other styles
 @media (max-width: 979px) {}
 /* Large desktop */
 @media (min-width: 1200px) {}
+

@@ -39,7 +39,7 @@ defined('_JEXEC') or die;
 	function modChrome_shaz3e($module, &$params, &$attribs)
 	{
 		if (!empty ($module->content)) : ?>
-			<div class="dc-block<?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+			<div class="dc-block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
 			<?php if ($module->showtitle != 0) : ?>
 				<h3><?php echo spanReplace($module->title); ?></h3>
 			<?php endif; ?>
@@ -52,7 +52,7 @@ defined('_JEXEC') or die;
 	function modChrome_s3_sidebar($module, &$params, &$attribs)
 	{
 		if (!empty ($module->content)) : ?>
-			<div class="dc-block<?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+			<div class="dc-block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
 			<?php if ($module->showtitle != 0) : ?>
 				<h3><?php echo spanReplace($module->title); ?></h3>
 			<?php endif; ?>

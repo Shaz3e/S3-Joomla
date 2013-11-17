@@ -1009,6 +1009,70 @@ component + left/right sidebar
 
 #dc-less-component{}
 
+/* Sidebar (left+right) */
+.dc-less-sidebar{
+/******************************************
+specific grid style
+i.e.
+background-color
+text-color
+background-image
+or any other styles
+******************************************/
+	
+	h1,h2,h3,h4,h5,h6{
+		/* heading specific grid styles */
+	}
+	
+	P{
+		/* paragraph specific grid styles */
+	}
+	
+	a{
+		/* href specific grid styles */
+		&:hover{
+		}
+	}
+	
+	ul{
+		/* unordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
+	ol{
+		/* ordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
+	.dc-block{
+		/* module specific grid styles */
+	}
+}
+
 /* left Sidebar */
 .dc-less-left-sidebar{
 /******************************************
@@ -1138,69 +1202,6 @@ or any other styles
 	}
 }
 #dc-less-right-sidebar{}
-
-.dc-less-sidebar{
-/******************************************
-specific grid style
-i.e.
-background-color
-text-color
-background-image
-or any other styles
-******************************************/
-	
-	h1,h2,h3,h4,h5,h6{
-		/* heading specific grid styles */
-	}
-	
-	P{
-		/* paragraph specific grid styles */
-	}
-	
-	a{
-		/* href specific grid styles */
-		&:hover{
-		}
-	}
-	
-	ul{
-		/* unordered list specific grid styles */
-		li{
-			/* href list specific grid styles */
-			a{
-				&:first-child{}
-				&:last-child{}
-				&:hover{
-					&:first-child{}
-					&:last-child{}
-				}
-			}
-			&:first-child{}
-			&:last-child{}
-		}
-	}
-	
-	ol{
-		/* ordered list specific grid styles */
-		li{
-			/* href list specific grid styles */
-			a{
-				&:first-child{}
-				&:last-child{}
-				&:hover{
-					&:first-child{}
-					&:last-child{}
-				}
-			}
-			&:first-child{}
-			&:last-child{}
-		}
-	}
-	
-	.dc-block{
-		/* module specific grid styles */
-	}
-}
 
 /* Content Top Module 3 grid */
 .dc-less-content-top{

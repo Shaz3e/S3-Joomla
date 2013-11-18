@@ -21,6 +21,7 @@ include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_tool.ph
 <!DOCTYPE HTML>
 <html>
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1, user-scaleable=no">
 <meta charset="utf-8">
 <?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_head.php'); ?>

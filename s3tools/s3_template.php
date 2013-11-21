@@ -119,6 +119,21 @@
 </section>
 <?php endif; ?>
 
+<?php if($breadcrumbModules || $modBreadcrumbModules): ?>
+<section class="dc-breadcrumb">
+	<div id="dc-breadcrumb">
+    	<div class="dc-modules">
+        	<div id="dc-modules">
+            	<div class="dc-clear"></div>
+                	<?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/breadcrumb.php"); ?>
+                	<?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-breadcrumb.php"); ?>
+                <div class="dc-clear"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
+
 <?php if($slideshowModules || $modSlideshowModules): ?>
 <section class="dc-slideshow">
 	<div id="dc-slideshow">
@@ -165,21 +180,6 @@
 						<?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-bottom-feature.php"); ?>
                     <div class="dc-clear"></div>
                 <?php endif; ?>
-            </div>
-        </div>
-    </div>
-</section>
-<?php endif; ?>
-
-<?php if($breadcrumbModules || $modBreadcrumbModules): ?>
-<section class="dc-breadcrumb">
-	<div id="dc-breadcrumb">
-    	<div class="dc-modules">
-        	<div id="dc-modules">
-            	<div class="dc-clear"></div>
-                	<?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/breadcrumb.php"); ?>
-                	<?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-breadcrumb.php"); ?>
-                <div class="dc-clear"></div>
             </div>
         </div>
     </div>

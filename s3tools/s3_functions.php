@@ -20,8 +20,10 @@ function s3Component(){
 ?>
     <div id="dc-component">
         <article>
-            <jdoc:include type="message" />
-            <jdoc:include type="component" />
+            <div class="dc-clear"></div>
+                <jdoc:include type="message" />
+                <jdoc:include type="component" />
+            <div class="dc-clear"></div>
         </article>
     </div>
 <?php

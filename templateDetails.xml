@@ -2,11 +2,11 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" client="site">
 	<name>S3_Blank</name>
-	<version>1.1</version>
-	<creationDate>7 July 2013</creationDate>
+	<version>2.0</version>
+	<creationDate>1 January 2014</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
-	<copyright>Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.</copyright>
 	<description>S3 Responsive Framework with Upto 150+ Module Positions for Joomla 2.5 / 3.0</description>
 	<files>
 		<filename>component.php</filename>
@@ -349,7 +349,10 @@
 				<field name="shaz3e" class="" type="list" default="1" label="Show Framework Logo" description="You can Show or Hide Framework Logo here.">
 					<option value="0">No</option>
 					<option value="1">Yes</option>
-				</field>					
+				</field>
+				
+				<field name="documentGenerator" class="" type="text" default="Shaz3e - The Revealing Paradigm"
+				label="Type Meta Generator" description="Type your custom meta generator text here." />					
 			</fieldset>
 					
 		</fields>

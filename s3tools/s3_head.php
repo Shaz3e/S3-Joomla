@@ -46,6 +46,5 @@ if($this->params->get('analytics')): ?>
 <link rel="shortcut icon" href="<?php echo $dcTemplatePath; ?>/images/favicon/favicon.png">
 <!--[if lt IE 9]>
 <link href="<?php echo $dcTemplatePath; ?>/css/ie.css" type="text/css" rel="stylesheet">
-<script src="<?php echo $dcTemplatePath; ?>/js/respond.js"></script>
-<script src="<?php echo $dcTemplatePath; ?>/js/html5.js"></script>
 <![endif]-->
+<!--[if lt IE 9]><script src="<?php echo $dcTemplatePath; ?>/js/html5.js"></script><![endif]-->

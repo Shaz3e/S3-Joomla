@@ -88,7 +88,6 @@
 </section>
 <?php endif; ?>
 
-
 <section class="dc-header">
 	<div id="dc-header">
     	<div class="dc-modules">

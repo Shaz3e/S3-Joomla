@@ -29,6 +29,13 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap Re
  - Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion
  - Show Framework Logo "Default Show" (Hide or Show)
 
+## How do I use Responsive Video
+```html
+<div class="s3-video">embaded code</div>
+```
+ 
 ## Licence
 
 The S3 Responsive Template System is opensource software released under the [GPL](http://www.gnu.org/licenses/gpl-2.0.txt).
+
+[Shaz3e's Website](http://www.shaz3e.com) | [@Shaz3e](https://www.twitter.com/Shaz3e) | [Fan Page](https://www.facebook.com/Shaz3e)

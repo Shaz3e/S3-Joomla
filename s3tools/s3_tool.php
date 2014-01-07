@@ -36,6 +36,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-responsive.css'
 // $doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
 $doc->addScript($dcTemplatePath.'/js/jquery-noconflict.js', 'text/javascript');
 $doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
+$doc->addScript($dcTemplatePath.'/js/jquery.fitvids.js', 'text/javascript');
 $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');
 
 include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_functions.php');

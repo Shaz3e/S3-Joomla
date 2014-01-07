@@ -11,7 +11,8 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap Re
  - Custom template_modules.less where you customized modules can be updated
  - Less Development Enable / Disable
  - Less compiler as lessphp
-
+ - Responsive Video with [FitVids.js](https://github.com/davatron5000/FitVids.js).
+ 
 ## Basic Options
 
  - Custom Sitename

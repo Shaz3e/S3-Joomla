@@ -24,6 +24,12 @@
          less.watch();
     </script>
 <?php endif; ?>
+<script>
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $(".s3-video").fitVids();
+  });
+</script>
 <?php
 // Google Analytics
 if($this->params->get('analytics')): ?>

@@ -1,5 +1,5 @@
-## S3 Responsive Template System for Joomla - V 3.0 Beta
-[![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=master)](https://travis-ci.org/Shaz3e/S3-Joomla)
+## S3 Responsive Template System for Joomla - V 3.0 Beta [![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=master)](https://travis-ci.org/Shaz3e/S3-Joomla)
+
 S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap Responsive Images and Less
  - 6 Columns Grid System
  - 150+ Module Positions

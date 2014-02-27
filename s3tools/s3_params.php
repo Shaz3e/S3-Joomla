@@ -18,10 +18,10 @@
 // meta generator
 $documentGenerator = $this->params->get('documentGenerator');
 	if($documentGenerator){
-		$document = &JFactory::getDocument();
+		$document = JFactory::getDocument();
 		$document->setGenerator($this->params->get('documentGenerator'));
 	}else{
-		$document = &JFactory::getDocument();
+		$document = JFactory::getDocument();
 		$document->setGenerator('Shaz3e - The Revealing Paradigm');
 	}
 

@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
-<extension version="2.5" type="template" client="site">
+<extension version="2.5" type="template">
 	<name>S3_Blank</name>
 	<version>2.0</version>
 	<creationDate>1 January 2014</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
 	<copyright>Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.</copyright>
-	<description>S3 Responsive Framework with Upto 150+ Module Positions for Joomla 2.5 / 3.0</description>
+	<description>
+	   <![CDATA[
+	   	
+		<h1>S3 Responsive Template System <span class="label label-success">v3</span></h1>
+		<p>Get more help and find out more at <a href="http://www.shaz3e.com" target="_blank">http://www.Sha3e.com</a></p>
+			
+		<img src="../templates/s3_blank/template_thumbnail.png"/> <!-- Change Template Name "S3_Blank" -->
+		
+			<h2>Key Features</h2>
+				<ul>
+					<li>Responsive Design supporting Phone, Tablets and Desktops</li>
+					<li>LESS CSS auto-compilation</li>
+					<li>Flexible widgets for template customization</li>
+					<li>Full extensible framework architecture</li>
+				</ul>
+				
+			<h2>S3 Framework Base Theme</h2>
+			<p>The S3 Framework base theme is a clean modern responsive design that is a great place to start when building your custom S3 powered theme.</p>
+			
+			<h2>What is the S3 Responsive Framework?</h2><hr>
+			<p>S3 is a sophisticated framework with the sole intention of being the best platform to build a solid theme with.
+				S3 takes all the lessons learned during the development of many Joomla templates 
+				Themes and distills that knowledge into a single super-flexible framework that is easy to configure, simple to
+				extend, and powerful enough to handle anything we want to throw at it.</p>
+
+	   ]]>
+	</description>
 	<files>
 		<filename>component.php</filename>
 		<filename>favicon.ico</filename>
@@ -29,6 +54,9 @@
 		<folder>layout</folder>
 		<folder>s3tools</folder>
 		<folder>themes</folder>
+		<!-- Change File name as Template Name inside language folder -->
+		<folder>language</folder>
+		
 	</files>
 	<positions>
 		<!-- Top Left Right Modules (2) -->
@@ -294,8 +322,11 @@
 		<position>debug</position>
 	</positions>
 	<config>
-		<fields name="params">
-			<fieldset name="basic">
+	<config>
+        <fields name="params">
+			
+			<!-- STYLE -->
+            <fieldset name="STYLE">
 				<field name="sitetitle" class="" type="text" default="" 
 				label="Site Name" description="Type your sitename here, if its black the default will be use" />
 				
@@ -322,10 +353,28 @@
 					<option value="0">No - Hide it</option>
 					<option value="1">Yes - Show it</option>
 				</field>
-				
-			</fieldset>	
-			
-			<fieldset name="advanced">
+            </fieldset>
+
+			<!-- FEATURES -->
+            <fieldset name="FEATURES">
+
+            </fieldset>
+
+
+			<!-- MENU -->
+            <fieldset name="MENU">
+
+            </fieldset>
+
+
+			<!-- LAYOUTS -->
+            <fieldset name="LAYOUTS">
+
+            </fieldset>
+
+
+			<!-- ADVANCED -->
+            <fieldset name="ADVANCED">
 				<field name="developmentMode" type="list" default="1" 
 					label="Development Mode?" 
 					description="Enable or Disable development mode for this website."> 
@@ -352,9 +401,11 @@
 				</field>
 				
 				<field name="documentGenerator" class="" type="text" default="Shaz3e - The Revealing Paradigm"
-				label="Type Meta Generator" description="Type your custom meta generator text here." />					
-			</fieldset>
-					
-		</fields>
+				label="Type Meta Generator" description="Type your custom meta generator text here." />
+            </fieldset>
+			
+			
+        </fields>
+    </config>
 	</config>
 </extension>

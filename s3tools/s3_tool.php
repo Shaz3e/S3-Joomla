@@ -18,7 +18,7 @@
 
 
 $app = JFactory::getApplication();
-$doc = &JFactory::getDocument();
+$doc = JFactory::getDocument();
 
 $this->language = $doc->language;
 $this->direction = $doc->direction;

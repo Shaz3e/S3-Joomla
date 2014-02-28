@@ -2,7 +2,7 @@
 <extension version="2.5" type="template">
 	<name>S3_Blank</name>
 	<version>2.0</version>
-	<creationDate>1 January 2014</creationDate>
+	<creationDate>28 February 2014</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
 	<copyright>Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.</copyright>
@@ -308,10 +308,7 @@
 		<position>mod-bottom-footer-4</position>
 		<position>mod-bottom-footer-5</position>
 		<position>mod-bottom-footer-6</position>
-		
-		<!-- Google Analytics -->
-		<position>analytics</position>
-		
+			
 		<!-- Copyright -->
 		<position>copyright</position>
 		
@@ -321,10 +318,10 @@
 		<!-- debug -->
 		<position>debug</position>
 	</positions>
+	
 	<config>
-	<config>
-        <fields name="params">
-			
+		<fields name="params">
+		
 			<!-- STYLE -->
             <fieldset name="STYLE">
 				<field name="sitetitle" class="" type="text" default="" 
@@ -340,21 +337,21 @@
 					<option value="style3">Style3</option>
 				</field>
 				
-				<field name="showFrontPage" type="radio" default="1" 
+				<field name="showFrontPage" type="list" default="1" 
 					label="Show Frontpage Articles" 
-					description="Show or Hide Front Page Article on Main Page"> 
+					description="Show or Hide Front Page Article on Main Page if Yes Selected please enable Show main Body"> 
 					<option value="0">No - Hide it</option>
 					<option value="1">Yes - Show it</option>
 				</field>
 				
-				<field name="showMainBody" type="radio" default="1" 
+				<field name="showMainBody" type="list" default="1" 
 					label="Show Main Body" 
 					description="Show or Hide main body container on main page"> 
 					<option value="0">No - Hide it</option>
 					<option value="1">Yes - Show it</option>
 				</field>
             </fieldset>
-
+			
 			<!-- FEATURES -->
             <fieldset name="FEATURES">
 
@@ -363,7 +360,7 @@
 
 			<!-- MENU -->
             <fieldset name="MENU">
-
+				
             </fieldset>
 
 
@@ -403,9 +400,8 @@
 				<field name="documentGenerator" class="" type="text" default="Shaz3e - The Revealing Paradigm"
 				label="Type Meta Generator" description="Type your custom meta generator text here." />
             </fieldset>
-			
-			
-        </fields>
-    </config>
+		
+		</fields>
 	</config>
+	
 </extension>

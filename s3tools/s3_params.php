@@ -39,5 +39,4 @@ $logoName = $this->params->get('logo');
 	}else{
 		$logo = '<img src="'.$dcTemplatePath.'/themes/'. $this->params->get('style') .'/images/logo.png'.'" alt="'.$sitetitle.'">';
 	}
-
 ?>

@@ -329,21 +329,23 @@
 				
 				<field name="logo" class="" type="media" default="" 
 				label="Logo Image" 
-				description="You can use any image format as your logo" />	
+				description="You can use any image format as your logo" />
 				
 				<field name="style" class="" type="list" default="style1" label="Choose Style" description="You can choose your default style here">
 					<option value="style1">Style1</option>
 					<option value="style2">Style2</option>
 					<option value="style3">Style3</option>
-				</field>
+				</field>	
 				
+			<field name="" type="spacer" default="" label="Front Page Settings" description="" />
+			
 				<field name="showFrontPage" type="list" default="1" 
 					label="Show Frontpage Articles" 
 					description="Show or Hide Front Page Article on Main Page if Yes Selected please enable Show main Body"> 
 					<option value="0">No - Hide it</option>
 					<option value="1">Yes - Show it</option>
 				</field>
-				
+			
 				<field name="showMainBody" type="list" default="1" 
 					label="Show Main Body" 
 					description="Show or Hide main body container on main page"> 

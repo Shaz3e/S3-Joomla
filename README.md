@@ -6,18 +6,29 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap Re
  - Suitable with any design
  - IE7 and IE8 Supported
  - Template Manager
+ - Custom Sitename
+ - Custom Logo
+ - Choose from Different Styles
+ - Use Style Switcher
  - Show or hide component area on front page
  - Show or hide main body container
- - Custom template_modules.less where you customized modules can be updated
- - Less Development Enable / Disable
+ - Custom template_modules.less where you customized modules can be updated through out the site
+ - Custom theme's module styles with themes/style1/theme_modules.less file
+ - Less Development Mode Enable / Disable
+ - Use Google Analytics Code
+ - Show or Hide Copyright
+ - Show or Hide Framework Logo
+ - Use Custom Meta Generator
  - Less compiler as lessphp
  - Responsive Video with [FitVids.js](https://github.com/davatron5000/FitVids.js).
  
-## Basic Options
+## Style Options
 
  - Custom Sitename
  - Custom Logo
+ - Style Settings
  - Choose from different Styles
+ - Style Switcher on "Default On"
  - Show Frontpage Articles or Hide it
  - Show Main Body
 
@@ -28,6 +39,7 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap Re
  - Show Credit "Default Show" (Hide or Show) when its hide the module still be available for this postion
  - Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion
  - Show Framework Logo "Default Show" (Hide or Show)
+ - Type Meta Generator
 
 ## How do I use Responsive Video
 ```html

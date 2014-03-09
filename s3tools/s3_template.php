@@ -328,6 +328,17 @@
         	<?php if($this->params->get('shaz3e')): ?>
 			<a href="http://www.shaz3e.com" class="shaz3e" target="_blank" title="Shaz3e"></a>
             <?php endif; ?>
+			<?php if($this->params->get('StyleSwitcher')){ ?>
+            <div class="dc-StyleSwitcher">
+            <div id="dc-StyleSwitcher">
+            <?php
+                while(list($key, $value) = each($styleSheets)){ 
+                    echo "<a href='".$dcTemplatePath."/s3tools/S3StyleSwitcher.php?SETSTYLE=".$key."' title='".$value["title"]."'>".$value["text"]."</a>";
+                } // endwhile
+			?>
+            </div>
+            </div>
+			<?php } // endif;?>
 		<div class="dc-clear"></div>
     </div>
 </section>

@@ -24,6 +24,7 @@
          less.watch();
     </script>
 <?php endif; ?>
+
 <script>
   $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.

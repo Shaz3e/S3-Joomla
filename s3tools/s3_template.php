@@ -333,7 +333,7 @@
             <div id="dc-StyleSwitcher">
             <?php
                 while(list($key, $value) = each($styleSheets)){ 
-                    echo "<a href='".$dcTemplatePath."/s3tools/S3StyleSwitcher.php?SETSTYLE=".$key."' title='".$value["title"]."'>".$value["text"]."</a>";
+                    echo "<a class='dc-style-".$key."' href='".$dcTemplatePath."/s3tools/S3StyleSwitcher.php?SETSTYLE=".$key."' title='".$value["title"]."'><span>".$value["text"]."</span></a>";
                 } // endwhile
 			?>
             </div>

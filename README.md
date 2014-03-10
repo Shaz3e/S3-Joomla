@@ -31,8 +31,22 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap Re
  - Style Switcher on "Default On"
  - Show Frontpage Articles or Hide it
  - Show Main Body
+ 
+## Color Modules
+ - All Module Styles
+ - Padding for All Modules
+ - Link Custom CSS i.e. padding, margin or display style etc.
+ - Modules boxes with different colors i.e. white, black, light, dark, blue, red, orange, green and their href link colors
+ 
+## Custom Badge Modules
+ - Badge Position Vertically and Horizontally
+ - Create 5 different custom class for badges and use upload custom images by calling them with s3-badge-your-badge-name in module_suffix
 
-## Advance Options
+## Extra Modules
+ - 5 Round Modules write your own custom code for rounded corner module css classes are s3-round1, s3-round2, s3-round3, s3-round4 & s3-round5
+ - 5 Shadow Modules write your own custom code for box shadow module css classes are s3-shadow1, s3-shadow2, s3-shadow3, s3-shadow4 & s3-shadow5
+
+## S3 Template Configuration
 
  - Enable or Disable development mode
  - Google Analytics

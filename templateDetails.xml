@@ -377,10 +377,150 @@
             <fieldset name="LAYOUTS">
 				
             </fieldset>
+			
+		
+			<!-- COLORMODULES -->
+            <fieldset name="COLORMODULES">
+				<field name="" type="spacer" default="" label="All Color Module Styles" description="" />
+				<field name="S3ColorBoxesPadding" type="text" default="0.3em" label="Padding" description="Pedding for all Color Boxes" />
+				<field name="S3ColorBoxesLinks" type="textarea" default="display:block;" label="CSS Link" description="Write your CSS for href link margin, padding, display style and etc." />
+				
+				<!-- s3-box-white -->
+				<field name="" type="spacer" default="" label="Module Styles for s3-box-white" description="" />
+				<field name="S3ColorBoxWhiteText" type="color" default="" label="Text Color" description="" />
+				<field name="S3ColorBoxWhiteBG" type="text" default="" label="Background Color" description="You can use any background i.e. #ffffff, white or any type of gradient" />
+				<field name="S3ColorBoxWhiteLink" type="color" default="" label="Link Text Color" description="Choose link color" />
+				<field name="S3ColorBoxWhiteHover" type="color" default="" label="Link Hover Text Color" description="Choose link hover color" />
+				
+				<!-- s3-box-black -->
+				<field name="" type="spacer" default="" label="Module Styles for s3-box-black" description="" />
+				<field name="S3ColorBoxBlackText" type="color" default="" label="Text Color" description="" />
+				<field name="S3ColorBoxBlackBG" type="text" default="" label="Background Color" description="You can use any background i.e. #ffffff, white or any type of gradient" />
+				<field name="S3ColorBoxBlackLink" type="color" default="" label="Link Text Color" description="Choose link color" />
+				<field name="S3ColorBoxBlackHover" type="color" default="" label="Link Hover Text Color" description="Choose link hover color" />
+				
+				<!-- s3-box-dark -->
+				<field name="" type="spacer" default="" label="Module Styles for s3-box-dark" description="" />
+				<field name="S3ColorBoxDarkText" type="color" default="" label="Text Color" description="" />
+				<field name="S3ColorBoxDarkBG" type="text" default="" label="Background Color" description="You can use any background i.e. #ffffff, white or any type of gradient" />
+				<field name="S3ColorBoxDarkLink" type="color" default="" label="Link Text Color" description="Choose link color" />
+				<field name="S3ColorBoxDarkHover" type="color" default="" label="Link Hover Text Color" description="Choose link hover color" />
+				
+				<!-- s3-box-light -->
+				<field name="" type="spacer" default="" label="Module Styles for s3-box-light" description="" />
+				<field name="S3ColorBoxLightText" type="color" default="" label="Text Color" description="" />
+				<field name="S3ColorBoxLightBG" type="text" default="" label="Background Color" description="You can use any background i.e. #ffffff, white or any type of gradient" />
+				<field name="S3ColorBoxLightLink" type="color" default="" label="Link Text Color" description="Choose link color" />
+				<field name="S3ColorBoxLightHover" type="color" default="" label="Link Hover Text Color" description="Choose link hover color" />
+				
+				<!-- s3-box-blue -->
+				<field name="" type="spacer" default="" label="Module Styles for s3-box-blue" description="" />
+				<field name="S3ColorBoxBlueText" type="color" default="" label="Text Color" description="" />
+				<field name="S3ColorBoxBlueBG" type="text" default="" label="Background Color" description="You can use any background i.e. #ffffff, white or any type of gradient" />
+				<field name="S3ColorBoxBlueLink" type="color" default="" label="Link Text Color" description="Choose link color" />
+				<field name="S3ColorBoxBlueHover" type="color" default="" label="Link Hover Text Color" description="Choose link hover color" />
+				
+				<!-- s3-box-orange -->
+				<field name="" type="spacer" default="" label="Module Styles for s3-box-orange" description="" />
+				<field name="S3ColorBoxOrangeText" type="color" default="" label="Text Color" description="" />
+				<field name="S3ColorBoxOrangeBG" type="text" default="" label="Background Color" description="You can use any background i.e. #ffffff, white or any type of gradient" />
+				<field name="S3ColorBoxOrangeLink" type="color" default="" label="Link Text Color" description="Choose link color" />
+				<field name="S3ColorBoxOrangeHover" type="color" default="" label="Link Hover Text Color" description="Choose link hover color" />
+				
+				<!-- s3-box-red -->
+				<field name="" type="spacer" default="" label="Module Styles for s3-box-red" description="" />
+				<field name="S3ColorBoxRedText" type="color" default="" label="Text Color" description="" />
+				<field name="S3ColorBoxRedBG" type="text" default="" label="Background Color" description="You can use any background i.e. #ffffff, white or any type of gradient" />
+				<field name="S3ColorBoxRedLink" type="color" default="" label="Link Text Color" description="Choose link color" />
+				<field name="S3ColorBoxRedHover" type="color" default="" label="Link Hover Text Color" description="Choose link hover color" />
+				
+				<!-- s3-box-green -->
+				<field name="" type="spacer" default="" label="Module Styles for s3-box-green" description="" />
+				<field name="S3ColorBoxGreenText" type="color" default="" label="Text Color" description="" />
+				<field name="S3ColorBoxGreenBG" type="text" default="" label="Background Color" description="You can use any background i.e. #ffffff, white or any type of gradient" />
+				<field name="S3ColorBoxGreenLink" type="color" default="" label="Link Text Color" description="Choose link color" />
+				<field name="S3ColorBoxGreenHover" type="color" default="" label="Link Hover Text Color" description="Choose link hover color" />
+				
+				
+				
+            </fieldset>
+			
+			<!-- BADGEMODULES -->
+            <fieldset name="BADGEMODULES">
+				<field name="" type="spacer" default="" label="Badge Position" description="" />
+				<field name="BadgePositions1" type="list" default="top" label="Badge Position" description="Badge Position top or bottom?">
+					<option value="top">Top</option>
+					<option value="bottom">Bottom</option>
+				</field>
+				<field name="BadgePositionsVar1" type="text" default="0" label="Position" description="Badge Position i.e. margin should be 1 or 100px;" />
+				<field name="BadgePositions2" type="list" default="Right" label="Badge Position" description="Badge Position left or right?">
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+				</field>
+				<field name="BadgePositionsVar2" type="text" default="0" label="Position" description="Badge Position i.e. margin should be 1 or 100px;" />
+				
+				
+				<field name="" type="spacer" default="" label="Module Styles for s3-badge-your-badge" description="" />
+				<!-- Badge 1 and Image -->
+				<field name="badge1" type="text" default="" label="Class for Badge 1" description="Create your own custom badge and call it with s3-badge-your-badge-name" />
+				<field name="badge1Image" type="media" label="Custom Badge 1 Image" description="Upload an image for your custom badge 1" />
+				
+				<!-- Badge 2 and Image -->
+				<field name="badge2" type="text" default="" label="Class for Badge 2" description="Create your own custom badge and call it with s3-badge-your-badge-name" />
+				<field name="badge2Image" type="media" label="Custom Badge 2 Image" description="Upload an image for your custom badge 2" />
+				
+				<!-- Badge 3 and Image -->
+				<field name="badge3" type="text" default="" label="Class for Badge 3" description="Create your own custom badge and call it with s3-badge-your-badge-name" />
+				<field name="badge3Image" type="media" label="Custom Badge 3 Image" description="Upload an image for your custom badge 3" />
+				
+				<!-- Badge 4 and Image -->
+				<field name="badge4" type="text" default="" label="Class for Badge 4" description="Create your own custom badge and call it with s3-badge-your-badge-name" />
+				<field name="badge4Image" type="media" label="Custom Badge 4 Image" description="Upload an image for your custom badge 4" />
+				
+				<!-- Badge 5 and Image -->
+				<field name="badge5" type="text" default="" label="Class for Badge 5" description="Create your own custom badge and call it with s3-badge-your-badge-name" />
+				<field name="badge5Image" type="media" label="Custom Badge 5 Image" description="Upload an image for your custom badge 5" />
+				
+            </fieldset>
+			
+			<!-- EXTRAMODULES -->
+            <fieldset name="EXTRAMODULES">
+				<field name="" type="spacer" default="" label="Round Modules" description="" />
+				<!-- s3-round1 -->
+				<field name="round1" type="textarea" default="" label="S3-Round1" description="Create your own custom rounded border for 's3-round1' you can also use any style applied to this class " />
+				
+				<!-- s3-round2 -->
+				<field name="round2" type="textarea" default="" label="S3-Round2" description="Create your own custom rounded border for 's3-round2' you can also use any style applied to this class " />
+				
+				<!-- s3-round3 -->
+				<field name="round3" type="textarea" default="" label="S3-Round3" description="Create your own custom rounded border for 's3-round3' you can also use any style applied to this class " />
+				
+				<!-- s3-round4 -->
+				<field name="round4" type="textarea" default="" label="S3-Round4" description="Create your own custom rounded border for 's3-round4' you can also use any style applied to this class " />
+				
+				<!-- s3-round5 -->
+				<field name="round5" type="textarea" default="" label="S3-Round5" description="Create your own custom rounded border for 's3-round5' you can also use any style applied to this class " />
+				
+				<field name="" type="spacer" default="" label="Shadow Modules" description="" />
+				<!-- s3-shadow1 -->
+				<field name="shadow1" type="textarea" default="" label="S3-shadow1" description="Create your own custom shadowed border for 's3-shadow1' you can also use any style applied to this class " />
+				
+				<!-- s3-shadow2 -->
+				<field name="shadow2" type="textarea" default="" label="S3-shadow2" description="Create your own custom shadowed border for 's3-shadow2' you can also use any style applied to this class " />
+				
+				<!-- s3-shadow3 -->
+				<field name="shadow3" type="textarea" default="" label="S3-shadow3" description="Create your own custom shadowed border for 's3-shadow3' you can also use any style applied to this class " />
+				
+				<!-- s3-shadow4 -->
+				<field name="shadow4" type="textarea" default="" label="S3-shadow4" description="Create your own custom shadowed border for 's3-shadow4' you can also use any style applied to this class " />
+				
+				<!-- s3-shadow5 -->
+				<field name="shadow5" type="textarea" default="" label="S3-shadow5" description="Create your own custom shadowed border for 's3-shadow5' you can also use any style applied to this class " />
+            </fieldset>
+			
 
-
-			<!-- ADVANCED -->
-            <fieldset name="ADVANCED">
+			<!-- S3TEMPLATECONFIG -->
+            <fieldset name="S3TEMPLATECONFIG">
 				<field name="developmentMode" type="list" default="1" 
 					label="Development Mode?" 
 					description="Enable or Disable development mode for this website."> 

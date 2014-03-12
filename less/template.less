@@ -221,10 +221,20 @@ a.shaz3e{
 }
 a.shaz3e:hover{background-position:bottom center;}
 
-.dc-StyleSwitcher{.dc-less-StyleSwitcher;}
+.dc-StyleSwitcher{
+	text-align:center;
+	.dc-less-StyleSwitcher;
+}
 #dc-StyleSwitcher{
 	#dc-less-StyleSwitcher;
 	// main theme color of selected style
+	a{
+		//height:5px;
+		//width:5px;
+		padding:0.3em;
+		display:inline-block;
+		span{} // display:none; if you don't want the text to be appeared i.e. style 1, style 2, style 3
+	}
 	a.dc-style-0{}
 	a.dc-style-1{}
 	a.dc-style-2{}

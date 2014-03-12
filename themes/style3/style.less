@@ -1,6 +1,7 @@
 @import "../../less/default.less";
 @import "variables-mixin.less";
 @import "theme_modules.less";
+@import "custom.less";
 *{}
 html{}
 body{
@@ -1590,19 +1591,10 @@ component + left/right sidebar
 /**********************************************
       Style Switcher Theme's Styles
 ***********************************************/
-.dc-less-StyleSwitcher{
-	text-align:center;
-	a{
-		//height:5px;
-		//width:5px;
-		display:inline-block;
-		
-		//padding:0.3em;
-		
-		span{} // display:none; if you don't want the text to be appeared i.e. style 1, style 2, style 3
-	}
+.dc-less-StyleSwitcher{}
+#dc-less-StyleSwitcher{
+	a.dc-style-3{}
 }
-#dc-less-StyleSwitcher{}
 
 /**********************************************
          Template Color Variant Styles

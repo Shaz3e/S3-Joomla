@@ -1,9 +1,9 @@
 <?php
-// SET COOKIE FOR 1 HOURE
+// SET COOKIE FOR 1 YEAR
 if(isset($_REQUEST["SETSTYLE"])){
 	if(setcookie("testcookie",true)){
-		setcookie("STYLE",$_REQUEST["SETSTYLE"],time()+3600,"/");
-		// setcookie("STYLE",$_REQUEST["SETSTYLE"],time()+31622400,"/"); for one year
+		setcookie("STYLE",$_REQUEST["SETSTYLE"],time()+31622400,"/");
+		// setcookie("STYLE",$_REQUEST["SETSTYLE"],time()+3600,"/"); // SET COOKIE FOR 1 HOUR
 	} else {
 		$_SESSION["STYLE"]=$_REQUEST["SETSTYLE"];
 	}

@@ -1,6 +1,5 @@
 ## S3 Responsive Template System for Joomla
-**Current Version: 3.0a**
-
+**Current Version: 3.1**
 **Compatibility: Joomla 2.5 and Joomla 3.2.x**
 
 S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap 3 Responsive Images and Less

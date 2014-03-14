@@ -49,8 +49,7 @@ if($this->params->get('StyleSwitcher')){
 	} else {
 		echo $styleSheets[$_COOKIE["STYLE"]]["sheet"];
 	}
-}else{
+}
 if($this->params->get('style')): ?>  
 	<link rel="stylesheet/less" type="text/css" href="<?php echo $dcTemplatePath; ?>/themes/<?php echo $this->params->get('style'); ?>/style.less">
-	<?php endif; }
-?>
+<?php endif; ?>

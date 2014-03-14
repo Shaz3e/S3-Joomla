@@ -28,7 +28,7 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap Re
  - Custom Logo
  - Style Settings
  - Choose from different Styles
- - Style Switcher on "Default Off"
+ - Style Switcher on "Default On"
  - Show Frontpage Articles or Hide it
  - Show Main Body
  

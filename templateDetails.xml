@@ -339,7 +339,7 @@
 					<option value="style3">style 3</option>
 				</field>
 				
-				<field name="StyleSwitcher" class="" type="list" default="1" label="Style Switcher on?" description="Style Switcher On? If you switched it on your chosen style won't work and default style1 will be used.">
+				<field name="StyleSwitcher" class="" type="list" default="0" label="Style Switcher on?" description="Style Switcher On? If you switched it on your chosen style won't work and default style1 will be used.">
 					<option value="0">No</option>
 					<option value="1">Yes</option>
 				</field>

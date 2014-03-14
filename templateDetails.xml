@@ -328,16 +328,16 @@
 				<field name="logo" class="" type="media" default="" 
 				label="Logo Image" 
 				description="You can use any image format as your logo" />
-				
+							
 				<field name="" type="spacer" default="" label="Style Settings" description="If you would like to use any specific style please switch off Style Switcher" />
 				
-				<field name="style" class="" type="list" default="style1" label="Choose Style" description="You can choose your default style here, If you would like to use any specific style please switch off Style Switcher">
-					<option value="style1">style 1</option>
-					<option value="style2">style 2</option>
-					<option value="style3">style 3</option>
+				<field name="style" class="" type="list" default="1" label="Choose Style" description="You can choose your default style here">
+					<option value="1">style 1</option>
+					<option value="2">style 2</option>
+					<option value="3">style 3</option>
 				</field>
 				
-				<field name="StyleSwitcher" class="" type="list" default="1" label="Style Switcher on?" description="Style Switcher On? If you switched it on your chosen style won't work and default style1 will be used.">
+				<field name="StyleSwitcher" class="" type="list" default="1" label="Style Switcher on?" description="Would you like to show Style Switcher at the bottom of your website?">
 					<option value="0">No</option>
 					<option value="1">Yes</option>
 				</field>

@@ -25,13 +25,14 @@
          less.watch();
     </script>
 <?php endif; ?>
-
+<?php if($this->params->get('ResponsiveVideo')): ?>
 <script>
   $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
     $(".s3-video").fitVids();
   });
 </script>
+<?php endif; ?>
 <?php
 // Google Analytics
 if($this->params->get('analytics')): ?>

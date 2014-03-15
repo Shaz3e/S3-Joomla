@@ -551,6 +551,37 @@
 				
 				<field name="documentGenerator" class="" type="text" default="Shaz3e - The Revealing Paradigm"
 				label="Type Meta Generator" description="Type your custom meta generator text here." />
+				
+				<field name="ResponsiveVideo" class="" type="list" default="0" label="Use Responsive Video" description="">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="" type="spacer" default="" label="Data Scroll Options" description="" />
+				
+				<field name="dataScrollOn" type="list" default="0" label="Scrollable Data" description="If you would like to this option to be enabled in your website make sure to use it i.e. anchor attribue data-scroll">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="dataScrollSpeed" type="text" default="500" label="Scroll Speed" description="Define Scrolling speed in ms" />
+				
+				<field name="dataScrollOptions" type="list" default="linear" label="Scroll Option" description="Scrolling options">
+					<option value="linear">Linear</option>
+					<option value="easeInQuad">easeInQuad</option>
+					<option value="easeInCubic">easeInCubic</option>
+					<option value="easeInQuart">easeInQuart</option>
+					<option value="easeInQuint">easeInQuint</option>
+					<option value="easeInOutQuad">easeInOutQuad</option>
+					<option value="easeInOutCubic">easeInOutCubic</option>
+					<option value="easeInOutQuart">easeInOutQuart</option>
+					<option value="easeInOutQuint">easeInOutQuint</option>
+					<option value="easeOutQuad">easeOutQuad</option>
+					<option value="easeOutCubic">easeOutCubic</option>
+					<option value="easeOutQuart">easeOutQuart</option>
+					<option value="easeOutQuint">easeOutQuint</option>
+				</field>
+				
             </fieldset>
 		
 		</fields>

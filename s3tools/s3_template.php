@@ -343,3 +343,15 @@
     </div>
 </section>
 <?php endif; ?>
+
+<?php if($this->params->get('dataScrollOn')): ?>
+	<script>
+		smoothScroll.init({
+			speed: <?php echo $this->params->get('dataScrollSpeed'); ?>,
+			easing: '<?php echo $this->params->get('dataScrollOptions'); ?>',
+			updateURL: false,
+			callbackBefore: function ( toggle, anchor ) {},
+			callbackAfter: function ( toggle, anchor ) {}
+		});
+	</script>
+<?php endif; ?>

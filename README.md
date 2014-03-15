@@ -23,6 +23,7 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap 3 
  - Use Custom Meta Generator
  - Less compiler as lessphp
  - Responsive Video with [FitVids.js](https://github.com/davatron5000/FitVids.js).
+ - Scroll Data Options [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
  
 ### Style Options
 
@@ -56,6 +57,10 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap 3 
  - Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion
  - Show Framework Logo "Default Show" (Hide or Show)
  - Type Meta Generator
+ - Use Responsive Video "Default Off"
+ - Scrollable Data
+ - Scroll Speed
+ - Scroll Options
 
 ### How To Use
  - [WIKI](https://github.com/Shaz3e/S3-Joomla/wiki)

@@ -21,14 +21,18 @@
 <?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_styles.php'); ?>
 <script type="text/javascript" src="<?php echo $dcTemplatePath;?>/js/less.js"></script>
 
-<?php if($this->params->get('developmentMode')): ?>
+<?php
+// Less Development Mode
+if($this->params->get('developmentMode')): ?>
 	<script type="text/javascript">
          less.env = "development";
          less.watch();
     </script>
 <?php endif; ?>
 
-<?php if($this->params->get('ResponsiveVideo')): ?>
+<?php
+// Responsive Video
+if($this->params->get('ResponsiveVideo')): ?>
 <script>
   $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.

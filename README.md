@@ -62,6 +62,7 @@ S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap 3 
  - [How To Update Template Name and Language File](https://github.com/Shaz3e/S3-Joomla/wiki/How-To-Update-Template-Name-and-Language-File)
  - [Custom Favicons](https://github.com/Shaz3e/S3-Joomla/wiki/Custom-Favicons)
  - [How to use Responsive Videos](https://github.com/Shaz3e/S3-Joomla/wiki/How-to-use-Responsive-Videos)
+ - [Known Issues](https://github.com/Shaz3e/S3-Joomla/wiki/Known-Issues)
  
 ### Licence
 

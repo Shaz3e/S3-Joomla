@@ -17,8 +17,8 @@
 <script type="text/javascript" src="<?php echo $dcTemplatePath;?>/js/jquery.min.js"></script>
 <jdoc:include type="head" />
 <?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_styles.php'); ?>
-<?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/less/template_modules.php'); ?>
 <script type="text/javascript" src="<?php echo $dcTemplatePath;?>/js/less.js"></script>
+<?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/less/template_modules.php'); ?>
 <?php if($this->params->get('developmentMode')): ?>
 	<script type="text/javascript">
          less.env = "development";

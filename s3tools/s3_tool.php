@@ -37,14 +37,17 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
 $doc->addScript($dcTemplatePath.'/js/jquery-noconflict.js', 'text/javascript');
 $doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
 
+// jQuery FitVIDS
 if($this->params->get('ResponsiveVideo')){
 $doc->addScript($dcTemplatePath.'/js/jquery.fitvids.js', 'text/javascript');
 }
 
+// Smooth Scroll
 if($this->params->get('dataScrollOn')){
 $doc->addScript($dcTemplatePath.'/js/smooth-scroll.js', 'text/javascript');
 }
 
+// Custom JavaScript File
 $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');
 
 include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_functions.php');

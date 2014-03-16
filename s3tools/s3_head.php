@@ -36,7 +36,7 @@ if($this->params->get('ResponsiveVideo')): ?>
 <script>
   $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
-    $(".s3-video").fitVids();
+	$(".s3-video").fitVids();
   });
 </script>
 <?php endif; ?>

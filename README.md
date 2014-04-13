@@ -76,7 +76,8 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Show Framework Logo "Default Show" (Hide or Show)
  - Type Meta Generator
  - Use Responsive Video "Default Off"
- - Fixed Header "Default Off"
+ - Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down
+ - Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)
  - Scrollable Data
  - Scroll Speed
  - Scroll Options

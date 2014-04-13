@@ -349,18 +349,15 @@
 
 <?php if($this->params->get('fixedHeader')): ?>
 	<style type="text/css">
-		@media (min-width: 980px) {
-			.dc-fixed-header{
-				margin:0 !important;
-				position:fixed;
-				top:0;
-				display:block;
-				width:100%;
-			}
-			.dc-fixed-header-bottom-margin{
-				height:<?php echo $this->params->get('fixedHeaderSize');?> ;
-			}
+	@media (min-width: 980px) {
+		.dc-fixed{position:fixed;}
+		.dc-fixed-header{
+			margin:0 !important;
+			top:0;
+			display:block;
+			width:100%;
 		}
+	}
 	</style>
 	<script>
 		var s3Header = $(window);
@@ -378,6 +375,17 @@
 				up = !up;
 			}
 			s3HeaderPosition = newscroll;
+			
+			var  dcFixedHeader = $('.dc-fixed-header');
+				dcFixed = "dc-fixed";
+
+			$(window).scroll(function() {
+			  if( $(this).scrollTop()) {
+				dcFixedHeader.addClass(dcFixed);
+			  } else {
+				dcFixedHeader.removeClass(dcFixed);
+			  }
+			});
 		});
 	</script>
 <?php endif; ?>

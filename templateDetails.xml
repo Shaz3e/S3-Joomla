@@ -563,7 +563,6 @@
 					<option value="0">No</option>
 					<option value="1">Yes</option>
 				</field>
-				<field name="fixedHeaderSize" class="" type="text" default="" label="Size After Fixed Header" description="Type size in px, em, or % for div after fixed header, i.e.100px, 5em or 25%" />
 				
 				<field name="" type="spacer" default="" label="Data Scroll Options" description="" />
 				

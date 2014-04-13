@@ -360,32 +360,32 @@
 	}
 	</style>
 	<script>
-		var s3Header = $(window);
-		var s3HeaderPosition = s3Header.scrollTop();
+		var dcHeader = $(window);
+		var dcHeaderPosition = dcHeader.scrollTop();
 		var up = false;
 		var newscroll;
-		s3Header.scroll(function () {
-			newscroll = s3Header.scrollTop();
-			if (newscroll > s3HeaderPosition && !up) {
+		dcHeader.scroll(function () {
+			newscroll = dcHeader.scrollTop();
+			if (newscroll > dcHeaderPosition && !up) {
 				$('.dc-fixed-header').stop().slideUp();
 				up = !up;
 				console.log(up);
-			} else if(newscroll < s3HeaderPosition && up) {
+			} else if(newscroll < dcHeaderPosition && up) {
 				$('.dc-fixed-header').stop().slideDown();
 				up = !up;
 			}
-			s3HeaderPosition = newscroll;
-			
-			var  dcFixedHeader = $('.dc-fixed-header');
-				dcFixed = "dc-fixed";
+			dcHeaderPosition = newscroll;
+		});
+		
+		var  dcFixedHeader = $('.dc-fixed-header');
+			dcFixed = "dc-fixed";
 
-			$(window).scroll(function() {
-			  if( $(this).scrollTop()) {
+		$(window).scroll(function() {
+			if( $(this).scrollTop()) {
 				dcFixedHeader.addClass(dcFixed);
-			  } else {
+			}else{
 				dcFixedHeader.removeClass(dcFixed);
-			  }
-			});
+			}
 		});
 	</script>
 <?php endif; ?>

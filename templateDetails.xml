@@ -557,9 +557,9 @@
 					<option value="1">Yes</option>
 				</field>
 
-				<field name="" type="spacer" default="" label="Fixed Header & Menu" description="" />
+				<field name="" type="spacer" default="" label="Fixed Header and Menu" description="" />
 				
-				<field name="fixedHeader" class="" type="list" default="0" label="Fixed Header & Menu?" description="If you want to hide/show header & Menu on scroll up/down enable it">
+				<field name="fixedHeader" class="" type="list" default="0" label="Fixed Header and Menu?" description="If you want to hide/show header and Menu on scroll up/down enable it">
 					<option value="0">No</option>
 					<option value="1">Yes</option>
 				</field>

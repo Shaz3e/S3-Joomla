@@ -88,6 +88,7 @@
 </section>
 <?php endif; ?>
 
+<div class="dc-fixed-header">
 <section class="dc-header">
 	<div id="dc-header">
     	<div class="dc-modules">
@@ -117,7 +118,9 @@
     </div>
 </section>
 <?php endif; ?>
+</div>
 
+<div class="dc-fixed-header-bottom-margin"></div>
 <?php if($breadcrumbModules || $modBreadcrumbModules): ?>
 <section class="dc-breadcrumb">
 	<div id="dc-breadcrumb">
@@ -330,18 +333,53 @@
             <?php endif; ?>
 			<?php if($this->params->get('StyleSwitcher')){ ?>
             <div class="dc-StyleSwitcher">
-            <div id="dc-StyleSwitcher">
-            <?php
-                while(list($key, $value) = each($styleSheets)){ 
-                    echo "<a class='dc-style-".$key."' href='".$dcTemplatePath."/s3tools/S3StyleSwitcher.php?SETSTYLE=".$key."' title='".$value["title"]."'><span>".$value["text"]."</span></a>";
-                } // endwhile
-			?>
-            </div>
+				<div id="dc-StyleSwitcher">
+				<?php
+					while(list($key, $value) = each($styleSheets)){ 
+						echo "<a class='dc-style-".$key."' href='".$dcTemplatePath."/s3tools/S3StyleSwitcher.php?SETSTYLE=".$key."' title='".$value["title"]."'><span>".$value["text"]."</span></a>";
+					} // endwhile
+				?>
+				</div>
             </div>
 			<?php } // endif;?>
 		<div class="dc-clear"></div>
     </div>
 </section>
+<?php endif; ?>
+
+<?php if($this->params->get('fixedHeader')): ?>
+	<style type="text/css">
+		@media (min-width: 980px) {
+			.dc-fixed-header{
+				margin:0 !important;
+				position:fixed;
+				top:0;
+				display:block;
+				width:100%;
+			}
+			.dc-fixed-header-bottom-margin{
+				height:<?php echo $this->params->get('fixedHeaderSize');?> ;
+			}
+		}
+	</style>
+	<script>
+		var s3Header = $(window);
+		var s3HeaderPosition = s3Header.scrollTop();
+		var up = false;
+		var newscroll;
+		s3Header.scroll(function () {
+			newscroll = s3Header.scrollTop();
+			if (newscroll > s3HeaderPosition && !up) {
+				$('.dc-fixed-header').stop().slideUp();
+				up = !up;
+				console.log(up);
+			} else if(newscroll < s3HeaderPosition && up) {
+				$('.dc-fixed-header').stop().slideDown();
+				up = !up;
+			}
+			s3HeaderPosition = newscroll;
+		});
+	</script>
 <?php endif; ?>
 
 <?php if($this->params->get('dataScrollOn')): ?>

@@ -77,7 +77,6 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Type Meta Generator
  - Use Responsive Video "Default Off"
  - Fixed Header "Default Off"
- - Size After Fixed Header
  - Scrollable Data
  - Scroll Speed
  - Scroll Options

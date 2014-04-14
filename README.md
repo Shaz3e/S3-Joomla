@@ -89,6 +89,9 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - [How to use Responsive Videos](https://github.com/Shaz3e/S3-Joomla/wiki/How-to-use-Responsive-Videos)
  - [Known Issues](https://github.com/Shaz3e/S3-Joomla/wiki/Known-Issues)
  
+### Download, Fork, Commit.
+If you think you can make this better, please Download, Fork, & Commit. We'd love to see your ideas.
+ 
 ### Licence
 
 The S3 Responsive Template System is opensource software released under the [GPL](http://www.gnu.org/licenses/gpl-2.0.txt).

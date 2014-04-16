@@ -88,6 +88,7 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - [How To Update Template Name and Language File](https://github.com/Shaz3e/S3-Joomla/wiki/How-To-Update-Template-Name-and-Language-File)
  - [Custom Favicons](https://github.com/Shaz3e/S3-Joomla/wiki/Custom-Favicons)
  - [How to use Responsive Videos](https://github.com/Shaz3e/S3-Joomla/wiki/How-to-use-Responsive-Videos)
+ - [How to use Smooth Scroll](https://github.com/Shaz3e/S3-Joomla/wiki/How-to-use-Smooth-Scroll)
  - [Known Issues](https://github.com/Shaz3e/S3-Joomla/wiki/Known-Issues)
  
 ### Download, Fork, Commit.

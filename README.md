@@ -34,6 +34,7 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Show or hide main body container
  - Custom template_modules.less where you customized modules can be updated through out the site
  - Custom theme's module styles with themes/style1/theme_modules.less file
+ - s3-elements folder contains s3-button.less s3-typography.less, s3-form-elements.less ( where you can update your own customize styles)
  - Less Development Mode Enable / Disable
  - Use Google Analytics Code
  - Show or Hide Copyright

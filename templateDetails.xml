@@ -2,7 +2,7 @@
 <extension version="2.5" type="template">
 	<name>S3_Blank</name>
 	<version>3.0</version>
-	<creationDate>14 April 2014</creationDate>
+	<creationDate>17 April 2014</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
 	<copyright>Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.</copyright>
@@ -385,8 +385,8 @@
 			<!-- COLORMODULES -->
             <fieldset name="COLORMODULES">
 				<field name="" type="spacer" default="" label="All Color Module Styles" description="" />
-				<field name="S3ColorBoxesPadding" type="text" default="0.3em" label="Padding" description="Pedding for all Color Boxes" />
-				<field name="S3ColorBoxesLinks" type="textarea" default="display:block;" label="CSS Link" description="Write your CSS for href link margin, padding, display style and etc." />
+				<field name="S3ColorBoxesPadding" type="text" default="" label="Padding" description="Pedding for all Color Boxes" />
+				<field name="S3ColorBoxesLinks" type="textarea" default="" label="CSS Link" description="Write your CSS for href link margin, padding, display style and etc." />
 				
 				<!-- s3-box-white -->
 				<field name="" type="spacer" default="" label="Module Styles for s3-box-white" description="" />

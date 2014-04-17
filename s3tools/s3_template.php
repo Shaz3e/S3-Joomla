@@ -120,7 +120,6 @@
 <?php endif; ?>
 </div>
 
-<div class="dc-fixed-header-bottom-margin"></div>
 <?php if($breadcrumbModules || $modBreadcrumbModules): ?>
 <section class="dc-breadcrumb">
 	<div id="dc-breadcrumb">

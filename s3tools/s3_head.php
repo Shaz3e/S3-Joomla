@@ -14,7 +14,6 @@
 || #################################################################### ||
 \*======================================================================*/
 ?>
-<script type="text/javascript" src="<?php echo $dcTemplatePath;?>/js/jquery.min.js"></script>
 <jdoc:include type="head" />
 
 

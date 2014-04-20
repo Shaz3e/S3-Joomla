@@ -1,4 +1,4 @@
-## S3 Responsive Template System for Joomla
+## S3 Framework - Responsive Template System for Joomla
 
 | Current Version | Compatibility | Build Status  |
 |:---------------:|:-------------:|:-------------:|

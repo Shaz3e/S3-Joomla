@@ -1,6 +1,6 @@
 <style type="text/css">
 
-<?php if($this->params->get('S3ColorBoxesPadding')): ?>
+<?php if($this->params->get('S3ColorBoxes')): ?>
 	div.dc-block.s3-box-white,
 	div.dc-block.s3-box-black,
 	div.dc-block.s3-box-light,
@@ -9,7 +9,7 @@
 	div.dc-block.s3-box-orange,
 	div.dc-block.s3-box-red,
 	div.dc-block.s3-box-green{
-		padding:<?php echo $this->params->get('S3ColorBoxesPadding'); ?>;
+		<?php echo $this->params->get('S3ColorBoxes'); ?>;
 	}
 <?php endif; ?>
 

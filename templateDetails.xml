@@ -51,7 +51,10 @@
 		<folder>js</folder>
 		<folder>layout</folder>
 		<folder>s3tools</folder>
+		<!-- Theme Folders All you need to edit this folder for customize your themes -->
 		<folder>themes</folder>
+		<!-- Font Awesome Folder  -->
+		<folder>font-awesome</folder>
 		<!-- Change File name as Template Name inside language folder -->
 		<folder>language</folder>
 		
@@ -385,7 +388,7 @@
 			<!-- COLORMODULES -->
             <fieldset name="COLORMODULES">
 				<field name="" type="spacer" default="" label="All Color Module Styles" description="" />
-				<field name="S3ColorBoxesPadding" type="text" default="" label="Padding" description="Pedding for all Color Boxes" />
+				<field name="S3ColorBoxes" type="textarea" default="" label="Box Styles" description="Write your CSS for All Color Boxes i.e. margin, padding, display style and etc." />
 				<field name="S3ColorBoxesLinks" type="textarea" default="" label="CSS Link" description="Write your CSS for href link margin, padding, display style and etc." />
 				
 				<!-- s3-box-white -->

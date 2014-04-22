@@ -29,6 +29,7 @@ $sitename = $app->getCfg('sitename');
 $sitetitle = htmlspecialchars($this->params->get('sitetitle'));
 
 // Add Stylesheets
+$doc->addStyleSheet('templates/'.$this->template.'/font-awesome/css/font-awesome.min.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
 

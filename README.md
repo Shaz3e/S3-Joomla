@@ -17,8 +17,6 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - LESS CSS auto-compilation
  - Flexible widgets for template customization
  - Full extensible framework architecture
- 
-
 
 ### Features
  - 6 Columns Grid System
@@ -43,6 +41,7 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Less compiler as [lessphp](http://leafo.net/lessphp/)
  - Responsive Video with [FitVids.js](https://github.com/davatron5000/FitVids.js).
  - Scroll Data Options [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+ - Font Icons [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
  
 ### Style Options
 

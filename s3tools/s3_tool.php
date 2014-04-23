@@ -40,12 +40,7 @@ $doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
 
 // jQuery FitVIDS
 if($this->params->get('ResponsiveVideo')){
-$doc->addScript($dcTemplatePath.'/js/jquery.fitvids.js', 'text/javascript');
-}
-
-// Smooth Scroll
-if($this->params->get('dataScrollOn')){
-$doc->addScript($dcTemplatePath.'/js/smooth-scroll.js', 'text/javascript');
+	$doc->addScript($dcTemplatePath.'/js/jquery.fitvids.js', 'text/javascript');
 }
 
 // Custom JavaScript File

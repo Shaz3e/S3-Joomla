@@ -40,7 +40,7 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Use Custom Meta Generator
  - Less compiler as [lessphp](http://leafo.net/lessphp/)
  - Responsive Video with [FitVids.js](https://github.com/davatron5000/FitVids.js).
- - Scroll Data Options [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+ - Scroll Scrolling
  - Font Icons [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
  
 ### Style Options
@@ -78,9 +78,8 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Use Responsive Video "Default Off"
  - Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down
  - Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)
- - Scrollable Data
+ - Scrollable Data with Anchor Link
  - Scroll Speed
- - Scroll Options
 
 ### How To Use
  - [WIKI](https://github.com/Shaz3e/S3-Joomla/wiki)

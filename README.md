@@ -2,7 +2,7 @@
 
 | Current Version | Compatibility | Build Status  |
 |:---------------:|:-------------:|:-------------:|
-|3.0|Joomla 2.5 & Joomla 3.x|[![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)|
+|3.0 RC|Joomla 2.5 & Joomla 3.x|[![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)|
 
 S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap 3 Responsive Images and Less
 

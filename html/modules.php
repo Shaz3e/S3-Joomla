@@ -16,36 +16,38 @@
 \*======================================================================*/
 
 
+
+
+
 // no direct access
+
 defined('_JEXEC') or die;
 
-	function spanReplace($title){ 
+
+
+	function spanReplace($title){
 		$title = "<span>" . $title;
 		$space = strpos($title," ");
-			if($space){ 
-				$title = substr($title, 0, $space) . "</span>" . substr($title, $space);
-			}else{
-				$title .= "";
-			}
+
+		if($space){ 
+			$title = substr($title, 0, $space) . "</span>" . substr($title, $space);
+		}else{
+			$title .= "";
+		}
+
 		return $title;
 	}
 
-	function modChrome_s3_none($module, &$params, &$attribs)
-	{
+
+
+	function modChrome_s3_none($module, &$params, &$attribs){
 		echo $module->content;
 	}
-	
-	function modChrome_s3_block($module, &$params, &$attribs)
-	{
-		if (!empty ($module->content)) : ?>
-			<div class="dc-block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
-				<?php echo $module->content; ?>
-			</div>
-	}
+
+
 
 	/* Default Module Style */
-	function modChrome_shaz3e($module, &$params, &$attribs)
-	{
+	function modChrome_shaz3e($module, &$params, &$attribs){
 		if (!empty ($module->content)) : ?>
 			<div class="dc-block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
 			<?php if ($module->showtitle != 0) : ?>
@@ -55,10 +57,12 @@ defined('_JEXEC') or die;
 			</div>
 		<?php endif;
 	}
+
+
 
 	/* Sidebar */
-	function modChrome_s3_sidebar($module, &$params, &$attribs)
-	{
+
+	function modChrome_s3_sidebar($module, &$params, &$attribs){
 		if (!empty ($module->content)) : ?>
 			<div class="dc-block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
 			<?php if ($module->showtitle != 0) : ?>
@@ -68,5 +72,5 @@ defined('_JEXEC') or die;
 			</div>
 		<?php endif;
 	}
-
 ?>
+

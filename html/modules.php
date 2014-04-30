@@ -15,16 +15,8 @@
 || #################################################################### ||
 \*======================================================================*/
 
-
-
-
-
 // no direct access
-
 defined('_JEXEC') or die;
-
-
-
 	function spanReplace($title){
 		$title = "<span>" . $title;
 		$space = strpos($title," ");
@@ -73,4 +65,3 @@ defined('_JEXEC') or die;
 		<?php endif;
 	}
 ?>
-

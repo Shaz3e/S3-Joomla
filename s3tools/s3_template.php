@@ -390,14 +390,3 @@
 
 	</script>
 <?php endif; ?>
-
-<?php if($this->params->get('dataScrollOn')): ?>
-	<script>
-        $('a').click(function(){
-            $('html, body').animate({
-                scrollTop: $( $.attr(this, 'href') ).offset().top
-            }, <?php echo $this->params->get('dataScrollSpeed'); ?>);
-            return false;
-        });
-	</script>
-<?php endif; ?>

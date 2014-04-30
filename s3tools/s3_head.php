@@ -41,8 +41,6 @@ if($this->params->get('ResponsiveVideo')): ?>
 <?php endif; ?>
 
 
-<?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/less/template_modules.php'); ?>
-
 <?php
 // Google Analytics
 if($this->params->get('analytics')): ?>
@@ -59,6 +57,8 @@ if($this->params->get('analytics')): ?>
 	})();
 	</script>
 <?php endif; ?>
+
+
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-114-precomposed.png">

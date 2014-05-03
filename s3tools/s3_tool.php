@@ -34,7 +34,6 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
 
 // Add Javascripts
-$doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
 $doc->addScript($dcTemplatePath.'/js/jquery-noconflict.js', 'text/javascript');
 $doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
 
@@ -45,6 +44,7 @@ if($this->params->get('ResponsiveVideo')){
 
 // Custom JavaScript File
 $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');
+
 
 include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_functions.php');
 include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_params.php');

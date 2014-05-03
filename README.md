@@ -63,6 +63,7 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Use Responsive Video "Default Off"
  - Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down
  - Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)
+ - Ease Speed
 
 ### How To Use
  - [WIKI](https://github.com/Shaz3e/S3-Joomla/wiki)

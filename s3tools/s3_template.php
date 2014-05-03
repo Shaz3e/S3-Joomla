@@ -348,18 +348,18 @@
 
 <?php if($this->params->get('fixedHeader')): ?>
 	<style type="text/css">
-	@media (min-width: 980px) {
-		.dc-fixed{position:fixed;}
-		.dc-fixed-header{
-			margin:0 !important;
-			top:0;
-			display:block;
-			width:100%;
-			z-index:9999;
-		}
-	}
+    	@media (min-width: 980px) {
+    		.dc-fixed{position:fixed;}
+    		.dc-fixed-header{
+    			margin:0 !important;
+    			top:0;
+    			display:block;
+    			width:100%;
+    			z-index:9999;
+    		}
+    	}
 	</style>
-	<script>
+	<script type="text/javascript">
 		var dcHeader = $(window);
 		var dcHeaderPosition = dcHeader.scrollTop();
 		var up = false;
@@ -367,11 +367,11 @@
 		dcHeader.scroll(function () {
 			newscroll = dcHeader.scrollTop();
 			if (newscroll > dcHeaderPosition && !up && newscroll > <?php if($this->params->get('fixedHeaderSize')){echo $this->params->get('fixedHeaderSize');}else{echo 100;} ?>) {
-				$('.dc-fixed-header').stop().slideUp();
+				$('.dc-fixed-header').stop().slideUp({duration:<?php if($this->params->get('fixedHeaderSpeed')){echo $this->params->get('fixedHeaderSpeed');}else{echo 400;} ?>});
 				up = !up;
 				console.log(up);				
 			} else if(newscroll < dcHeaderPosition && up) {
-				$('.dc-fixed-header').stop().slideDown();
+				$('.dc-fixed-header').stop().slideDown({duration:<?php if($this->params->get('fixedHeaderSpeed')){echo $this->params->get('fixedHeaderSpeed');}else{echo 400;} ?>});
 				up = !up;
 			}
 			dcHeaderPosition = newscroll;

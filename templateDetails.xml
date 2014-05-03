@@ -406,6 +406,7 @@
 				
 				<field name="fixedHeaderSize" class="" type="text" default="100" label="Enable Height" description="Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)" 
 				/>
+				<field name="fixedHeaderSpeed" class="" type="text" default="400" label="Ease Speed" description="Define header ease slideUp/slideDown speed in ms default 400" />
 								
             </fieldset>
 		

@@ -66,16 +66,12 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Ease Speed
 
 ### How To Use
- - [WIKI](https://github.com/Shaz3e/S3-Joomla/wiki)
- - [How To Update Template Name and Language File](https://github.com/Shaz3e/S3-Joomla/wiki/How-To-Update-Template-Name-and-Language-File)
- - [Custom Favicons](https://github.com/Shaz3e/S3-Joomla/wiki/Custom-Favicons)
- - [How to use Responsive Videos](https://github.com/Shaz3e/S3-Joomla/wiki/How-to-use-Responsive-Videos)
- - [Known Issues](https://github.com/Shaz3e/S3-Joomla/wiki/Known-Issues)
+Visit for Complete [Documentation](http://shaz3e.com/documantation/s3-joomla)
  
 ### Download, Fork, Commit.
 If you think you can make this better, please Download, Fork, & Commit. We'd love to see your ideas.
  
-### Licence
+### License
 
 The S3 Responsive Template System is opensource software released under the [GPL](http://www.gnu.org/licenses/gpl-2.0.txt).
 

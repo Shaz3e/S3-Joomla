@@ -360,6 +360,7 @@
     	}
 	</style>
 	<script type="text/javascript">
+    
 		var dcHeader = $(window);
 		var dcHeaderPosition = dcHeader.scrollTop();
 		var up = false;
@@ -378,7 +379,7 @@
 		});
 		
 		var  dcFixedHeader = $('.dc-fixed-header');
-			dcFixed = "dc-fixed";
+			 dcFixed = "dc-fixed";
 
 		$(window).scroll(function() {
 			if( $(this).scrollTop()) {
@@ -387,6 +388,6 @@
 				dcFixedHeader.removeClass(dcFixed);
 			}
 		});
-
+        
 	</script>
 <?php endif; ?>

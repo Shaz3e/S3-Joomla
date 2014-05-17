@@ -360,6 +360,7 @@
         }
     </style>
     <script type="text/javascript">
+    if(screen.width >= 980){
         var dcHeader = $(window);
         var dcHeaderPosition = dcHeader.scrollTop();
         var up = false;
@@ -387,5 +388,6 @@
                 dcFixedHeader.removeClass(dcFixed);
             }
         });
+    }
     </script>
 <?php endif; ?>

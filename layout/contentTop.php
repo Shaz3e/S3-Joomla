@@ -1,16 +1,16 @@
 <?php
     if($this->countModules('content-top-1')){
-        $modules["mod1"] = '<jdoc:include type="modules" name="content-top-1" style="shaz3e" />';
+        $contentTops["mod1"] = '<jdoc:include type="modules" name="content-top-1" style="shaz3e" />';
     }
     if($this->countModules('content-top-2')){
-        $modules["mod2"] = '<jdoc:include type="modules" name="content-top-2" style="shaz3e" />';
+        $contentTops["mod2"] = '<jdoc:include type="modules" name="content-top-2" style="shaz3e" />';
     }
     if($this->countModules('content-top-3')){
-        $modules["mod3"] = '<jdoc:include type="modules" name="content-top-3" style="shaz3e" />';
+        $contentTops["mod3"] = '<jdoc:include type="modules" name="content-top-3" style="shaz3e" />';
     }
-if(isset($modules)){
-    $result = count($modules);
-    foreach($modules as $module => $name){
+if(isset($contentTops)){
+    $result = count($contentTops);
+    foreach($contentTops as $contentTop => $name){
         if($result == 3){
             echo '<div class="dc-modules3">';
             echo $name;

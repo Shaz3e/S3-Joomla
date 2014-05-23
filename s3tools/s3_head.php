@@ -70,4 +70,7 @@ if($this->params->get('analytics')): ?>
 <!--[if lt IE 9]>
 <link href="<?php echo $dcTemplatePath; ?>/css/ie.css" type="text/css" rel="stylesheet">
 <![endif]-->
-<!--[if lt IE 9]><script src="<?php echo $dcTemplatePath; ?>/js/html5.js"></script><![endif]-->
+<!--[if lt IE 9]>
+  <script src="<?php echo $dcTemplatePath; ?>/js/html5.js"></script>
+  <script src="<?php echo $dcTemplatePath; ?>/js/respond.js"></script>
+<![endif]-->

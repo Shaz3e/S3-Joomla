@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="template">
-	<name>S3_Blank</name>
+	<name>DiligentCreators</name>
 	<version>3.0</version>
 	<creationDate>30 April 2014</creationDate>
 	<author>Team DC - Shaz3e</author>
@@ -60,6 +60,12 @@
 		
 	</files>
 	<positions>
+		<!-- Extra 2 Module -->
+		<position>slideshow</position>
+		<position>showcase</position>
+		<position>footer</position>
+		<position>footer-bottom</position>
+		
 		<!-- Top Left Right Modules (2) -->
 		<position>top-left</position>
 		<position>top-right</position>
@@ -364,22 +370,13 @@
 			
 			<!-- S3TEMPLATECONFIG -->
             <fieldset name="S3TEMPLATECONFIG">
-				<field name="developmentMode" type="list" default="1" 
-					label="Development Mode?" 
-					description="Enable or Disable development mode for this website."> 
-					<option value="0">Off</option>
-					<option value="1">On</option>
-				</field>
-							
-				<field name="analytics" class="" type="text" default="" 
-				label="Google Analytic" description="Type your Google Analytic code (UA-XXXXXXXX-X) here." />
-
-				<field name="credit" class="" type="list" default="1" label="Show Credit" description="You can Show or Hide credit information here.">
+				
+				<field name="copyright" class="" type="list" default="1" label="Show Copyright" description="You can Show or Hide copyright information here.">
 					<option value="0">No</option>
 					<option value="1">Yes</option>
 				</field>
 				
-				<field name="copyright" class="" type="list" default="1" label="Show Copyright" description="You can Show or Hide copyright information here.">
+				<field name="credit" class="" type="list" default="1" label="Show Credit" description="You can Show or Hide credit information here.">
 					<option value="0">No</option>
 					<option value="1">Yes</option>
 				</field>
@@ -389,13 +386,32 @@
 					<option value="1">Yes</option>
 				</field>
 				
-				<field name="documentGenerator" class="" type="text" default="Shaz3e - The Revealing Paradigm"
-				label="Type Meta Generator" description="Type your custom meta generator text here." />
+				<field name="analytics" class="" type="text" default="" 
+				label="Google Analytic" description="Type your Google Analytic code (UA-XXXXXXXX-X) here." />
+
+				<field name="" type="spacer" default="" label="Development Options" description="" />
 				
 				<field name="ResponsiveVideo" class="" type="list" default="0" label="Use Responsive Video" description="">
 					<option value="0">No</option>
 					<option value="1">Yes</option>
 				</field>
+				
+				<field name="developmentMode" type="list" default="1" 
+					label="Development Mode?" 
+					description="Enable or Disable development mode for this website."> 
+					<option value="0">Off</option>
+					<option value="1">On</option>
+				</field>
+				
+				<field name="LocalCDN" type="list" default="1" 
+					label="js Hosted on CDN" 
+					description="By disabling this feature template will use all js files locally which may cause slow down your website, we recommend to enable this feature for faster speed."> 
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+				</field>
+				
+				<field name="documentGenerator" class="" type="text" default="Shaz3e - The Revealing Paradigm"
+				label="Type Meta Generator" description="Type your custom meta generator text here." />
 
 				<field name="" type="spacer" default="" label="Fixed Header and Menu" description="" />
 				

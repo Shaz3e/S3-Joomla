@@ -14,13 +14,21 @@
 || #################################################################### ||
 \*======================================================================*/
 ?>
-<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/jquery.min.js"></script>
+<?php if($this->params->get('LocalCDN')): ?>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<?php else: ?>
+	<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/jquery.min.js"></script>
+<?php endif; ?>
 
 <jdoc:include type="head" />
 
 
 <?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_styles.php'); ?>
-<script type="text/javascript" src="<?php echo $dcTemplatePath;?>/js/less.js"></script>
+<?php if($this->params->get('LocalCDN')): ?>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js"></script>
+<?php else: ?>
+	<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/less.js"></script>
+<?php endif; ?>
 
 <?php
 // Less Development Mode
@@ -67,10 +75,14 @@ if($this->params->get('analytics')): ?>
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-57-precomposed.png">
 <link rel="shortcut icon" href="<?php echo $dcTemplatePath; ?>/images/favicon/favicon.png">
+
 <!--[if lt IE 9]>
-<link href="<?php echo $dcTemplatePath; ?>/css/ie.css" type="text/css" rel="stylesheet">
-<![endif]-->
-<!--[if lt IE 9]>
-  <script src="<?php echo $dcTemplatePath; ?>/js/html5.js"></script>
-  <script src="<?php echo $dcTemplatePath; ?>/js/respond.js"></script>
+	<link href="<?php echo $dcTemplatePath; ?>/css/ie.css" type="text/css" rel="stylesheet">
+<?php if($this->params->get('LocalCDN')): ?>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+<?php else: ?>
+	<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/html5.js"></script>
+	<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/respond.js"></script>
+<?php endif; ?>
 <![endif]-->

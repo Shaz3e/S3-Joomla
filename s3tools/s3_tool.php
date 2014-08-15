@@ -28,18 +28,38 @@ $dcTemplatePath = $this->baseurl.'/templates/'.$this->template;
 $sitename = $app->getCfg('sitename');
 $sitetitle = htmlspecialchars($this->params->get('sitetitle'));
 
-// Add Stylesheets
-$doc->addStyleSheet('templates/'.$this->template.'/font-awesome/css/font-awesome.min.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
+if($this->params->get('LocalCDN')){
+	
+	// Add Stylesheets
+	$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+	$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+	$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css');
+	
+	// Add Javascripts
+	$doc->addScript($dcTemplatePath.'/js/jquery-noconflict.js', 'text/javascript');
+	$doc->addScript('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', 'text/javascript');
+	
+	// jQuery FitVIDS
+	if($this->params->get('ResponsiveVideo')){
+		$doc->addScript('//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js', 'text/javascript');
+	}
 
-// Add Javascripts
-$doc->addScript($dcTemplatePath.'/js/jquery-noconflict.js', 'text/javascript');
-$doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
+}else{
 
-// jQuery FitVIDS
-if($this->params->get('ResponsiveVideo')){
-	$doc->addScript($dcTemplatePath.'/js/jquery.fitvids.js', 'text/javascript');
+	// Add Stylesheets
+	$doc->addStyleSheet('templates/'.$this->template.'/font-awesome/css/font-awesome.min.css');
+	$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
+	$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
+	
+	// Add Javascripts
+	$doc->addScript($dcTemplatePath.'/js/jquery-noconflict.js', 'text/javascript');
+	$doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
+	
+	// jQuery FitVIDS
+	if($this->params->get('ResponsiveVideo')){
+		$doc->addScript($dcTemplatePath.'/js/jquery.fitvids.js', 'text/javascript');
+	}
+
 }
 
 // Custom JavaScript File

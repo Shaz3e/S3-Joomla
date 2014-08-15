@@ -59,13 +59,7 @@
 		<folder>language</folder>
 		
 	</files>
-	<positions>
-		<!-- Extra 2 Module -->
-		<position>slideshow</position>
-		<position>showcase</position>
-		<position>footer</position>
-		<position>footer-bottom</position>
-		
+	<positions>		
 		<!-- Top Left Right Modules (2) -->
 		<position>top-left</position>
 		<position>top-right</position>

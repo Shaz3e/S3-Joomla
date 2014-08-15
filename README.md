@@ -54,16 +54,19 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
 
 ### S3 Template Configuration
 
- - Enable or Disable development mode
- - Google Analytics
- - Show Credit "Default Show" (Hide or Show) when its hide the module still be available for this postion
- - Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion
- - Show Framework Logo "Default Show" (Hide or Show)
- - Type Meta Generator
- - Use Responsive Video "Default Off"
- - Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down
- - Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)
- - Ease Speed
+- Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion
+- Show Credit "Default Show" (Hide or Show) when its hide the module still be available for this postion 
+- Show Framework Logo "Default Show" (Hide or Show)
+- Google Analytics
+- **Development Options**
+- Use Responsive Video "Default Off"
+- Development Mode "Default On"
+- js Hosted on CDN "Enable or Disable" By disabling this feature template will use all js files locally.
+- Type Meta Generator
+- **Fixed Header and Menu**
+- Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down enable this option
+- Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)
+- Ease Speed "Default 400" Low Number is Faster and Higher Number will slow down.
 
 ### How To Use
 Visit for Complete [Documentation](http://shaz3e.com/documantation/s3-joomla)

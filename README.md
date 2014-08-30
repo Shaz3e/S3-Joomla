@@ -50,6 +50,7 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Style Switcher on "Default On"
  - Show Frontpage Articles or Hide it
  - Show Main Body
+ - Hide Component
 
 
 ### S3 Template Configuration

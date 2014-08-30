@@ -359,6 +359,10 @@
 					<option value="0">No - Hide it</option>
 					<option value="1">Yes - Show it</option>
 				</field>
+
+                <field name="hideComponent" type="menuitem" multiple="true"
+                       label="Hide Component"
+                       description="Hide Component on certain pages which are selected" />
             </fieldset>
 			
 			<!-- S3TEMPLATECONFIG -->

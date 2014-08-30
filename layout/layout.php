@@ -1,25 +1,39 @@
 <?php
+        $app = JFactory::getApplication();
 
-// Left Sidebar
-$left = ($this->countModules('left'));
+        if ($app->isAdmin()) return;
 
-// Right Sidebar
-$right = ($this->countModules('right'));
+        //Added support to show slnotificationbar based on menu items for joomla version more than 1.6
+        if (version_compare(JVERSION, '1.6.0', 'ge')) {
+            $hideComponent = $this->params->get('hideComponent',array());
 
-// 3columns
-if($left && $right):
-	require_once("3columns.php");
+            $Itemid = JRequest::getVar('Itemid');
+            if(in_array($Itemid,$hideComponent)){
+                return;
+            }else{
+				// Left Sidebar
+				$left = ($this->countModules('left'));
 
-// left and component 2 columns
-elseif($left && !$right):
-	require_once("leftcolumns.php");   
+				// Right Sidebar
+				$right = ($this->countModules('right'));
 
-// right and component 2 columns
-elseif($right && !$left):
-	require_once("rightcolumns.php");
+				// 3columns
+				if($left && $right):
+					require_once("3columns.php");
 
-// component 1 columns
-else:
-	require_once("fullpage.php");
-endif;
+				// left and component 2 columns
+				elseif($left && !$right):
+					require_once("leftcolumns.php");   
+
+				// right and component 2 columns
+				elseif($right && !$left):
+					require_once("rightcolumns.php");
+
+				// component 1 columns
+				else:
+					require_once("fullpage.php");
+				endif;
+            }
+        }
+
 ?>

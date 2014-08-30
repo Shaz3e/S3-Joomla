@@ -188,6 +188,7 @@
 <?php endif; ?>
 
 <?php 
+
 	$app = JFactory::getApplication();
 	$menu = $app->getMenu();
 	$lang = JFactory::getLanguage();
@@ -196,8 +197,9 @@
 			include_once(JPATH_ROOT . "/templates/" . $this->template . "/layout/layout.php"); 
 		}
 	}else{
-		include_once(JPATH_ROOT . "/templates/" . $this->template . "/layout/layout.php"); 
+        include_once(JPATH_ROOT . "/templates/" . $this->template . "/layout/layout.php"); 
 	}
+
 ?>
 
 <?php if($utilityModules || $modUtilityModules): ?>

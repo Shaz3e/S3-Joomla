@@ -164,7 +164,7 @@ function pagination_list_render($list)
 
 
 
-	$html = '<ul class="pagination-list">';
+	$html = '<ul class="pagination">';
 
 	$html .= $list['start']['data'];
 
@@ -312,7 +312,7 @@ function pagination_item_inactive(&$item)
 
 	{
 
-		return '<li class="disabled"><a><i class="icon-first"></i></a></li>';
+		return '<li class="disabled"><a><i class="fa fa-angle-double-left"></i></a></li>';
 
 	}
 
@@ -324,7 +324,7 @@ function pagination_item_inactive(&$item)
 
 	{
 
-		return '<li class="disabled"><a><i class="icon-previous"></i></a></li>';
+		return '<li class="disabled"><a><i class="fa fa-angle-left"></i></a></li>';
 
 	}
 
@@ -336,7 +336,7 @@ function pagination_item_inactive(&$item)
 
 	{
 
-		return '<li class="disabled"><a><i class="icon-next"></i></a></li>';
+		return '<li class="disabled"><a><i class="fa fa-angle-right"></i></a></li>';
 
 	}
 
@@ -348,7 +348,7 @@ function pagination_item_inactive(&$item)
 
 	{
 
-		return '<li class="disabled"><a><i class="icon-last"></i></a></li>';
+		return '<li class="disabled"><a><i class="fa fa-angle-double-right"></i></a></li>';
 
 	}
 

@@ -362,7 +362,7 @@
 
                 <field name="hideComponent" type="menuitem" multiple="true"
                        label="Hide Component"
-                       description="Hide Component on certain pages which are selected" />
+                       description="Hide Component (Body Container) on certain pages which are selected" />
             </fieldset>
 			
 			<!-- S3TEMPLATECONFIG -->

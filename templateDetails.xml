@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="template">
 	<name>S3_Blank</name>
-	<version>3.0</version>
+	<version>3.1</version>
 	<creationDate>30 April 2014</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
@@ -198,7 +198,7 @@
 		<position>mod-breadcrumb-5</position>
 		<position>mod-breadcrumb-6</position>
 		
-		<!-- Content-top Modules -->
+		<!-- Sidebar Modules -->
 		<position>left</position>
 		<position>right</position>
 		

@@ -1,14 +1,11 @@
 @import "../../less/default.less";
 @import "variables-mixin.less";
 @import "theme_modules.less";
-@import "custom.less";
 *{}
 html{}
-body{
-	font-size:150% !important;
-}
+body{}
 
-a:link,a:visited{}
+a:link,a:visited{text-decoration:none;}
 a:hover{}
 
 h1,h2,h3,h4,h5,h6{}
@@ -130,13 +127,19 @@ Default Grid IDs
 /****************************************************
 Top Left or Right Module Default Styles 2 columns
 *****************************************************/
-.dc-less-left-right{}
+.dc-less-left-right{
+	.left-right-style;
+	.left-right-colors;
+}
 #dc-less-left-right{}
 .dc-less-left{}
 .dc-less-right{}
 
 /* Top Module 2 grid */
-.dc-less-top{}
+.dc-less-top{
+	.top-style;
+	.top-colors;
+}
 #dc-less-top{}
 
 /* Fixed Header which works on scroll up/down */
@@ -144,7 +147,10 @@ Top Left or Right Module Default Styles 2 columns
 .dc-fixed{}
 
 /* Header Module 6 grid */
-.dc-less-header{}
+.dc-less-header{
+	.header-style;
+	.header-colors;
+}
 #dc-less-header{}
 
 /* Header Module Static 4 */
@@ -162,24 +168,36 @@ Top Left or Right Module Default Styles 2 columns
 }
 
 /* Menu Module 6 grid */
-.dc-less-menu{}
+.dc-less-menu{
+	.menu-style;
+	.menu-colors;
+}
 #dc-less-menu{}
 
+/* Breadcrumb Module 6 grid */
+.dc-less-breadcrumb{.breadcrumb-style;}
+#dc-less-breadcrumb{}
+
 /* Slideshow Module 6 grid */
-.dc-less-slideshow{}
+.dc-less-slideshow{
+	.slideshow-style;
+	.slideshow-colors
+}
 #dc-less-slideshow{}
 
 /* Showcase Module 6 grid */
-.dc-less-showcase{}
+.dc-less-showcase{
+	.showcase-style;
+	.showcase-colors;
+}
 #dc-less-showcase{}
 
 /* Feature Module 6 grid */
-.dc-less-feature{}
+.dc-less-feature{
+	.feature-style;
+	.feature-colors;
+}
 #dc-less-feature{}
-
-/* Breadcrumb Module 6 grid */
-.dc-less-breadcrumb{}
-#dc-less-breadcrumb{}
 
 /* Main Container compoenent 3 grid */
 .dc-less-container{}
@@ -228,29 +246,48 @@ component + left/right sidebar
 #dc-less-content-bottom{}
 
 /* Utility Module 6 grid */
-.dc-less-utility{}
+.dc-less-utility{
+	.utility-style;
+	.utility-colors;
+}
 #dc-less-utility{}
 
 /* Scroller Module 6 grid */
-.dc-less-scroller{}
+.dc-less-scroller{
+	.scroller-style;
+	.scroller-colors;
+}
 #dc-less-scroller{}
 
 /* Extension Module 6 grid */
-.dc-less-extension{}
+.dc-less-extension{
+	.extension-style;
+	.extension-colors;
+}
 #dc-less-extension{}
 
 /* Bottom Module 6 grid */
-.dc-less-bottom{}
+.dc-less-bottom{
+	.bottom-style;
+	.bottom-colors;
+}
 #dc-less-bottom{}
 
 /* Footer Module 6 grid */
-.dc-less-footer{}
+.dc-less-footer{
+	.footer-style;
+	.footer-colors;
+}
 #dc-less-footer{}
 
 /* Powered by DiligentCreators */
-.DiligentCreators-less{}
+.DiligentCreators-less{
+	.DiligentCreators-style;
+	.DiligentCreators-colors;
+}
 #DiligentCreators-less{}
-#dc-less-copyright,#dc-less-credits{}
+#dc-less-copyright,
+#dc-less-credits{}
 
 .dc-less-copyright{}
 #dc-less-copyright{}

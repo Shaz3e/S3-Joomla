@@ -1,3 +1,7 @@
+<?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
 <?php if($this->countModules('mod-feature-1')): ?>
 	<jdoc:include type="modules" name="mod-feature-1" style="shaz3e" />
 <?php endif; ?>

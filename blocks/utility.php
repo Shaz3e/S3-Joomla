@@ -1,4 +1,8 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+<?php
     if($this->countModules('utility-1')){
         $utilitys["utility1"] = '<jdoc:include type="modules" name="utility-1" style="shaz3e" />';
     }

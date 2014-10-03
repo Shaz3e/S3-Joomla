@@ -15,6 +15,9 @@
 || #################################################################### ||
 \*======================================================================*/
 
+// restricted access
+defined('_JEXEC') or die;
+
 // meta generator
 $documentGenerator = $this->params->get('documentGenerator');
 	if($documentGenerator){

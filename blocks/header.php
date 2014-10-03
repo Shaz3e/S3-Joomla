@@ -1,3 +1,7 @@
+<?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
 <?php if($this->countModules('header-1')): ?>
 	<div class="dc-header1">
     	<jdoc:include type="modules" name="header-1" style="s3_none" />

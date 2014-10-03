@@ -1,4 +1,8 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+<?php
         $app = JFactory::getApplication();
 
         if ($app->isAdmin()) return;

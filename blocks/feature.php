@@ -1,4 +1,8 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+<?php
     if($this->countModules('feature-1')){
         $features["feature1"] = '<jdoc:include type="modules" name="feature-1" style="shaz3e" />';
     }

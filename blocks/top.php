@@ -1,4 +1,9 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+
+<?php
     if($this->countModules('top-1')){
         $tops["top1"] = '<jdoc:include type="modules" name="top-1" style="shaz3e" />';
     }

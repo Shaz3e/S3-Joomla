@@ -1,4 +1,8 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+<?php
     if($this->countModules('extension-1')){
         $extensions["extension1"] = '<jdoc:include type="modules" name="extension-1" style="shaz3e" />';
     }

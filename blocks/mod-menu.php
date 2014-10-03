@@ -1,3 +1,7 @@
+<?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
 <?php if($this->countModules('mod-menu-1')): ?>
 	<jdoc:include type="modules" name="mod-menu-1" style="s3_none" />
 <?php endif; ?>

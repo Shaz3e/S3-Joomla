@@ -1,3 +1,7 @@
+<?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
 <section class="dc-container">
 <div class="dc-clear"></div>
 	<div id="dc-container">

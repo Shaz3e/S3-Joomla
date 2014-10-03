@@ -21,29 +21,33 @@
     <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/"><strong>upgrade your browser</strong></a> or <a href="http://www.google.com/chromeframe/?redirect=true"><strong>activate Google Chrome Frame</strong></a> to improve your experience.</p>
     </div>
 <![endif]-->
+<?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
 
 <?php if($this->countModules('top-left-panel')) :?>
-<div class="top-left-panel"><div id="top-left-panel"><jdoc:include type="modules" name="top-left-panel" style="shaz3e" /></div></div>
+<div class="top-left-panel"><div id="top-left-panel"><jdoc:include type="modules" name="top-left-panel" style="s3_none" /></div></div>
 <?php endif; ?>
 
 <?php if($this->countModules('top-right-panel')) :?>
-<div class="top-right-panel"><div id="top-right-panel"><jdoc:include type="modules" name="top-right-panel" style="shaz3e" /></div></div>
+<div class="top-right-panel"><div id="top-right-panel"><jdoc:include type="modules" name="top-right-panel" style="s3_none" /></div></div>
 <?php endif; ?>
 
 <?php if($this->countModules('right-panel')) :?>
-<div class="right-panel"><div id="right-panel"><jdoc:include type="modules" name="right-panel" style="shaz3e" /></div></div>
+<div class="right-panel"><div id="right-panel"><jdoc:include type="modules" name="right-panel" style="s3_none" /></div></div>
 <?php endif; ?>
 
 <?php if($this->countModules('bottom-right-panel')) :?>
-<div class="bottom-right-panel"><div id="bottom-right-panel"><jdoc:include type="modules" name="bottom-right-panel" style="shaz3e" /></div></div>
+<div class="bottom-right-panel"><div id="bottom-right-panel"><jdoc:include type="modules" name="bottom-right-panel" style="s3_none" /></div></div>
 <?php endif; ?>
 
 <?php if($this->countModules('bottom-left-panel')) :?>
-<div class="bottom-left-panel"><div id="bottom-left-panel"><jdoc:include type="modules" name="bottom-left-panel" style="shaz3e" /></div></div>
+<div class="bottom-left-panel"><div id="bottom-left-panel"><jdoc:include type="modules" name="bottom-left-panel" style="s3_none" /></div></div>
 <?php endif; ?>
 
 <?php if($this->countModules('left-panel')) :?>
-<div class="left-panel"><div id="left-panel"><jdoc:include type="modules" name="left-panel" style="shaz3e" /></div></div>
+<div class="left-panel"><div id="left-panel"><jdoc:include type="modules" name="left-panel" style="s3_none" /></div></div>
 <?php endif; ?>
 
 <?php if($left_right): ?>

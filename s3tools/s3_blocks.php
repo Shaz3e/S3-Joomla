@@ -16,6 +16,8 @@
 || #################################################################### ||
 \*======================================================================*/
 
+// restricted access
+defined('_JEXEC') or die;
 
 $left_right = $this->countModules('top-left') || $this->countModules('top-right');
 

@@ -1,4 +1,8 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+<?php
     if($this->countModules('breadcrumb-1')){
         $breadcrumbs["breadcrumb1"] = '<jdoc:include type="modules" name="breadcrumb-1" style="shaz3e" />';
     }

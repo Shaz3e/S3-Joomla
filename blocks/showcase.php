@@ -1,4 +1,8 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+<?php
     if($this->countModules('showcase-1')){
         $showcases["showcase1"] = '<jdoc:include type="modules" name="showcase-1" style="shaz3e" />';
     }

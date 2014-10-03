@@ -14,8 +14,10 @@
 || #################################################################### ||
 \*======================================================================*/
 
-// S3 Functions
+// restricted access
+defined('_JEXEC') or die;
 
+// S3 Functions
 function s3Component(){
 ?>
     <div id="dc-component">

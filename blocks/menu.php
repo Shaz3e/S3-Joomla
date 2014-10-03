@@ -1,4 +1,8 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+<?php
     if($this->countModules('menu-1')){
         $menus["menu1"] = '<jdoc:include type="modules" name="menu-1" style="s3_none" />';
     }

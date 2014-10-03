@@ -37,6 +37,12 @@
  * The `lessc_formatter` takes a CSS tree, and dumps it to a formatted string,
  * handling things like indentation.
  */
+
+
+// restricted access
+defined('_JEXEC') or die;
+
+
 class lessc {
 	static public $VERSION = "v0.4.0";
 

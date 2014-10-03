@@ -1,4 +1,8 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+<?php
     if($this->countModules('scroller-1')){
         $scrollers["scroller1"] = '<jdoc:include type="modules" name="scroller-1" style="shaz3e" />';
     }

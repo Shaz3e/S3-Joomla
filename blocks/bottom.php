@@ -1,4 +1,8 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+<?php
     if($this->countModules('bottom-1')){
         $bottoms["bottom1"] = '<jdoc:include type="modules" name="bottom-1" style="shaz3e" />';
     }

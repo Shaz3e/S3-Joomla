@@ -1,3 +1,7 @@
+<?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
 <?php if($this->countModules('content-top-1') || $this->countModules('content-top-2') || $this->countModules('content-top-3')): ?>
 <section class="dc-content-top">
 	<div id="dc-content-top">

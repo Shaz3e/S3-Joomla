@@ -1,4 +1,8 @@
 <?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
+<?php
     if($this->countModules('slideshow-1')){
         $slideshows["slideshow1"] = '<jdoc:include type="modules" name="slideshow-1" style="shaz3e" />';
     }

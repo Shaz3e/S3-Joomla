@@ -1,3 +1,7 @@
+<?php
+    // restricted access
+    defined('_JEXEC') or die;
+?>
 <?php if($this->countModules('right')) :?>
 <aside class="dc-right-sidebar">
 	<div id="dc-right-sidebar">

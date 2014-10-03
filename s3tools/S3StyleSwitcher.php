@@ -1,4 +1,8 @@
 <?php
+
+// restricted access
+defined('_JEXEC') or die;
+
 // SET COOKIE FOR 1 YEAR
 if(isset($_REQUEST["SETSTYLE"])){
 	if(setcookie("testcookie",true)){

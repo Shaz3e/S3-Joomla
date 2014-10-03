@@ -31,7 +31,7 @@ $sitetitle = htmlspecialchars($this->params->get('sitetitle'));
 if($this->params->get('LocalCDN')){
 	
 	// Add Stylesheets
-	$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+	$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 	$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
 	$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css');
 	

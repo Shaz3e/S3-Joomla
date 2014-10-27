@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="template">
 	<name>S3_Blank</name>
-	<version>3.1</version>
+	<version>3.2</version>
 	<creationDate>30 April 2014</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
@@ -73,12 +73,14 @@
 		<position>bottom-right-panel</position>
 		
 		<!-- Top Modules -->
+		<position>top</position>
 		<position>top-1</position>
 		<position>top-2</position>
 		<position>top-3</position>
 		<position>top-4</position>
 		<position>top-5</position>
 		<position>top-6</position>
+		<position>top-bottom</position>
 		
 		<!-- mod-top Modules -->
 		<position>mod-top-1</position>
@@ -103,12 +105,14 @@
 		<position>mod-header-6</position>
 		
 		<!-- Menu Modules -->
+		<position>menu</position>
 		<position>menu-1</position>
 		<position>menu-2</position>
 		<position>menu-3</position>
 		<position>menu-4</position>
 		<position>menu-5</position>
 		<position>menu-6</position>
+		<position>menu-bottom</position>
 		
 		<!-- mod-menu Modules -->
 		<position>mod-menu-1</position>
@@ -118,13 +122,33 @@
 		<position>mod-menu-5</position>
 		<position>mod-menu-6</position>
 		
+		<!-- Breadcrumb Modules -->
+		<position>breadcrumb</position>
+		<position>breadcrumb-1</position>
+		<position>breadcrumb-2</position>
+		<position>breadcrumb-3</position>
+		<position>breadcrumb-4</position>
+		<position>breadcrumb-5</position>
+		<position>breadcrumb-6</position>
+		<position>breadcrumb-bottom</position>
+		
+		<!-- mod-breadcrumb Modules -->
+		<position>mod-breadcrumb-1</position>
+		<position>mod-breadcrumb-2</position>
+		<position>mod-breadcrumb-3</position>
+		<position>mod-breadcrumb-4</position>
+		<position>mod-breadcrumb-5</position>
+		<position>mod-breadcrumb-6</position>
+		
 		<!-- Slideshow Modules -->
+		<position>slideshow</position>
 		<position>slideshow-1</position>
 		<position>slideshow-2</position>
 		<position>slideshow-3</position>
 		<position>slideshow-4</position>
 		<position>slideshow-5</position>
 		<position>slideshow-6</position>
+		<position>slideshow-bottom</position>
 		
 		<!-- span-slideshow Modules -->
 		<position>mod-slideshow-1</position>
@@ -135,12 +159,14 @@
 		<position>mod-slideshow-6</position>
 		
 		<!-- Showcase Modules -->
+		<position>showcase</position>
 		<position>showcase-1</position>
 		<position>showcase-2</position>
 		<position>showcase-3</position>
 		<position>showcase-4</position>
 		<position>showcase-5</position>
 		<position>showcase-6</position>
+		<position>showcase-bottom</position>
 		
 		<!-- mod-showcase Modules -->
 		<position>mod-showcase-1</position>
@@ -151,12 +177,14 @@
 		<position>mod-showcase-6</position>
 		
 		<!-- Feature Modules -->
+		<position>feature</position>
 		<position>feature-1</position>
 		<position>feature-2</position>
 		<position>feature-3</position>
 		<position>feature-4</position>
 		<position>feature-5</position>
 		<position>feature-6</position>
+		<position>feature-bottom</position>
 		
 		<!-- mod-feature Modules -->
 		<position>mod-feature-1</position>
@@ -182,44 +210,34 @@
 		<position>mod-bottom-feature-5</position>
 		<position>mod-bottom-feature-6</position>
 		
-		<!-- Breadcrumb Modules -->
-		<position>breadcrumb-1</position>
-		<position>breadcrumb-2</position>
-		<position>breadcrumb-3</position>
-		<position>breadcrumb-4</position>
-		<position>breadcrumb-5</position>
-		<position>breadcrumb-6</position>
-		
-		<!-- mod-breadcrumb Modules -->
-		<position>mod-breadcrumb-1</position>
-		<position>mod-breadcrumb-2</position>
-		<position>mod-breadcrumb-3</position>
-		<position>mod-breadcrumb-4</position>
-		<position>mod-breadcrumb-5</position>
-		<position>mod-breadcrumb-6</position>
-		
 		<!-- Sidebar Modules -->
 		<position>left</position>
 		<position>right</position>
 		
 		<!-- Content-top Modules -->
+		<position>content-top</position>
 		<position>content-top-1</position>
 		<position>content-top-2</position>
 		<position>content-top-3</position>
+		<position>content-top-bottom</position>
 		
 		<!-- Content-bottom Modules -->
+		<position>content-bottom</position>
 		<position>content-bottom-1</position>
 		<position>content-bottom-2</position>
 		<position>content-bottom-3</position>
+		<position>content-bottom-bottom</position>
 		
 		
 		<!-- Utility Modules -->
+		<position>utility</position>
 		<position>utility-1</position>
 		<position>utility-2</position>
 		<position>utility-3</position>
 		<position>utility-4</position>
 		<position>utility-5</position>
 		<position>utility-6</position>
+		<position>utility-bottom</position>
 		
 		<!-- mod-utility Modules -->
 		<position>mod-utility-1</position>
@@ -230,12 +248,14 @@
 		<position>mod-utility-6</position>
 		
 		<!-- Scroller Modules -->
+		<position>scroller</position>
 		<position>scroller-1</position>
 		<position>scroller-2</position>
 		<position>scroller-3</position>
 		<position>scroller-4</position>
 		<position>scroller-5</position>
 		<position>scroller-6</position>
+		<position>scroller-bottom</position>
 		
 		<!-- mod-scroller Modules -->
 		<position>mod-scroller-1</position>
@@ -246,12 +266,14 @@
 		<position>mod-scroller-6</position>
 		
 		<!-- Extension Modules -->
+		<position>extension</position>
 		<position>extension-1</position>
 		<position>extension-2</position>
 		<position>extension-3</position>
 		<position>extension-4</position>
 		<position>extension-5</position>
 		<position>extension-6</position>
+		<position>extension-bottom</position>
 		
 		<!-- mod-extension Modules -->
 		<position>mod-extension-1</position>
@@ -262,12 +284,14 @@
 		<position>mod-extension-6</position>
 		
 		<!-- Bottom Modules -->
+		<position>bottom</position>
 		<position>bottom-1</position>
 		<position>bottom-2</position>
 		<position>bottom-3</position>
 		<position>bottom-4</position>
 		<position>bottom-5</position>
 		<position>bottom-6</position>
+		<position>bottom-bottom</position>
 		
 		<!-- mod-bottom Modules -->
 		<position>mod-bottom-1</position>
@@ -278,12 +302,14 @@
 		<position>mod-bottom-6</position>
 		
 		<!-- Footer Modules -->
+		<position>footer</position>
 		<position>footer-1</position>
 		<position>footer-2</position>
 		<position>footer-3</position>
 		<position>footer-4</position>
 		<position>footer-5</position>
 		<position>footer-6</position>
+		<position>footer-bottom</position>
 		
 		<!-- mod-footer Modules -->
 		<position>mod-footer-1</position>

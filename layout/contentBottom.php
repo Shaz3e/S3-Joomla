@@ -2,11 +2,16 @@
     // restricted access
     defined('_JEXEC') or die;
 ?>
-<?php if($this->countModules('content-bottom-1') || $this->countModules('content-bottom-2') || $this->countModules('content-bottom-3')): ?>
+<?php if($this->countModules('content-bottom') || 
+		 $this->countModules('content-bottom-1') || 
+		 $this->countModules('content-bottom-2') || 
+		 $this->countModules('content-bottom-3') ||
+		 $this->countModules('content-bottom-bottom')): ?>
 <section class="dc-content-bottom">
 	<div id="dc-content-bottom">
     	<div id="dc-modules">
         	<div class="dc-clear"></div>
+            	<jdoc:include type="modules" name="content-bottom" style="shaz3e" />
 				<?php
                     if($this->countModules('content-bottom-1')){
                         $contentBottoms["mod1"] = '<jdoc:include type="modules" name="content-bottom-1" style="shaz3e" />';
@@ -39,6 +44,7 @@
                     }
                 }
                 ?>
+            	<jdoc:include type="modules" name="content-bottom-bottom" style="shaz3e" />
 			<div class="dc-clear"></div>
 		</div>
 	</div>

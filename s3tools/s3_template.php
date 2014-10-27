@@ -78,7 +78,8 @@
 <?php endif; ?>
 
 <?php if($topModules || $modTopModules): ?>
-<section class="dc-top">
+<section class="dc-top dc-clear">
+	<jdoc:include type="modules" name="top" style="shaz3e" />
 	<div id="dc-top">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -89,11 +90,12 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="top-bottom" style="shaz3e" />
 </section>
 <?php endif; ?>
 
 <div class="dc-fixed-header">
-<section class="dc-header">
+<section class="dc-header dc-clear">
 	<div id="dc-header">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -109,7 +111,8 @@
 
 
 <?php if($menuModules || $modMenuModules):?>
-<section class="dc-menu">
+<section class="dc-menu dc-clear">
+	<jdoc:include type="modules" name="menu" style="shaz3e" />
 	<div id="dc-menu">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -120,12 +123,14 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="menu-bottom" style="shaz3e" />
 </section>
 <?php endif; ?>
 </div>
 
 <?php if($breadcrumbModules || $modBreadcrumbModules): ?>
-<section class="dc-breadcrumb">
+<section class="dc-breadcrumb dc-clear">
+	<jdoc:include type="modules" name="breadcrumb" style="shaz3e" />
 	<div id="dc-breadcrumb">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -136,11 +141,13 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="breadcrumb-bottom" style="shaz3e" />
 </section>
 <?php endif; ?>
 
 <?php if($slideshowModules || $modSlideshowModules): ?>
-<section class="dc-slideshow">
+<section class="dc-slideshow dc-clear">
+	<jdoc:include type="modules" name="slideshow" style="shaz3e" />
 	<div id="dc-slideshow">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -151,11 +158,13 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="slideshow-bottom" style="shaz3e" />
 </section>
 <?php endif; ?>
 
 <?php if($showcaseModules || $modShowcaseModules): ?>
-<section class="dc-showcase">
+<section class="dc-showcase dc-clear">
+	<jdoc:include type="modules" name="showcase" style="shaz3e" />
 	<div id="dc-showcase">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -166,11 +175,13 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="showcase-bottom" style="shaz3e" />
 </section>
 <?php endif; ?>
 
 <?php if($featureModules || $modFeatureModules || $bottomFeatureModules || $modBottomFeatureModules): ?>
-<section class="dc-feature">
+<section class="dc-feature dc-clear">
+	<jdoc:include type="modules" name="feature" style="shaz3e" />
 	<div id="dc-feature">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -188,6 +199,7 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="feature-bottom" style="shaz3e" />
 </section>
 <?php endif; ?>
 
@@ -207,7 +219,8 @@
 ?>
 
 <?php if($utilityModules || $modUtilityModules): ?>
-<section class="dc-utility">
+<section class="dc-utility dc-clear">
+	<jdoc:include type="modules" name="utility" style="shaz3e" />
 	<div id="dc-utility">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -218,11 +231,13 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="utility-bottom" style="shaz3e" />
 </section>
 <?php endif; ?>
 
 <?php if($scrollerModules || $scrollerModules): ?>
-<section class="dc-scroller">
+<section class="dc-scroller dc-clear">
+	<jdoc:include type="modules" name="scroller" style="shaz3e" />
 	<div id="dc-scroller">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -233,11 +248,13 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="scroller-bottom" style="shaz3e" />
 </section>
 <?php endif; ?>
 
 <?php if($extensionModules || $modExtensionModules): ?>
-<section class="dc-extension">
+<section class="dc-extension dc-clear">
+	<jdoc:include type="modules" name="extension" style="shaz3e" />
 	<div id="dc-extension">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -248,11 +265,13 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="extension-bottom" style="shaz3e" />
 </section>
 <?php endif; ?>
 
 <?php if($bottomModules || $modBottomModules): ?>
-<section class="dc-bottom">
+<section class="dc-bottom dc-clear">
+	<jdoc:include type="modules" name="bottom" style="shaz3e" />
 	<div id="dc-bottom">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -263,11 +282,13 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="bottom-bottom" style="shaz3e" />
 </section>
 <?php endif; ?>
 
 <?php if($footerModules || $modFooterModules || $bottomFooterModules || $modBottomFooterModules): ?>
-<footer class="dc-footer">
+<footer class="dc-footer dc-clear">
+	<jdoc:include type="modules" name="footer" style="shaz3e" />
 	<div id="dc-footer">
     	<div class="dc-modules">
         	<div id="dc-modules">
@@ -285,6 +306,7 @@
             </div>
         </div>
     </div>
+	<jdoc:include type="modules" name="footer-bottom" style="shaz3e" />
 </footer>
 <?php endif; ?>
 

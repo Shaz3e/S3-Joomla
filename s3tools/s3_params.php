@@ -30,8 +30,18 @@ $documentGenerator = $this->params->get('documentGenerator');
 
 
 
-// Add pageclass from menu item
-$pageclass = $app->getParams('com_content');
+// Add pageclass_sfx from menu item
+$DCPageClassSuffix = $app->getParams('com_content');
+
+// Get Active Menu Alias as a body.class
+$DCActivePageAliasClassName = JFactory::getApplication()->getMenu()->getActive();
+
+// pageclass_sfx & DCActivePageAliasClassName
+$DCBodyPageClasses = 'Shaz3e '; // Default Class for Shaz3e
+$DCBodyPageClasses .= 'dc-wrapper '; // relative wrapper 
+$DCBodyPageClasses .= $DCActivePageAliasClassName->alias . ' '; // get pageclass_sfx from item menu
+$DCBodyPageClasses .= $DCPageClassSuffix->get('pageclass_sfx'); // get active menu alias as a class
+
 
 // Logo Params
 $logoName = $this->params->get('logo');

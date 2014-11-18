@@ -34,12 +34,12 @@ if($this->params->get('LocalCDN')){
 	
 	// Add Stylesheets
 	$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
-	$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css');
-	$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css');
+	$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css');
+	$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css');
 	
 	// Add Javascripts
 	$doc->addScript($dcTemplatePath.'/js/jquery-noconflict.js', 'text/javascript');
-	$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js', 'text/javascript');
+	$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', 'text/javascript');
 	
 	// jQuery FitVIDS
 	if($this->params->get('ResponsiveVideo')){

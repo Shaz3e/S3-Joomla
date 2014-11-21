@@ -38,7 +38,7 @@ if($this->params->get('LocalCDN')){
 	$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css');
 	
 	// Add Javascripts
-	$doc->addScript($dcTemplatePath.'/js/jquery-noconflict.js', 'text/javascript');
+	$doc->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 'text/javascript');
 	$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', 'text/javascript');
 	
 	// jQuery FitVIDS
@@ -54,7 +54,7 @@ if($this->params->get('LocalCDN')){
 	$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
 	
 	// Add Javascripts
-	$doc->addScript($dcTemplatePath.'/js/jquery-noconflict.js', 'text/javascript');
+	$doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
 	$doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
 	
 	// jQuery FitVIDS

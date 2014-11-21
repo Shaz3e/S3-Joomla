@@ -18,14 +18,8 @@
 defined('_JEXEC') or die;
 
 ?>
-<?php if($this->params->get('LocalCDN')): ?>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<?php else: ?>
-	<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/jquery.min.js"></script>
-<?php endif; ?>
 
 <jdoc:include type="head" />
-
 
 <?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_styles.php'); ?>
 <?php if($this->params->get('LocalCDN')): ?>

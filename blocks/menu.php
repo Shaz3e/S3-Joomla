@@ -4,22 +4,22 @@
 ?>
 <?php
     if($this->countModules('menu-1')){
-        $menus["menu1"] = '<jdoc:include type="modules" name="menu-1" style="s3_none" />';
+        $menus["menu1"] = '<jdoc:include type="modules" name="menu-1" style="shaz3e" />';
     }
     if($this->countModules('menu-2')){
-        $menus["menu2"] = '<jdoc:include type="modules" name="menu-2" style="s3_none" />';
+        $menus["menu2"] = '<jdoc:include type="modules" name="menu-2" style="shaz3e" />';
     }
     if($this->countModules('menu-3')){
-        $menus["menu3"] = '<jdoc:include type="modules" name="menu-3" style="s3_none" />';
+        $menus["menu3"] = '<jdoc:include type="modules" name="menu-3" style="shaz3e" />';
     }
     if($this->countModules('menu-4')){
-        $menus["menu4"] = '<jdoc:include type="modules" name="menu-4" style="s3_none" />';
+        $menus["menu4"] = '<jdoc:include type="modules" name="menu-4" style="shaz3e" />';
     }
     if($this->countModules('menu-5')){
-        $menus["menu5"] = '<jdoc:include type="modules" name="menu-5" style="s3_none" />';
+        $menus["menu5"] = '<jdoc:include type="modules" name="menu-5" style="shaz3e" />';
     }
     if($this->countModules('menu-6')){
-        $menus["menu6"] = '<jdoc:include type="modules" name="menu-6" style="s3_none" />';
+        $menus["menu6"] = '<jdoc:include type="modules" name="menu-6" style="shaz3e" />';
     }
 if(isset($menus)){
     $result = count($menus);

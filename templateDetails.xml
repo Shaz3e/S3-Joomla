@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="template">
 	<name>S3_Blank</name>
-	<version>3.2</version>
+	<version>3.3</version>
 	<creationDate>30 April 2014</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
@@ -59,16 +59,18 @@
 		
 	</files>
 	<positions>		
-		<!-- Top Left Right Modules (2) -->
-		<position>top-left</position>
-		<position>top-right</position>
 	
 		<!-- Absolute Modules (6)-->
+		
+		<!-- left / right -->
 		<position>right-panel</position>
 		<position>left-panel</position>
 		
+		<!-- top left / top right -->
 		<position>top-left-panel</position>
 		<position>top-right-panel</position>
+		
+		<!-- bottom left / bottom right -->
 		<position>bottom-left-panel</position>
 		<position>bottom-right-panel</position>
 		
@@ -80,29 +82,47 @@
 		<position>top-4</position>
 		<position>top-5</position>
 		<position>top-6</position>
+		<position>top-7</position>
+		<position>top-8</position>
+		<position>top-9</position>
+		<position>top-10</position>
+		<position>top-11</position>
+		<position>top-12</position>
 		<position>top-bottom</position>
 		
-		<!-- mod-top Modules -->
-		<position>mod-top-1</position>
-		<position>mod-top-2</position>
-		<position>mod-top-3</position>
-		<position>mod-top-4</position>
-		<position>mod-top-5</position>
-		<position>mod-top-6</position>
-		
+		<!-- grid-top Modules -->
+		<position>grid-top-1</position>
+		<position>grid-top-2</position>
+		<position>grid-top-3</position>
+		<position>grid-top-4</position>
+		<position>grid-top-5</position>
+		<position>grid-top-6</position>
+		<position>grid-top-7</position>
+		<position>grid-top-8</position>
+		<position>grid-top-9</position>
+		<position>grid-top-10</position>
+		<position>grid-top-11</position>
+		<position>grid-top-12</position>
+				
 		<!-- Top Header Modules -->
 		<position>header-1</position>
 		<position>header-2</position>
 		<position>header-3</position>
 		<position>header-4</position>
 		
-		<!-- Top mod-header Modules -->
-		<position>mod-header-1</position>
-		<position>mod-header-2</position>
-		<position>mod-header-3</position>
-		<position>mod-header-4</position>
-		<position>mod-header-5</position>
-		<position>mod-header-6</position>
+		<!-- Top grid-header Modules -->
+		<position>grid-header-1</position>
+		<position>grid-header-2</position>
+		<position>grid-header-3</position>
+		<position>grid-header-4</position>
+		<position>grid-header-5</position>
+		<position>grid-header-6</position>
+		<position>grid-header-7</position>
+		<position>grid-header-8</position>
+		<position>grid-header-9</position>
+		<position>grid-header-10</position>
+		<position>grid-header-11</position>
+		<position>grid-header-12</position>
 		
 		<!-- Menu Modules -->
 		<position>menu</position>
@@ -112,15 +132,27 @@
 		<position>menu-4</position>
 		<position>menu-5</position>
 		<position>menu-6</position>
+		<position>menu-7</position>
+		<position>menu-8</position>
+		<position>menu-9</position>
+		<position>menu-10</position>
+		<position>menu-11</position>
+		<position>menu-12</position>
 		<position>menu-bottom</position>
 		
-		<!-- mod-menu Modules -->
-		<position>mod-menu-1</position>
-		<position>mod-menu-2</position>
-		<position>mod-menu-3</position>
-		<position>mod-menu-4</position>
-		<position>mod-menu-5</position>
-		<position>mod-menu-6</position>
+		<!-- grid-menu Modules -->
+		<position>grid-menu-1</position>
+		<position>grid-menu-2</position>
+		<position>grid-menu-3</position>
+		<position>grid-menu-4</position>
+		<position>grid-menu-5</position>
+		<position>grid-menu-6</position>
+		<position>grid-menu-7</position>
+		<position>grid-menu-8</position>
+		<position>grid-menu-9</position>
+		<position>grid-menu-10</position>
+		<position>grid-menu-11</position>
+		<position>grid-menu-12</position>
 		
 		<!-- Breadcrumb Modules -->
 		<position>breadcrumb</position>
@@ -130,15 +162,27 @@
 		<position>breadcrumb-4</position>
 		<position>breadcrumb-5</position>
 		<position>breadcrumb-6</position>
+		<position>breadcrumb-7</position>
+		<position>breadcrumb-8</position>
+		<position>breadcrumb-9</position>
+		<position>breadcrumb-10</position>
+		<position>breadcrumb-11</position>
+		<position>breadcrumb-12</position>
 		<position>breadcrumb-bottom</position>
 		
-		<!-- mod-breadcrumb Modules -->
-		<position>mod-breadcrumb-1</position>
-		<position>mod-breadcrumb-2</position>
-		<position>mod-breadcrumb-3</position>
-		<position>mod-breadcrumb-4</position>
-		<position>mod-breadcrumb-5</position>
-		<position>mod-breadcrumb-6</position>
+		<!-- grid-breadcrumb Modules -->
+		<position>grid-breadcrumb-1</position>
+		<position>grid-breadcrumb-2</position>
+		<position>grid-breadcrumb-3</position>
+		<position>grid-breadcrumb-4</position>
+		<position>grid-breadcrumb-5</position>
+		<position>grid-breadcrumb-6</position>
+		<position>grid-breadcrumb-7</position>
+		<position>grid-breadcrumb-8</position>
+		<position>grid-breadcrumb-9</position>
+		<position>grid-breadcrumb-10</position>
+		<position>grid-breadcrumb-11</position>
+		<position>grid-breadcrumb-12</position>
 		
 		<!-- Slideshow Modules -->
 		<position>slideshow</position>
@@ -148,15 +192,27 @@
 		<position>slideshow-4</position>
 		<position>slideshow-5</position>
 		<position>slideshow-6</position>
+		<position>slideshow-7</position>
+		<position>slideshow-8</position>
+		<position>slideshow-9</position>
+		<position>slideshow-10</position>
+		<position>slideshow-11</position>
+		<position>slideshow-12</position>
 		<position>slideshow-bottom</position>
 		
-		<!-- span-slideshow Modules -->
-		<position>mod-slideshow-1</position>
-		<position>mod-slideshow-2</position>
-		<position>mod-slideshow-3</position>
-		<position>mod-slideshow-4</position>
-		<position>mod-slideshow-5</position>
-		<position>mod-slideshow-6</position>
+		<!-- grid-slideshow Modules -->
+		<position>grid-slideshow-1</position>
+		<position>grid-slideshow-2</position>
+		<position>grid-slideshow-3</position>
+		<position>grid-slideshow-4</position>
+		<position>grid-slideshow-5</position>
+		<position>grid-slideshow-6</position>
+		<position>grid-slideshow-7</position>
+		<position>grid-slideshow-8</position>
+		<position>grid-slideshow-9</position>
+		<position>grid-slideshow-10</position>
+		<position>grid-slideshow-11</position>
+		<position>grid-slideshow-12</position>
 		
 		<!-- Showcase Modules -->
 		<position>showcase</position>
@@ -166,15 +222,27 @@
 		<position>showcase-4</position>
 		<position>showcase-5</position>
 		<position>showcase-6</position>
+		<position>showcase-7</position>
+		<position>showcase-8</position>
+		<position>showcase-9</position>
+		<position>showcase-10</position>
+		<position>showcase-11</position>
+		<position>showcase-12</position>
 		<position>showcase-bottom</position>
 		
-		<!-- mod-showcase Modules -->
-		<position>mod-showcase-1</position>
-		<position>mod-showcase-2</position>
-		<position>mod-showcase-3</position>
-		<position>mod-showcase-4</position>
-		<position>mod-showcase-5</position>
-		<position>mod-showcase-6</position>
+		<!-- grid-showcase Modules -->
+		<position>grid-showcase-1</position>
+		<position>grid-showcase-2</position>
+		<position>grid-showcase-3</position>
+		<position>grid-showcase-4</position>
+		<position>grid-showcase-5</position>
+		<position>grid-showcase-6</position>
+		<position>grid-showcase-7</position>
+		<position>grid-showcase-8</position>
+		<position>grid-showcase-9</position>
+		<position>grid-showcase-10</position>
+		<position>grid-showcase-11</position>
+		<position>grid-showcase-12</position>
 		
 		<!-- Feature Modules -->
 		<position>feature</position>
@@ -184,15 +252,27 @@
 		<position>feature-4</position>
 		<position>feature-5</position>
 		<position>feature-6</position>
+		<position>feature-7</position>
+		<position>feature-8</position>
+		<position>feature-9</position>
+		<position>feature-10</position>
+		<position>feature-11</position>
+		<position>feature-12</position>
 		<position>feature-bottom</position>
 		
 		<!-- mod-feature Modules -->
-		<position>mod-feature-1</position>
-		<position>mod-feature-2</position>
-		<position>mod-feature-3</position>
-		<position>mod-feature-4</position>
-		<position>mod-feature-5</position>
-		<position>mod-feature-6</position>
+		<position>grid-feature-1</position>
+		<position>grid-feature-2</position>
+		<position>grid-feature-3</position>
+		<position>grid-feature-4</position>
+		<position>grid-feature-5</position>
+		<position>grid-feature-6</position>
+		<position>grid-feature-7</position>
+		<position>grid-feature-8</position>
+		<position>grid-feature-9</position>
+		<position>grid-feature-10</position>
+		<position>grid-feature-11</position>
+		<position>grid-feature-12</position>
 		
 		<!-- Feature Modules -->
 		<position>bottom-feature-1</position>
@@ -201,14 +281,26 @@
 		<position>bottom-feature-4</position>
 		<position>bottom-feature-5</position>
 		<position>bottom-feature-6</position>
+		<position>bottom-feature-7</position>
+		<position>bottom-feature-8</position>
+		<position>bottom-feature-9</position>
+		<position>bottom-feature-10</position>
+		<position>bottom-feature-11</position>
+		<position>bottom-feature-12</position>
 		
-		<!-- Feature Modules -->
-		<position>mod-bottom-feature-1</position>
-		<position>mod-bottom-feature-2</position>
-		<position>mod-bottom-feature-3</position>
-		<position>mod-bottom-feature-4</position>
-		<position>mod-bottom-feature-5</position>
-		<position>mod-bottom-feature-6</position>
+		<!-- grid-bottom-feature Modules -->
+		<position>grid-bottom-feature-1</position>
+		<position>grid-bottom-feature-2</position>
+		<position>grid-bottom-feature-3</position>
+		<position>grid-bottom-feature-4</position>
+		<position>grid-bottom-feature-5</position>
+		<position>grid-bottom-feature-6</position>
+		<position>grid-bottom-feature-7</position>
+		<position>grid-bottom-feature-8</position>
+		<position>grid-bottom-feature-9</position>
+		<position>grid-bottom-feature-10</position>
+		<position>grid-bottom-feature-11</position>
+		<position>grid-bottom-feature-12</position>
 		
 		<!-- Sidebar Modules -->
 		<position>left</position>
@@ -237,15 +329,27 @@
 		<position>utility-4</position>
 		<position>utility-5</position>
 		<position>utility-6</position>
+		<position>utility-7</position>
+		<position>utility-8</position>
+		<position>utility-9</position>
+		<position>utility-10</position>
+		<position>utility-11</position>
+		<position>utility-12</position>
 		<position>utility-bottom</position>
 		
-		<!-- mod-utility Modules -->
-		<position>mod-utility-1</position>
-		<position>mod-utility-2</position>
-		<position>mod-utility-3</position>
-		<position>mod-utility-4</position>
-		<position>mod-utility-5</position>
-		<position>mod-utility-6</position>
+		<!-- grid-utility Modules -->
+		<position>grid-utility-1</position>
+		<position>grid-utility-2</position>
+		<position>grid-utility-3</position>
+		<position>grid-utility-4</position>
+		<position>grid-utility-5</position>
+		<position>grid-utility-6</position>
+		<position>grid-utility-7</position>
+		<position>grid-utility-8</position>
+		<position>grid-utility-9</position>
+		<position>grid-utility-10</position>
+		<position>grid-utility-11</position>
+		<position>grid-utility-12</position>
 		
 		<!-- Scroller Modules -->
 		<position>scroller</position>
@@ -255,15 +359,27 @@
 		<position>scroller-4</position>
 		<position>scroller-5</position>
 		<position>scroller-6</position>
+		<position>scroller-7</position>
+		<position>scroller-8</position>
+		<position>scroller-9</position>
+		<position>scroller-10</position>
+		<position>scroller-11</position>
+		<position>scroller-12</position>
 		<position>scroller-bottom</position>
 		
-		<!-- mod-scroller Modules -->
-		<position>mod-scroller-1</position>
-		<position>mod-scroller-2</position>
-		<position>mod-scroller-3</position>
-		<position>mod-scroller-4</position>
-		<position>mod-scroller-5</position>
-		<position>mod-scroller-6</position>
+		<!-- grid-scroller Modules -->
+		<position>grid-scroller-1</position>
+		<position>grid-scroller-2</position>
+		<position>grid-scroller-3</position>
+		<position>grid-scroller-4</position>
+		<position>grid-scroller-5</position>
+		<position>grid-scroller-6</position>
+		<position>grid-scroller-7</position>
+		<position>grid-scroller-8</position>
+		<position>grid-scroller-9</position>
+		<position>grid-scroller-10</position>
+		<position>grid-scroller-11</position>
+		<position>grid-scroller-12</position>
 		
 		<!-- Extension Modules -->
 		<position>extension</position>
@@ -273,15 +389,27 @@
 		<position>extension-4</position>
 		<position>extension-5</position>
 		<position>extension-6</position>
+		<position>extension-7</position>
+		<position>extension-8</position>
+		<position>extension-9</position>
+		<position>extension-10</position>
+		<position>extension-11</position>
+		<position>extension-12</position>
 		<position>extension-bottom</position>
 		
-		<!-- mod-extension Modules -->
-		<position>mod-extension-1</position>
-		<position>mod-extension-2</position>
-		<position>mod-extension-3</position>
-		<position>mod-extension-4</position>
-		<position>mod-extension-5</position>
-		<position>mod-extension-6</position>
+		<!-- grid-extension Modules -->
+		<position>grid-extension-1</position>
+		<position>grid-extension-2</position>
+		<position>grid-extension-3</position>
+		<position>grid-extension-4</position>
+		<position>grid-extension-5</position>
+		<position>grid-extension-6</position>
+		<position>grid-extension-7</position>
+		<position>grid-extension-8</position>
+		<position>grid-extension-9</position>
+		<position>grid-extension-10</position>
+		<position>grid-extension-11</position>
+		<position>grid-extension-12</position>
 		
 		<!-- Bottom Modules -->
 		<position>bottom</position>
@@ -291,15 +419,27 @@
 		<position>bottom-4</position>
 		<position>bottom-5</position>
 		<position>bottom-6</position>
+		<position>bottom-7</position>
+		<position>bottom-8</position>
+		<position>bottom-9</position>
+		<position>bottom-10</position>
+		<position>bottom-11</position>
+		<position>bottom-12</position>
 		<position>bottom-bottom</position>
 		
-		<!-- mod-bottom Modules -->
-		<position>mod-bottom-1</position>
-		<position>mod-bottom-2</position>
-		<position>mod-bottom-3</position>
-		<position>mod-bottom-4</position>
-		<position>mod-bottom-5</position>
-		<position>mod-bottom-6</position>
+		<!-- grid-bottom Modules -->
+		<position>grid-bottom-1</position>
+		<position>grid-bottom-2</position>
+		<position>grid-bottom-3</position>
+		<position>grid-bottom-4</position>
+		<position>grid-bottom-5</position>
+		<position>grid-bottom-6</position>
+		<position>grid-bottom-7</position>
+		<position>grid-bottom-8</position>
+		<position>grid-bottom-9</position>
+		<position>grid-bottom-10</position>
+		<position>grid-bottom-11</position>
+		<position>grid-bottom-12</position>
 		
 		<!-- Footer Modules -->
 		<position>footer</position>
@@ -309,15 +449,27 @@
 		<position>footer-4</position>
 		<position>footer-5</position>
 		<position>footer-6</position>
+		<position>footer-7</position>
+		<position>footer-8</position>
+		<position>footer-9</position>
+		<position>footer-10</position>
+		<position>footer-11</position>
+		<position>footer-12</position>
 		<position>footer-bottom</position>
 		
-		<!-- mod-footer Modules -->
-		<position>mod-footer-1</position>
-		<position>mod-footer-2</position>
-		<position>mod-footer-3</position>
-		<position>mod-footer-4</position>
-		<position>mod-footer-5</position>
-		<position>mod-footer-6</position>
+		<!-- grid-footer Modules -->
+		<position>grid-footer-1</position>
+		<position>grid-footer-2</position>
+		<position>grid-footer-3</position>
+		<position>grid-footer-4</position>
+		<position>grid-footer-5</position>
+		<position>grid-footer-6</position>
+		<position>grid-footer-7</position>
+		<position>grid-footer-8</position>
+		<position>grid-footer-9</position>
+		<position>grid-footer-10</position>
+		<position>grid-footer-11</position>
+		<position>grid-footer-12</position>
 		
 		<!-- Footer Modules -->
 		<position>bottom-footer-1</position>
@@ -326,14 +478,26 @@
 		<position>bottom-footer-4</position>
 		<position>bottom-footer-5</position>
 		<position>bottom-footer-6</position>
+		<position>bottom-footer-7</position>
+		<position>bottom-footer-8</position>
+		<position>bottom-footer-9</position>
+		<position>bottom-footer-10</position>
+		<position>bottom-footer-11</position>
+		<position>bottom-footer-12</position>
 		
-		<!-- Footer Modules -->
-		<position>mod-bottom-footer-1</position>
-		<position>mod-bottom-footer-2</position>
-		<position>mod-bottom-footer-3</position>
-		<position>mod-bottom-footer-4</position>
-		<position>mod-bottom-footer-5</position>
-		<position>mod-bottom-footer-6</position>
+		<!-- grid-bottom-footer Modules -->
+		<position>grid-bottom-footer-1</position>
+		<position>grid-bottom-footer-2</position>
+		<position>grid-bottom-footer-3</position>
+		<position>grid-bottom-footer-4</position>
+		<position>grid-bottom-footer-5</position>
+		<position>grid-bottom-footer-6</position>
+		<position>grid-bottom-footer-7</position>
+		<position>grid-bottom-footer-8</position>
+		<position>grid-bottom-footer-9</position>
+		<position>grid-bottom-footer-10</position>
+		<position>grid-bottom-footer-11</position>
+		<position>grid-bottom-footer-12</position>
 			
 		<!-- Copyright -->
 		<position>copyright</position>
@@ -365,11 +529,6 @@
 					<option value="3">style 3</option>
 				</field>
 				
-				<field name="StyleSwitcher" class="" type="list" default="1" label="Style Switcher on?" description="Would you like to show Style Switcher at the bottom of your website?">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
-				</field>
-				
 			<field name="" type="spacer" default="" label="Front Page Settings" description="" />
 			
 				<field name="showFrontPage" type="list" default="1" 
@@ -391,9 +550,8 @@
                        description="Hide Component (Body Container) on certain pages which are selected" />
             </fieldset>
 			
-			<!-- S3TEMPLATECONFIG -->
-            <fieldset name="S3TEMPLATECONFIG">
-				
+			<fieldset name="LAYOUTS">
+			
 				<field name="copyright" class="" type="list" default="1" label="Show Copyright" description="You can Show or Hide copyright information here.">
 					<option value="0">No</option>
 					<option value="1">Yes</option>
@@ -409,6 +567,22 @@
 					<option value="1">Yes</option>
 				</field>
 				
+				<field name="" type="spacer" default="" label="Fixed Header and Menu" description="" />
+				
+				<field name="fixedHeader" class="" type="list" default="0" label="Fixed Header and Menu?" description="If you want to hide/show header and Menu on scroll up/down">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="fixedHeaderSize" class="" type="text" default="100" label="Enable Height" description="Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)" 
+				/>
+				<field name="fixedHeaderSpeed" class="" type="text" default="400" label="Ease Speed" description="Define header ease slideUp/slideDown speed in ms default 400" />
+			
+			</fieldset>
+			
+			<!-- S3TEMPLATECONFIG -->
+            <fieldset name="S3TEMPLATECONFIG">
+
 				<field name="analytics" class="" type="text" default="" 
 				label="Google Analytic" description="Type your Google Analytic code (UA-XXXXXXXX-X) here." />
 
@@ -436,17 +610,6 @@
 				<field name="documentGenerator" class="" type="text" default="Shaz3e - The Revealing Paradigm"
 				label="Type Meta Generator" description="Type your custom meta generator text here." />
 
-				<field name="" type="spacer" default="" label="Fixed Header and Menu" description="" />
-				
-				<field name="fixedHeader" class="" type="list" default="0" label="Fixed Header and Menu?" description="If you want to hide/show header and Menu on scroll up/down">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
-				</field>
-				
-				<field name="fixedHeaderSize" class="" type="text" default="100" label="Enable Height" description="Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)" 
-				/>
-				<field name="fixedHeaderSpeed" class="" type="text" default="400" label="Ease Speed" description="Define header ease slideUp/slideDown speed in ms default 400" />
-								
             </fieldset>
 		
 		</fields>

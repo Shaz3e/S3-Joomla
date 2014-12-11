@@ -6,47 +6,53 @@
 		 $this->countModules('content-bottom-1') || 
 		 $this->countModules('content-bottom-2') || 
 		 $this->countModules('content-bottom-3') ||
-		 $this->countModules('content-bottom-bottom')): ?>
-<section class="dc-content-bottom">
-	<div id="dc-content-bottom">
-    	<div id="dc-modules">
-        	<div class="dc-clear"></div>
-            	<jdoc:include type="modules" name="content-bottom" style="shaz3e" />
+		 $this->countModules('content-bottom-bottom')
+		 ): ?>
+<section class="dc-content-bottom" id="dc-content-bottom">
+
+	<?php if($this->countModules('content-bottom')): ?>
+	    <jdoc:include type="modules" name="content-bottom" style="shaz3e" />
+    	<div class="dc-clear"></div>
+    <?php endif; ?>
 				<?php
                     if($this->countModules('content-bottom-1')){
-                        $contentBottoms["mod1"] = '<jdoc:include type="modules" name="content-bottom-1" style="shaz3e" />';
+                        $contentbottoms["content-bottom1"] = '<jdoc:include type="modules" name="content-bottom-1" style="shaz3e" />';
                     }
                     if($this->countModules('content-bottom-2')){
-                        $contentBottoms["mod2"] = '<jdoc:include type="modules" name="content-bottom-2" style="shaz3e" />';
+                        $contentbottoms["content-bottom2"] = '<jdoc:include type="modules" name="content-bottom-2" style="shaz3e" />';
                     }
                     if($this->countModules('content-bottom-3')){
-                        $contentBottoms["mod3"] = '<jdoc:include type="modules" name="content-bottom-3" style="shaz3e" />';
+                        $contentbottoms["content-bottom3"] = '<jdoc:include type="modules" name="content-bottom-3" style="shaz3e" />';
                     }
-                if(isset($contentBottoms)){
-                    $result = count($contentBottoms);
-                    foreach($contentBottoms as $contentBottom => $name){
-                
+                if(isset($contentbottoms)){
+                    $result = count($contentbottoms);
+                    foreach($contentbottoms as $contentbottom => $name){
                         if($result == 3){
-                            echo '<div class="dc-modules3">';
-                            echo $name;
+                            echo '<div class="col-3">';
+    	                        echo $name;
                             echo '</div>';
                         }
                         if($result == 2){
-                            echo '<div class="dc-modules2">';
-                            echo $name;
+                            echo '<div class="col-2">';
+	                            echo $name;
                             echo '</div>';
                         }
                         if($result == 1){
-                            echo '<div class="dc-modules1">';
-                            echo $name;
+                            echo '<div class="col-1">';
+                            	echo $name;
                             echo '</div>';
                         }
                     }
+					// clearfix
+					echo '<div class="dc-clear"></div>';
                 }
                 ?>
-            	<jdoc:include type="modules" name="content-bottom-bottom" style="shaz3e" />
-			<div class="dc-clear"></div>
-		</div>
-	</div>
+                
+
+	<?php if($this->countModules('content-bottom-bottom')): ?>
+    	<jdoc:include type="modules" name="content-bottom-bottom" style="shaz3e" />
+    	<div class="dc-clear"></div>
+	<?php endif; ?>
+
 </section>
 <?php endif; ?>

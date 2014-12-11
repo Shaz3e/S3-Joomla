@@ -1,8 +1,7 @@
 ## S3 Framework - Responsive Template System for Joomla
 
 [![S3Framework](http://img.shields.io/badge/S3Framework-beta-blue.svg)](http://www.shaz3e.com)
-[![Version](http://img.shields.io/badge/Version-3.3--b197-green.svg)](http://www.shaz3e.com)
-[![Build](http://img.shields.io/badge/Build--Type-Beta-green.svg)](http://www.shaz3e.com)
+[![Version](http://img.shields.io/badge/Version-3.3_b198-green.svg)](http://www.shaz3e.com)
 [![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)
 
 

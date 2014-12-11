@@ -1,8 +1,10 @@
 ## S3 Framework - Responsive Template System for Joomla
 
-| Current Version | Compatibility | Build Status  | Download S3 |
-|:---------------:|:-------------:|:-------------:|:------------|
-|3.2 Stable|Joomla 2.5 & Joomla 3.x|[![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)|[Download Now](http://shaz3e.com/downloads)|
+[![S3Framework](http://img.shields.io/badge/S3Framework-beta-blue.svg)](http://www.shaz3e.com)
+[![Build number](http://img.shields.io/badge/Version-3.3-green.svg)](http://www.shaz3e.com)
+[![Usage](http://img.shields.io/badge/Usage-Development-red.svg)](http://www.shaz3e.com)
+[![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)
+
 
 S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap 3 Responsive Images and Less
 
@@ -19,8 +21,8 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Full extensible framework architecture
 
 ### Features
- - 6 Columns Grid System
- - 150+ Module Positions
+ - 12 Columns Grid System
+ - 300+ Module Positions
  - Full width Modules Added in v3.2
  - Suitable with any design
  - IE7 and IE8 Supported

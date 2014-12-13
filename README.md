@@ -1,7 +1,7 @@
 ## S3 Framework - Responsive Template System for Joomla
 
 [![S3Framework](http://img.shields.io/badge/S3Framework-beta-blue.svg)](http://www.shaz3e.com)
-[![Version](http://img.shields.io/badge/Version-3.3_b198-green.svg)](http://www.shaz3e.com)
+[![Version](http://img.shields.io/badge/Version-3.3_b2.0-green.svg)](http://www.shaz3e.com)
 [![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)
 
 
@@ -32,7 +32,6 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Show or hide component area on front page
  - Show or hide main body container
  - Custom theme's module styles with themes/style1/theme_modules.less file
- - s3-elements folder contains s3-button.less s3-typography.less, s3-form-elements.less (where you can update your own customize styles)
  - Less Development Mode Enable / Disable
  - Use Google Analytics Code
  - Show or Hide Copyright

@@ -21,16 +21,11 @@ defined('_JEXEC') or die;
 
 <jdoc:include type="head" />
 
-<?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_styles.php'); ?>
-<?php if($this->params->get('LocalCDN')): ?>
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.0.0-b2/less.min.js"></script>
-<?php else: ?>
-	<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/less.js"></script>
-<?php endif; ?>
-
-<?php
-// Less Development Mode
+<?php // Less Development Mode
 if($this->params->get('developmentMode')): ?>
+	<link rel="stylesheet/less" type="text/css" href="<?php echo $dcTemplatePath; ?>/themes/style<?php echo $this->params->get('style'); ?>/style.less">
+	<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/less.js"></script>
+    
 	<script type="text/javascript">
          less.env = "development";
          less.watch();

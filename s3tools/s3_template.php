@@ -76,156 +76,177 @@ defined('_JEXEC') or die;
     </div>
 <?php endif; ?>
 
-<?php if($left_right): ?>
-<section class="dc-left-right">
-    <div id="dc-left-right">
-        <div class="dc-modules">
-            <div id="dc-modules-left-right">
-                <div class="dc-clear"></div>
-                    <?php if($this->countModules('top-right')): ?>
-                    <div class="dc-modules2">
-                        <div class="dc-right">
-                            <jdoc:include type="modules" name="top-right" style="shaz3e" />
-                        </div>
-                    </div>
-                    <?php endif; ?>
-                    <?php if($this->countModules('top-left')): ?>
-                    <div class="dc-modules2">
-                        <div class="dc-left">
-                            <jdoc:include type="modules" name="top-left" style="shaz3e" />
-                        </div>
-                    </div>
-                    <?php endif; ?>
-                <div class="dc-clear"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<?php endif; ?>
-
-<?php if($topModules || $modTopModules): ?>
-<section class="dc-top dc-clear">
+<?php if($topModules || $gridTopModules): ?>
+<section class="dc-top dc-clear" id="dc-top">
+    
+    <?php // full width module ?>
     <jdoc:include type="modules" name="top" style="shaz3e" />
-    <div id="dc-top">
-        <div class="dc-modules">
-            <div id="dc-modules-top">
-                <div class="dc-clear"></div>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/top.php"); ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-top.php"); ?>
-                <div class="dc-clear"></div>
-            </div>
-        </div>
+    
+    <div class="row">
+    
+    	<?php 
+			// column
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/top.php");
+        	
+			// grid
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-top.php");
+		?>
     </div>
+    
+    <?php // full width module ?>
     <jdoc:include type="modules" name="top-bottom" style="shaz3e" />
+    
 </section>
 <?php endif; ?>
 
 <div class="dc-fixed-header">
-    <section class="dc-header dc-clear">
-        <div id="dc-header">
-            <div class="dc-modules">
-                <div id="dc-modules-header">
-                    <div class="dc-clear"></div>
-                        <div class="dc-logo"><a href="<?php echo $this->baseurl; ?>"><?php echo $logo; ?></a></div>
-                            <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/header.php"); ?>
-                            <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-header.php"); ?>
-                    <div class="dc-clear"></div>
-                </div>
-            </div>
+    <section class="dc-header dc-clear" id="dc-header">
+        <div class="row">
+        	
+            <div class="dc-logo"><a href="<?php echo $this->baseurl; ?>"><?php echo $logo; ?></a></div>
+            
+			<?php
+				// column
+            	include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/header.php");
+				
+				// grid
+				include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-header.php");
+			?>
+            
         </div>
     </section>
 
 
-    <?php if($menuModules || $modMenuModules):?>
+    <?php if($menuModules || $gridMenuModules):?>
     <section class="dc-menu dc-clear">
+    	
+        <?php // full width module ?>
         <jdoc:include type="modules" name="menu" style="shaz3e" />
-        <div id="dc-menu">
-            <div class="dc-modules">
-                <div id="dc-modules-menu">
-                    <div class="dc-clear"></div>
-                        <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/menu.php"); ?>
-                        <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-menu.php"); ?>
-                    <div class="dc-clear"></div>
-                </div>
-            </div>
+        
+        <div class="row" id="dc-menu">
+        	<?php
+				// column
+            	include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/menu.php"); 
+				
+				// grid
+				include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-menu.php");
+			?>
         </div>
+        
+        <?php // full width module ?>
         <jdoc:include type="modules" name="menu-bottom" style="shaz3e" />
+        
     </section>
     <?php endif; ?>
-</div>
+    
+</div> <?php // header fixed ?>
 
-<?php if($breadcrumbModules || $modBreadcrumbModules): ?>
-<section class="dc-breadcrumb dc-clear">
+<?php if($breadcrumbModules || $gridBreadcrumbModules): ?>
+<section class="dc-breadcrumb dc-clear" id="dc-breadcrumb">
+
+	<?php // full width module ?>
     <jdoc:include type="modules" name="breadcrumb" style="shaz3e" />
-    <div id="dc-breadcrumb">
-        <div class="dc-modules">
-            <div id="dc-modules-breadcrumb">
-                <div class="dc-clear"></div>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/breadcrumb.php"); ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-breadcrumb.php"); ?>
-                <div class="dc-clear"></div>
-            </div>
-        </div>
+
+    <div class="row">
+    <?php
+    	// column
+		include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/breadcrumb.php");
+		
+		// grid
+		include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-breadcrumb.php");
+	?>
+
     </div>
+	
+    <?php // full width module ?>
     <jdoc:include type="modules" name="breadcrumb-bottom" style="shaz3e" />
+    
 </section>
 <?php endif; ?>
 
-<?php if($slideshowModules || $modSlideshowModules): ?>
-<section class="dc-slideshow dc-clear">
+
+<?php if($slideshowModules || $gridSlideshowModules): ?>
+<section class="dc-slideshow dc-clear" id="dc-slideshows">
+    
+    <?php // full width module ?>
     <jdoc:include type="modules" name="slideshow" style="shaz3e" />
-    <div id="dc-slideshow">
-        <div class="dc-modules">
-            <div id="dc-modules-slideshow">
-                <div class="dc-clear"></div>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/slideshow.php"); ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-slideshow.php"); ?>
-                <div class="dc-clear"></div>
-            </div>
-        </div>
+    
+    <div class="row">
+	
+    	<?php
+        	// column
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/slideshow.php");
+			
+			// grid
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-slideshow.php");
+		?>
+        
     </div>
+    
+    <?php // full width module ?>
     <jdoc:include type="modules" name="slideshow-bottom" style="shaz3e" />
+    
 </section>
 <?php endif; ?>
 
-<?php if($showcaseModules || $modShowcaseModules): ?>
-<section class="dc-showcase dc-clear">
+<?php if($showcaseModules || $gridShowcaseModules): ?>
+<section class="dc-showcase dc-clear" id="dc-showcase">
+
+	<?php // full width module ?>
     <jdoc:include type="modules" name="showcase" style="shaz3e" />
-    <div id="dc-showcase">
-        <div class="dc-modules">
-            <div id="dc-modules-showcase">
-                <div class="dc-clear"></div>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/showcase.php"); ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-showcase.php"); ?>
-                <div class="dc-clear"></div>
-            </div>
-        </div>
+    
+    <div class="row">
+    	<?php
+        	// column
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/showcase.php");
+			
+			// grid
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-showcase.php");
+		?>
     </div>
+
+	<?php // full width module ?>
     <jdoc:include type="modules" name="showcase-bottom" style="shaz3e" />
+
 </section>
 <?php endif; ?>
 
-<?php if($featureModules || $modFeatureModules || $bottomFeatureModules || $modBottomFeatureModules): ?>
-<section class="dc-feature dc-clear">
+<?php if($featureModules || $gridFeatureModules || $bottomFeatureModules || $gridBottomFeatureModules): ?>
+<section class="dc-feature dc-clear" id="dc-feature">
+    
+    <?php // full width module ?>
     <jdoc:include type="modules" name="feature" style="shaz3e" />
-    <div id="dc-feature">
-        <div class="dc-modules">
-            <div id="dc-modules-feature">
-                <div class="dc-clear"></div>
-                <?php if($featureModules || $modFeatureModules): ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/feature.php"); ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-feature.php"); ?>
-                <div class="dc-clear"></div>
-                <?php endif; ?>
-                <?php if($bottomFeatureModules || $modBottomFeatureModules): ?>
-                        <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/bottom-feature.php"); ?>
-                        <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-bottom-feature.php"); ?>
-                    <div class="dc-clear"></div>
-                <?php endif; ?>
-            </div>
-        </div>
+    
+    
+    <div class="row">
+    
+		<?php
+        	if($featureModules || $gridFeatureModules):
+			
+				// column
+				include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/feature.php");
+				
+				// grid
+				include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-feature.php");
+			
+				echo '<div class="dc-clear"></div>';
+			endif;
+			
+			if($bottomFeatureModules || $gridBottomFeatureModules):
+			
+				// column
+				include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/bottom-feature.php");
+
+				// grid
+				include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-bottom-feature.php");
+				
+			endif;
+		?>
     </div>
+
+	<?php // ful width module ?>
     <jdoc:include type="modules" name="feature-bottom" style="shaz3e" />
+    
 </section>
 <?php endif; ?>
 
@@ -244,161 +265,137 @@ defined('_JEXEC') or die;
 
 ?>
 
-<?php if($utilityModules || $modUtilityModules): ?>
-<section class="dc-utility dc-clear">
+<?php if($utilityModules || $gridUtilityModules): ?>
+<section class="dc-utility dc-clear" id="dc-utility">
+	
+    <?php // full width module ?>
     <jdoc:include type="modules" name="utility" style="shaz3e" />
-    <div id="dc-utility">
-        <div class="dc-modules">
-            <div id="dc-modules-utility">
-                <div class="dc-clear"></div>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/utility.php"); ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-utility.php"); ?>
-                <div class="dc-clear"></div>
-            </div>
-        </div>
+    
+    <div class="row">
+    	<?php
+        	// column
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/utility.php");
+			
+			// grid
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-utility.php");
+		?>
     </div>
+    
+    <?php // full width module ?>
     <jdoc:include type="modules" name="utility-bottom" style="shaz3e" />
+    
 </section>
 <?php endif; ?>
 
-<?php if($scrollerModules || $scrollerModules): ?>
-<section class="dc-scroller dc-clear">
+<?php if($scrollerModules || $gridScrollerModules): ?>
+<section class="dc-scroller dc-clear" id="dc-scroller">
+
+	<?php // full width module ?>
     <jdoc:include type="modules" name="scroller" style="shaz3e" />
-    <div id="dc-scroller">
-        <div class="dc-modules">
-            <div id="dc-modules-scroller">
-                <div class="dc-clear"></div>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/scroller.php"); ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-scroller.php"); ?>
-                <div class="dc-clear"></div>
-            </div>
-        </div>
+    <div class="row">
+    	<?php
+			// column
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/scroller.php");
+			
+			// grid
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-scroller.php");
+		?>
     </div>
+    
+    <?php // full width module ?>
     <jdoc:include type="modules" name="scroller-bottom" style="shaz3e" />
+    
 </section>
 <?php endif; ?>
 
-<?php if($extensionModules || $modExtensionModules): ?>
-<section class="dc-extension dc-clear">
+<?php if($extensionModules || $gridExtensionModules): ?>
+<section class="dc-extension dc-clear" id="dc-extension">
+
+	<?php // full width module ?>
     <jdoc:include type="modules" name="extension" style="shaz3e" />
-    <div id="dc-extension">
-        <div class="dc-modules">
-            <div id="dc-modules-extension">
-                <div class="dc-clear"></div>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/extension.php"); ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-extension.php"); ?>
-                <div class="dc-clear"></div>
-            </div>
-        </div>
+    
+    <div class="row">
+    <?php
+    
+		// column
+		include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/extension.php");
+		
+		// grid
+		include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-extension.php");
+	?>
+
     </div>
+    
+	<?php // full width module ?>
     <jdoc:include type="modules" name="extension-bottom" style="shaz3e" />
+    
 </section>
 <?php endif; ?>
 
-<?php if($bottomModules || $modBottomModules): ?>
-<section class="dc-bottom dc-clear">
+<?php if($bottomModules || $gridBottomModules): ?>
+<section class="dc-bottom dc-clear" id="dc-bottom">
+
+	<?php // full width module ?>
     <jdoc:include type="modules" name="bottom" style="shaz3e" />
-    <div id="dc-bottom">
-        <div class="dc-modules">
-            <div id="dc-modules-bottom">
-                <div class="dc-clear"></div>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/bottom.php"); ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-bottom.php"); ?>
-                <div class="dc-clear"></div>
-            </div>
-        </div>
+    <div class="row">
+    <?php
+    	// column
+		include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/bottom.php");
+		
+		// grid
+		include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-bottom.php");
+	?>
     </div>
+    
+    <?php // full width module ?>
     <jdoc:include type="modules" name="bottom-bottom" style="shaz3e" />
+	
 </section>
 <?php endif; ?>
 
-<?php if($footerModules || $modFooterModules || $bottomFooterModules || $modBottomFooterModules): ?>
-<footer class="dc-footer dc-clear">
+<?php if($footerModules || $gridFooterModules || $bottomFooterModules || $gridBottomFooterModules): ?>
+<footer class="dc-footer dc-clear" id="dc-footer">
+
+	<?php // full width module ?>
     <jdoc:include type="modules" name="footer" style="shaz3e" />
-    <div id="dc-footer">
-        <div class="dc-modules">
-            <div id="dc-modules-footer">
-                <div class="dc-clear"></div>
-                <?php if($footerModules || $modFooterModules): ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/footer.php"); ?>
-                    <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-footer.php"); ?>
-                <div class="dc-clear"></div>
-                <?php endif; ?>
-                <?php if($bottomFooterModules || $modBottomFooterModules): ?>
-                        <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/bottom-footer.php"); ?>
-                        <?php include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/mod-bottom-footer.php"); ?>
-                <div class="dc-clear"></div>
-                <?php endif; ?>
-            </div>
-        </div>
+    
+    <div class="row">
+    
+	<?php
+    	if($footerModules || $gridFooterModules):
+		
+			// column
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/footer.php");
+			
+			// grid
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-footer.php");
+		
+			echo '<div class="dc-clear"></div>';
+		
+		endif;
+		
+		if($bottomFooterModules || $gridBottomFooterModules):
+		
+			// column
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/bottom-footer.php");
+			
+			// grid
+			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-bottom-footer.php");
+		endif;
+	?>
+
     </div>
+    
+	<?php // full width module ?>
     <jdoc:include type="modules" name="footer-bottom" style="shaz3e" />
+    
 </footer>
 <?php endif; ?>
 
-<?php if($this->params->get('credit') || $this->params->get('copyright') || $this->params->get('shaz3e')): ?>
-<section class="DiligentCreators">
-    <div id="DiligentCreators">
-        <?php if($this->params->get('credit') || $this->params->get('copyright')): ?>
-            <div class="dc-clear"></div>
-            <?php if($this->params->get('credit')): ?>
-            <div class="dc-credits">
-                <div id="dc-credits">
-                    <div class="dc-modules">
-                        <div id="dc-modules-DiligentCreators">
-                            <div class="dc-clear"></div>
-                                <div class="dc-block">
-                                <?php if($this->countModules('credits')): ?>
-                                    <jdoc:include type="modules" name="credits" style="s3_none" />                                
-                                <?php else: ?>
-                                    <p>Designed &amp; Developed by <a href="http://www.diligentcreators.com" title="DiligentCreators" target="_blank">DiligentCreators</a></p>
-                                <?php endif; ?>
-                                </div>
-                            <div class="dc-clear"></div>
-                        </div>
-                    </div>          
-                </div>
-            </div>
-            <?php endif; ?>
-            <?php if($this->params->get('copyright')): ?>
-            <div class="dc-copyright">
-                <div id="dc-copyright">
-                    <div class="dc-modules">
-                        <div id="dc-modules-DiligentCreators">
-                            <div class="dc-clear"></div>
-                                <div class="dc-block">
-                                <?php if($this->countModules('copyright')): ?>
-                                    <jdoc:include type="modules" name="copyright" style="s3_none" />
-                                <?php else: ?>
-                                    <p>&copy; <?php echo date('Y'); ?> <a href="<?php echo $this->baseurl; ?>" title="<?php echo $sitetitle; ?>"> <?php echo $sitename; ?></a> | All Rights Reserved.</p>
-                                <?php endif; ?>
-                                </div>
-                            <div class="dc-clear"></div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-            <?php endif; ?>
-        <?php endif; ?>
-        <div class="dc-clear"></div>
-            <?php if($this->params->get('shaz3e')): ?>
-            <a href="http://www.shaz3e.com" class="shaz3e" target="_blank" title="Shaz3e"></a>
-            <?php endif; ?>
-            <?php if($this->params->get('StyleSwitcher')){ ?>
-            <div class="dc-StyleSwitcher">
-                <div id="dc-StyleSwitcher">
-                <?php
-                    while(list($key, $value) = each($styleSheets)){ 
-                        echo "<a class='dc-style-".$key."' href='".$dcTemplatePath."/s3tools/S3StyleSwitcher.php?SETSTYLE=".$key."' title='".$value["title"]."'><span>".$value["text"]."</span></a>";
-                    } // endwhile
-                ?>
-                </div>
-            </div>
-            <?php } // endif;?>
-        <div class="dc-clear"></div>
-    </div>
-</section>
-<?php endif; ?>
+<?php 
+	// copyright / credit / framework logo / style switch
+	include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/credit.php"); 
+?>
 
 <?php if($this->params->get('fixedHeader')): ?>
 	<style type="text/css">

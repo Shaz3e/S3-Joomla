@@ -19,16 +19,8 @@
 // restricted access
 defined('_JEXEC') or die;
 
-$app = JFactory::getApplication();
-$doc = JFactory::getDocument();
-
-$this->language = $doc->language;
-$this->direction = $doc->direction;
-$dcTemplatePath = $this->baseurl.'/templates/'.$this->template;
-
-// Sitename
-$sitename = $app->getCfg('sitename');
-$sitetitle = htmlspecialchars($this->params->get('sitetitle'));
+include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_params.php');
+include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_blocks.php');
 
 if($this->params->get('LocalCDN')){
 	
@@ -64,16 +56,35 @@ if($this->params->get('LocalCDN')){
 
 }
 
+// font style sheet
+$doc->addStyleSheet('templates/'.$this->template.'/fonts/fonts.css');
+
 // Custom JavaScript File
 $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');
 
 
-include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_functions.php');
-include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_params.php');
-include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_blocks.php');
+// if development mode is off script will generate css file instead less
+if($this->params->get('developmentMode') != 1){
+	// less compiler
+	require "lessc.inc.php";
+	
+	$inputFile = JPATH_ROOT . "/templates/" . $this->template ."/themes/style". $this->params->get('style') ."/style.less";
+	$outputFile = JPATH_ROOT . "/templates/" . $this->template ."/themes/style". $this->params->get('style') ."/style.css";
+	
+	$less = new lessc;
+	$less->setFormatter("compressed");
+	$cache = $less->cachedCompile($inputFile);
+	
+	file_put_contents($outputFile, $cache["compiled"]);
+	
+	$last_updated = $cache["updated"];
+	$cache = $less->cachedCompile($cache);
+		if ($cache["updated"] > $last_updated) {
+			file_put_contents($outputFile, $cache["compiled"]);
+		}
 
-require "lessc.inc.php";
-$less = new lessc;
-$less->setFormatter("compressed");
-$less->checkedCompile(JPATH_ROOT . "/templates/" . $this->template ."/themes/style". $this->params->get('style') ."/style.less", JPATH_ROOT . "/templates/" . $this->template ."/compile/style.css");
+	// compiled css file
+	$doc->addStyleSheet($dcTemplatePath.'/themes/style'.$this->params->get('style').'/style.css');
+}
+
 ?>

@@ -18,6 +18,17 @@
 // restricted access
 defined('_JEXEC') or die;
 
+$app = JFactory::getApplication();
+$doc = JFactory::getDocument();
+
+$this->language = $doc->language;
+$this->direction = $doc->direction;
+$dcTemplatePath = $this->baseurl.'/templates/'.$this->template;
+
+// Sitename
+$sitename = $app->getCfg('sitename');
+$sitetitle = htmlspecialchars($this->params->get('sitetitle'));
+
 // meta generator
 $documentGenerator = $this->params->get('documentGenerator');
 	if($documentGenerator){

@@ -58,7 +58,7 @@ $this->direction = $doc->direction;
         <div class="dc-404-error-message">
             If difficulties persist, please contact the System Administrator of this site and report the error above.
         </div>
-        <a class="dc-404-goto-home" href="index.php" title="<?php echo JText::_('JERROR_LAYOUT_GO_TO_THE_HOME_PAGE'); ?>"><?php echo JText::_('JERROR_LAYOUT_HOME_PAGE'); ?></a>
+        <a class="dc-404-goto-home" href="<?php echo $this->baseurl;?>/index.php" title="<?php echo JText::_('JERROR_LAYOUT_GO_TO_THE_HOME_PAGE'); ?>"><?php echo JText::_('JERROR_LAYOUT_HOME_PAGE'); ?></a>
     </div>
 </body>
 </html>

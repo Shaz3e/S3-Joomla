@@ -1,8 +1,9 @@
 ## S3 Framework - Responsive Template System for Joomla
 
-| Current Version | Compatibility | Build Status  | Download S3 |
-|:---------------:|:-------------:|:-------------:|:------------|
-|3.2 Stable|Joomla 2.5 & Joomla 3.x|[![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)|[Download Now](http://shaz3e.com/downloads)|
+[![S3Framework](http://img.shields.io/badge/S3Framework-beta-blue.svg)](http://www.shaz3e.com)
+[![Version](http://img.shields.io/badge/Version-3.3_b2.0-green.svg)](http://www.shaz3e.com)
+[![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)
+
 
 S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap 3 Responsive Images and Less
 
@@ -19,8 +20,8 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Full extensible framework architecture
 
 ### Features
- - 6 Columns Grid System
- - 150+ Module Positions
+ - 12 Columns Grid System
+ - 300+ Module Positions
  - Full width Modules Added in v3.2
  - Suitable with any design
  - IE7 and IE8 Supported
@@ -28,11 +29,9 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Custom Sitename
  - Custom Logo
  - Choose from Different Styles
- - Use Style Switcher
  - Show or hide component area on front page
  - Show or hide main body container
  - Custom theme's module styles with themes/style1/theme_modules.less file
- - s3-elements folder contains s3-button.less s3-typography.less, s3-form-elements.less (where you can update your own customize styles)
  - Less Development Mode Enable / Disable
  - Use Google Analytics Code
  - Show or Hide Copyright
@@ -53,22 +52,24 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Show Main Body
  - Hide Component
 
-
-### S3 Template Configuration
-
+### Layout Settings
 - Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion
 - Show Credit "Default Show" (Hide or Show) when its hide the module still be available for this postion 
 - Show Framework Logo "Default Show" (Hide or Show)
-- Google Analytics
-- **Development Options**
-- Use Responsive Video "Default Off"
-- Development Mode "Default On"
-- js Hosted on CDN "Enable or Disable" By disabling this feature template will use all js files locally.
-- Type Meta Generator
 - **Fixed Header and Menu**
 - Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down enable this option
 - Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)
 - Ease Speed "Default 400" Low Number is Faster and Higher Number will slow down.
+
+### S3 Template Configuration
+
+- Google Analytics
+- **Development Options**
+- Use Responsive Video "Default Off"
+- Development Mode "Default On" (CSS will be auto-compilation when off)
+- js Hosted on CDN "Enable or Disable" By disabling this feature template will use all js files locally.
+- Type Meta Generator
+
 
 ### How To Use
 Visit for Complete [Documentation](http://shaz3e.com/documantation/s3-joomla)

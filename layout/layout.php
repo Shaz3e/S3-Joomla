@@ -2,12 +2,14 @@
     // restricted access
     defined('_JEXEC') or die;
 ?>
+<section class="dc-container dc-clear" id="container">
+<div class="row">
 <?php
         $app = JFactory::getApplication();
 
         if ($app->isAdmin()) return;
 
-        //Added support to show slnotificationbar based on menu items for joomla version more than 1.6
+        //Added support to hide component based on selected menu in template manager
         if (version_compare(JVERSION, '1.6.0', 'ge')) {
             $hideComponent = $this->params->get('hideComponent',array());
 
@@ -41,3 +43,5 @@
         }
 
 ?>
+</div>
+</section>

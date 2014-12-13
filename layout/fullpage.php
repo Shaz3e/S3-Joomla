@@ -1,26 +1,18 @@
 <?php
     // restricted access
     defined('_JEXEC') or die;
+	
+	echo '<div class="grid-12">';
+	
+	// content top modules
+	require_once("contentTop.php");
+	
+	// main component area
+	require_once("component.php");
+	
+	// content bottom modules
+	require_once("contentBottom.php");
+	
+	echo '</div>';
+
 ?>
-<section class="dc-container">
-<div class="dc-clear"></div>
-	<div id="dc-container">
-    <div class="dc-clear"></div>
-        <section class="dc-componentFull">
-            <?php
-                // content top modules
-                require_once("contentTop.php");
-                
-                // main component area
-                require_once("component.php");
-                
-                // content bottom modules
-                require_once("contentBottom.php");
-            ?>
-            
-        </section>        
-   	<div class="dc-clear"></div>
-    </div>
-<div class="dc-clear"></div>
-</section>
-<div class="dc-clear"></div><!--clearfix -->

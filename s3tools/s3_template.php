@@ -80,7 +80,7 @@ defined('_JEXEC') or die;
 <section class="dc-top dc-clear" id="dc-top">
     
     <?php // full width module ?>
-    <jdoc:include type="modules" name="top" style="shaz3e" />
+    <jdoc:include type="modules" name="top" style="full_width" />
     
     <div class="row">
     
@@ -94,7 +94,7 @@ defined('_JEXEC') or die;
     </div>
     
     <?php // full width module ?>
-    <jdoc:include type="modules" name="top-bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="top-bottom" style="full_width" />
     
 </section>
 <?php endif; ?>
@@ -121,7 +121,7 @@ defined('_JEXEC') or die;
     <section class="dc-menu dc-clear">
     	
         <?php // full width module ?>
-        <jdoc:include type="modules" name="menu" style="shaz3e" />
+        <jdoc:include type="modules" name="menu" style="full_width" />
         
         <div class="row" id="dc-menu">
         	<?php
@@ -134,7 +134,7 @@ defined('_JEXEC') or die;
         </div>
         
         <?php // full width module ?>
-        <jdoc:include type="modules" name="menu-bottom" style="shaz3e" />
+        <jdoc:include type="modules" name="menu-bottom" style="full_width" />
         
     </section>
     <?php endif; ?>
@@ -145,7 +145,7 @@ defined('_JEXEC') or die;
 <section class="dc-breadcrumb dc-clear" id="dc-breadcrumb">
 
 	<?php // full width module ?>
-    <jdoc:include type="modules" name="breadcrumb" style="shaz3e" />
+    <jdoc:include type="modules" name="breadcrumb" style="full_width" />
 
     <div class="row">
     <?php
@@ -159,7 +159,7 @@ defined('_JEXEC') or die;
     </div>
 	
     <?php // full width module ?>
-    <jdoc:include type="modules" name="breadcrumb-bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="breadcrumb-bottom" style="full_width" />
     
 </section>
 <?php endif; ?>
@@ -169,7 +169,7 @@ defined('_JEXEC') or die;
 <section class="dc-slideshow dc-clear" id="dc-slideshows">
     
     <?php // full width module ?>
-    <jdoc:include type="modules" name="slideshow" style="shaz3e" />
+    <jdoc:include type="modules" name="slideshow" style="full_width" />
     
     <div class="row">
 	
@@ -184,7 +184,7 @@ defined('_JEXEC') or die;
     </div>
     
     <?php // full width module ?>
-    <jdoc:include type="modules" name="slideshow-bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="slideshow-bottom" style="full_width" />
     
 </section>
 <?php endif; ?>
@@ -193,7 +193,7 @@ defined('_JEXEC') or die;
 <section class="dc-showcase dc-clear" id="dc-showcase">
 
 	<?php // full width module ?>
-    <jdoc:include type="modules" name="showcase" style="shaz3e" />
+    <jdoc:include type="modules" name="showcase" style="full_width" />
     
     <div class="row">
     	<?php
@@ -206,7 +206,7 @@ defined('_JEXEC') or die;
     </div>
 
 	<?php // full width module ?>
-    <jdoc:include type="modules" name="showcase-bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="showcase-bottom" style="full_width" />
 
 </section>
 <?php endif; ?>
@@ -215,7 +215,7 @@ defined('_JEXEC') or die;
 <section class="dc-feature dc-clear" id="dc-feature">
     
     <?php // full width module ?>
-    <jdoc:include type="modules" name="feature" style="shaz3e" />
+    <jdoc:include type="modules" name="feature" style="full_width" />
     
     
     <div class="row">
@@ -245,7 +245,7 @@ defined('_JEXEC') or die;
     </div>
 
 	<?php // ful width module ?>
-    <jdoc:include type="modules" name="feature-bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="feature-bottom" style="full_width" />
     
 </section>
 <?php endif; ?>
@@ -269,7 +269,7 @@ defined('_JEXEC') or die;
 <section class="dc-utility dc-clear" id="dc-utility">
 	
     <?php // full width module ?>
-    <jdoc:include type="modules" name="utility" style="shaz3e" />
+    <jdoc:include type="modules" name="utility" style="full_width" />
     
     <div class="row">
     	<?php
@@ -282,7 +282,7 @@ defined('_JEXEC') or die;
     </div>
     
     <?php // full width module ?>
-    <jdoc:include type="modules" name="utility-bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="utility-bottom" style="full_width" />
     
 </section>
 <?php endif; ?>
@@ -291,7 +291,7 @@ defined('_JEXEC') or die;
 <section class="dc-scroller dc-clear" id="dc-scroller">
 
 	<?php // full width module ?>
-    <jdoc:include type="modules" name="scroller" style="shaz3e" />
+    <jdoc:include type="modules" name="scroller" style="full_width" />
     <div class="row">
     	<?php
 			// column
@@ -303,7 +303,7 @@ defined('_JEXEC') or die;
     </div>
     
     <?php // full width module ?>
-    <jdoc:include type="modules" name="scroller-bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="scroller-bottom" style="full_width" />
     
 </section>
 <?php endif; ?>
@@ -312,7 +312,7 @@ defined('_JEXEC') or die;
 <section class="dc-extension dc-clear" id="dc-extension">
 
 	<?php // full width module ?>
-    <jdoc:include type="modules" name="extension" style="shaz3e" />
+    <jdoc:include type="modules" name="extension" style="full_width" />
     
     <div class="row">
     <?php
@@ -327,7 +327,7 @@ defined('_JEXEC') or die;
     </div>
     
 	<?php // full width module ?>
-    <jdoc:include type="modules" name="extension-bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="extension-bottom" style="full_width" />
     
 </section>
 <?php endif; ?>
@@ -336,7 +336,7 @@ defined('_JEXEC') or die;
 <section class="dc-bottom dc-clear" id="dc-bottom">
 
 	<?php // full width module ?>
-    <jdoc:include type="modules" name="bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="bottom" style="full_width" />
     <div class="row">
     <?php
     	// column
@@ -348,7 +348,7 @@ defined('_JEXEC') or die;
     </div>
     
     <?php // full width module ?>
-    <jdoc:include type="modules" name="bottom-bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="bottom-bottom" style="full_width" />
 	
 </section>
 <?php endif; ?>
@@ -357,7 +357,7 @@ defined('_JEXEC') or die;
 <footer class="dc-footer dc-clear" id="dc-footer">
 
 	<?php // full width module ?>
-    <jdoc:include type="modules" name="footer" style="shaz3e" />
+    <jdoc:include type="modules" name="footer" style="full_width" />
     
     <div class="row">
     
@@ -387,7 +387,7 @@ defined('_JEXEC') or die;
     </div>
     
 	<?php // full width module ?>
-    <jdoc:include type="modules" name="footer-bottom" style="shaz3e" />
+    <jdoc:include type="modules" name="footer-bottom" style="full_width" />
     
 </footer>
 <?php endif; ?>

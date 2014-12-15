@@ -50,6 +50,21 @@ defined('_JEXEC') or die;
 		<?php endif;
 	}
 
+	/**
+	 * Full width module
+	 * @since v3.3
+	 */
+	function modChrome_full_width($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+			<div class="full-width block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+			<?php if ($module->showtitle != 0) : ?>
+				<h3><?php echo spanReplace($module->title); ?></h3>
+			<?php endif; ?>
+				<?php echo $module->content; ?>
+			</div>
+		<?php endif;
+	}
+
 
 
 	/* Sidebar */

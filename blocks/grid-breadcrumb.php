@@ -21,20 +21,20 @@
 	<jdoc:include type="modules" name="grid-breadcrumb-6" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-breadcrumb-7')): ?>
-	<jdoc:include type="modules" name="grid-breadcrumb-1" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-breadcrumb-7" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-breadcrumb-8')): ?>
-	<jdoc:include type="modules" name="grid-breadcrumb-2" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-breadcrumb-8" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-breadcrumb-9')): ?>
-	<jdoc:include type="modules" name="grid-breadcrumb-3" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-breadcrumb-9" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-breadcrumb-10')): ?>
-	<jdoc:include type="modules" name="grid-breadcrumb-4" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-breadcrumb-10" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-breadcrumb-11')): ?>
-	<jdoc:include type="modules" name="grid-breadcrumb-5" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-breadcrumb-11" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-breadcrumb-12')): ?>
-	<jdoc:include type="modules" name="grid-breadcrumb-6" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-breadcrumb-12" style="shaz3e" />
 <?php endif; ?>

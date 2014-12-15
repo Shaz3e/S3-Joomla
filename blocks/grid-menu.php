@@ -21,20 +21,20 @@
 	<jdoc:include type="modules" name="grid-menu-6" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-menu-7')): ?>
-	<jdoc:include type="modules" name="grid-menu-1" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-menu-7" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-menu-8')): ?>
-	<jdoc:include type="modules" name="grid-menu-2" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-menu-8" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-menu-9')): ?>
-	<jdoc:include type="modules" name="grid-menu-3" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-menu-9" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-menu-10')): ?>
-	<jdoc:include type="modules" name="grid-menu-4" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-menu-10" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-menu-11')): ?>
-	<jdoc:include type="modules" name="grid-menu-5" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-menu-11" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-menu-12')): ?>
-	<jdoc:include type="modules" name="grid-menu-6" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-menu-12" style="shaz3e" />
 <?php endif; ?>

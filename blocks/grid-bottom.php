@@ -21,20 +21,20 @@
 	<jdoc:include type="modules" name="grid-bottom-6" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-bottom-7')): ?>
-	<jdoc:include type="modules" name="grid-bottom-1" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-bottom-7" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-bottom-8')): ?>
-	<jdoc:include type="modules" name="grid-bottom-2" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-bottom-8" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-bottom-9')): ?>
-	<jdoc:include type="modules" name="grid-bottom-3" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-bottom-9" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-bottom-10')): ?>
-	<jdoc:include type="modules" name="grid-bottom-4" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-bottom-10" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-bottom-11')): ?>
-	<jdoc:include type="modules" name="grid-bottom-5" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-bottom-11" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-bottom-12')): ?>
-	<jdoc:include type="modules" name="grid-bottom-6" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-bottom-12" style="shaz3e" />
 <?php endif; ?>

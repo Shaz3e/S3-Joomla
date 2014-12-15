@@ -21,20 +21,20 @@
 	<jdoc:include type="modules" name="grid-slideshow-6" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-slideshow-7')): ?>
-	<jdoc:include type="modules" name="grid-slideshow-1" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-slideshow-7" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-slideshow-8')): ?>
-	<jdoc:include type="modules" name="grid-slideshow-2" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-slideshow-8" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-slideshow-9')): ?>
-	<jdoc:include type="modules" name="grid-slideshow-3" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-slideshow-9" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-slideshow-10')): ?>
-	<jdoc:include type="modules" name="grid-slideshow-4" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-slideshow-10" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-slideshow-11')): ?>
-	<jdoc:include type="modules" name="grid-slideshow-5" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-slideshow-11" style="shaz3e" />
 <?php endif; ?>
 <?php if($this->countmodules('grid-slideshow-12')): ?>
-	<jdoc:include type="modules" name="grid-slideshow-6" style="shaz3e" />
+	<jdoc:include type="modules" name="grid-slideshow-12" style="shaz3e" />
 <?php endif; ?>

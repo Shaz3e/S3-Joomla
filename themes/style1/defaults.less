@@ -108,10 +108,13 @@ i.e. top margin or bottom margin for each grid
 
 /* Menu Modules */
 .dc-menu{
-	.block{margin-bottom:0;} /* hide block margin after menu */
+	.block{padding:0 !important;margin-bottom:0;} /* hide block margin/padding after menu */
 }
 
-/* component block background */
+/**
+ * component background is none when default .block is enabled
+ * default background for .block is none for page content area
+ */
 .block.dc-page-content{
   background:none !important;
 }

@@ -41,10 +41,8 @@
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<folder>blocks</folder>
-		<folder>compile</folder>
 		<folder>fonts</folder>
 		<folder>css</folder>
-		<folder>less</folder>
 		<folder>html</folder>
 		<folder>images</folder>
 		<folder>js</folder>

@@ -16,24 +16,64 @@
 \*======================================================================*/
 
 
-defined('_JEXEC') or die;
-if (!isset($this->error)) {
-	$this->error = JError::raiseWarning(404, JText::_('JERROR_ALERTNOAUTHOR'));
-	$this->debug = false;
-}
-//get language and direction
-$doc = JFactory::getDocument();
-$this->language = $doc->language;
+$app             = JFactory::getApplication();
+$doc             = JFactory::getDocument();
+$user            = JFactory::getUser();
+$this->language  = $doc->language;
 $this->direction = $doc->direction;
+
+if (!isset($this->error)) {
+    $this->error = JError::raiseWarning(404, JText::_('JERROR_ALERTNOAUTHOR'));
+    $this->debug = false;
+}
+
+$dcTemplatePath = $this->baseurl.'/templates/'.$this->template;
+
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1, user-scaleable=no">
 <meta charset="utf-8">
-	<title><?php echo $this->error->getCode(); ?> - <?php echo $this->title; ?></title>
-    <link href="<?php echo $this->baseurl.'/templates/'.$this->template; ?>/css/404.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo $this->baseurl.'/templates/'.$this->template; ?>/css/style.css" rel="stylesheet" type="text/css">
+
+<title><?php echo $this->title; ?> <?php echo htmlspecialchars($this->error->getMessage()); ?></title>
+<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/jquery.min.js"></script>
+
+
+<link href="<?php echo $dcTemplatePath; ?>/css/pace.css" rel="stylesheet" type="text/css">
+<link href="<?php echo $dcTemplatePath; ?>/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="<?php echo $dcTemplatePath; ?>/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="<?php echo $dcTemplatePath; ?>/css/404.css">
+<link rel="stylesheet" type="text/css" href="<?php echo $dcTemplatePath; ?>/fonts/fonts.css">
+<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet/less" type="text/css" href="<?php echo $dcTemplatePath; ?>/themes/style1/style.less">
+<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/less.js"></script>
+<link rel="shortcut icon" href="<?php echo $dcTemplatePath; ?>/images/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="<?php echo $dcTemplatePath; ?>/images/favicon/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="<?php echo $dcTemplatePath; ?>/images/favicon/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="<?php echo $dcTemplatePath; ?>/images/favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="<?php echo $dcTemplatePath; ?>/images/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="<?php echo $dcTemplatePath; ?>/images/favicon/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="<?php echo $dcTemplatePath; ?>/images/favicon/mstile-144x144.png">
+<meta name="msapplication-config" content="<?php echo $dcTemplatePath; ?>/images/favicon/browserconfig.xml">
+
+<!--[if lt IE 9]>
+    <link href="<?php echo $dcTemplatePath; ?>/css/ie.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/html5.js"></script>
+    <script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/respond.js"></script>
+<![endif]-->
+
 </head>
 <body class="dc-404-layout">
     <div class="dc-404">

@@ -27,7 +27,6 @@ defined('_JEXEC') or die;
     </div>
 <![endif]-->
 
-
 <?php if($this->countModules('top-left-panel')) :?>
     <div class="top-left-panel">
         <div id="top-left-panel">

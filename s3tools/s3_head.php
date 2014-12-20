@@ -16,10 +16,95 @@
 
 // restricted access
 defined('_JEXEC') or die;
-
 ?>
 
+<?php if($this->params->get('LocalCDN')){ ?>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<?php }else{ ?>
+	<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/jquery.min.js"></script>
+<?php } ?>
+
 <jdoc:include type="head" />
+
+<?php 
+
+/**
+ * Fixed header on scroll up/down slide up/down
+ * hide/show Header and Menu on scroll up/down
+ * 
+ * @var string
+ * @since S3Framework 3.3
+ */
+
+if($this->params->get('fixedHeader')):
+
+	/**
+	 * Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px) at Joomla back-end/
+	 * 
+	 * $var int
+	 * @since S3Framework 3.3
+	 */
+	$sizeHeight = $this->params->get('fixedHeaderSize');
+	
+	/**
+	 * Define header ease slideUp/slideDown speed in ms default 400 in templateDetails.xml
+	 * 
+	 * $var int
+	 * @since S3Framework 3.3
+	 */
+	$duration = $this->params->get('fixedHeaderSpeed');
+	
+	/**
+	 * Break point fixed header will show on larger than break point devices as defined at Joomla back-end.
+	 * 
+	 * $var int
+	 * @since S3Framework 3.3
+	 */
+	$breakPoint = $this->params->get('breakPoint');
+?>
+<style type="text/css">
+/* Fixed Header which works on scroll up/down */
+@media (min-width: <?php echo $breakPoint; ?>px) {
+	.dc-fixed{position:fixed;}
+	.dc-fixed-header{
+		margin:0 !important;
+		top:0;
+		display:block;
+		width:100%;
+		z-index:99999999;
+	}
+}
+</style>
+<script type="text/javascript">
+	if (document.documentElement.clientWidth >= <?php echo $breakPoint; ?> || screen.width >= <?php echo $breakPoint; ?>){
+        var dcHeader = $(window);
+        var dcHeaderPosition = dcHeader.scrollTop();
+        var up = false;
+        var newscroll;
+        dcHeader.scroll(function () {
+            newscroll = dcHeader.scrollTop();
+            if (newscroll > dcHeaderPosition && !up && newscroll > <?php echo $sizeHeight; ?>) {
+                $('.dc-fixed-header').stop().slideUp({duration:<?php echo $duration; ?>});
+                up = !up;
+                console.log(up);                
+            } else if(newscroll < dcHeaderPosition && up) {
+                $('.dc-fixed-header').stop().slideDown({duration:<?php echo $duration; ?>});
+                up = !up;
+            }
+            dcHeaderPosition = newscroll;
+        });
+
+        $(window).scroll(function() {
+            if( $(this).scrollTop()) {
+                $('.dc-fixed-header').addClass('dc-fixed');
+            }else{
+                $('.dc-fixed-header').removeClass('dc-fixed');
+            }
+        });
+    }
+</script>
+<?php endif; ?>
+
 
 <?php // Less Development Mode
 if($this->params->get('developmentMode')): ?>

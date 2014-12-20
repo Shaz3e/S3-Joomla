@@ -1,7 +1,8 @@
 ## S3 Framework - Responsive Template System for Joomla
 
 [![S3Framework](http://img.shields.io/badge/S3Framework-beta-blue.svg)](http://www.shaz3e.com)
-[![Version](http://img.shields.io/badge/Version-3.3_b2.0-green.svg)](http://www.shaz3e.com)
+[![Version](http://img.shields.io/badge/Version-3.3_Beta-green.svg)](http://www.shaz3e.com)
+[![Build](http://img.shields.io/badge/Build-2.1.2-orange.svg)](http://www.shaz3e.com)
 [![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)
 
 
@@ -53,22 +54,22 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Hide Component
 
 ### Layout Settings
-- Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion
-- Show Credit "Default Show" (Hide or Show) when its hide the module still be available for this postion 
-- Show Framework Logo "Default Show" (Hide or Show)
-- **Fixed Header and Menu**
-- Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down enable this option
-- Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)
-- Ease Speed "Default 400" Low Number is Faster and Higher Number will slow down.
+ - Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion
+ - Show Credit "Default Show" (Hide or Show) when its hide the module still be available for this postion 
+ - Show Framework Logo "Default Show" (Hide or Show)
+ - **Fixed Header and Menu**
+ - Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down enable this option
+ - Break Point Type your break point (only number) i.e. (768 for tablet) fixed header will show on larger than break point defined here.
+ - Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)
+ - Ease Speed "Default 400" Low Number is Faster and Higher Number will slow down.
 
 ### S3 Template Configuration
-
-- Google Analytics
-- **Development Options**
-- Use Responsive Video "Default Off"
-- Development Mode "Default On" (CSS will be auto-compilation when off)
-- js Hosted on CDN "Enable or Disable" By disabling this feature template will use all js files locally.
-- Type Meta Generator
+ - Google Analytics
+ - **Development Options**
+ - Use Responsive Video "Default Off"
+ - Development Mode "Default Off" (CSS will be auto-compilation when off)
+ - js Hosted on CDN "Enable or Disable" By disabling this feature template will use all js files locally.
+ - Type Meta Generator
 
 
 ### How To Use

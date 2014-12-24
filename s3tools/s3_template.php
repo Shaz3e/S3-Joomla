@@ -249,7 +249,7 @@ defined('_JEXEC') or die;
 </section>
 <?php endif; ?>
 
-<?php 
+<?php
 
     $app = JFactory::getApplication();
     $menu = $app->getMenu();
@@ -261,7 +261,6 @@ defined('_JEXEC') or die;
     }else{
         include_once(JPATH_ROOT . "/templates/" . $this->template . "/layout/layout.php"); 
     }
-
 ?>
 
 <?php if($utilityModules || $gridUtilityModules): ?>

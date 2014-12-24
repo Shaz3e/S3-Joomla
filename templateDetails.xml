@@ -299,7 +299,7 @@
 		<position>grid-bottom-feature-10</position>
 		<position>grid-bottom-feature-11</position>
 		<position>grid-bottom-feature-12</position>
-		
+
 		<!-- Sidebar Modules -->
 		<position>left</position>
 		<position>right</position>
@@ -310,6 +310,23 @@
 		<position>content-top-2</position>
 		<position>content-top-3</position>
 		<position>content-top-bottom</position>
+		
+		<!-- component Modules -->
+		<position>component</position>
+		<position>component-top</position>
+		<position>component-1</position>
+		<position>component-2</position>
+		<position>component-3</position>
+		<position>component-4</position>
+		<position>component-5</position>
+		<position>component-6</position>
+		<position>component-7</position>
+		<position>component-8</position>
+		<position>component-9</position>
+		<position>component-10</position>
+		<position>component-11</position>
+		<position>component-12</position>
+		<position>component-bottom</position>
 		
 		<!-- Content-bottom Modules -->
 		<position>content-bottom</position>

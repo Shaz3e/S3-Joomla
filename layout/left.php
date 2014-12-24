@@ -2,7 +2,7 @@
     // restricted access
     defined('_JEXEC') or die;
 ?>
-<?php if($this->countModules('left') || $this->countModules('left-left')): ?>
+<?php if($this->countModules('left')): ?>
 <aside class="grid-3 dc-left-sidebar dc-clear">
 	<div id="dc-left-sidebar">
     	<div class="dc-sidebar">

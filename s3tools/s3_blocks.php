@@ -227,6 +227,36 @@ $gridBottomFeatureModules = $this->countModules('grid-bottom-feature-1') ||
 				 $this->countModules('grid-bottom-feature-11') || 
 				 $this->countModules('grid-bottom-feature-12');
 
+// Component Modules
+$componentModules = $this->countModules('component') || $this->countModules('component-top') || 
+			  $this->countModules('component-1') || 
+			  $this->countModules('component-2') || 
+			  $this->countModules('component-3') || 
+			  $this->countModules('component-4') || 
+			  $this->countModules('component-5') || 
+			  $this->countModules('component-6') ||
+			  $this->countModules('component-7') || 
+			  $this->countModules('component-8') || 
+			  $this->countModules('component-9') || 
+			  $this->countModules('component-10') || 
+			  $this->countModules('component-11') || 
+			  $this->countModules('component-12') || 
+				  $this->countModules('component-bottom');
+
+// grid Component Modules	
+$gridcomponentModules = $this->countModules('grid-component-1') || 
+				 $this->countModules('grid-component-2') || 
+				 $this->countModules('grid-component-3') || 
+				 $this->countModules('grid-component-4') || 
+				 $this->countModules('grid-component-5') || 
+				 $this->countModules('grid-component-6') ||
+				 $this->countModules('grid-component-7') || 
+				 $this->countModules('grid-component-8') || 
+				 $this->countModules('grid-component-9') || 
+				 $this->countModules('grid-component-10') || 
+				 $this->countModules('grid-component-11') || 
+				 $this->countModules('grid-component-12');
+
 // Utility Modules
 $utilityModules = $this->countModules('utility') || 
 			  $this->countModules('utility-1') || 

@@ -30,6 +30,7 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Custom Sitename
  - Custom Logo
  - Choose from Different Styles
+ - Enable Modules (component / component-top / component-(1 to 12) / component-bottom) to hide Component
  - Show or hide component area on front page
  - Show or hide main body container
  - Custom theme's module styles with themes/style1/theme_modules.less file

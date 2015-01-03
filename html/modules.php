@@ -30,15 +30,180 @@ defined('_JEXEC') or die;
 		return $title;
 	}
 
+	/** Grid Module Style
+	 * 
+	 * @since v3.3
+	 */
+	function modChrome_grid_1($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-1">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_2($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-2">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_3($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-3">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_4($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-4">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_5($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-5">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_6($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-6">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_7($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-7">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_8($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-8">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_9($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-9">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_10($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-10">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_11($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-11">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
+	
+	function modChrome_grid_12($module, &$params, &$attribs){
+		if (!empty ($module->content)) : ?>
+        	<div class="grid-12">
+                <div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+                <?php if ($module->showtitle != 0) : ?>
+                    <h3><?php echo spanReplace($module->title); ?></h3>
+                <?php endif; ?>
+                    <?php echo $module->content; ?>
+                </div>
+            </div>
+		<?php endif;
+	}
 
-
+	/** Default Module Style
+	 *
+	 * @since v1.0
+	 */
 	function modChrome_s3_none($module, &$params, &$attribs){
 		echo $module->content;
 	}
 
 
 
-	/* Default Module Style */
+	/** Default Module Style
+	 *
+	 * @since v1.0
+	 */
 	function modChrome_shaz3e($module, &$params, &$attribs){
 		if (!empty ($module->content)) : ?>
 			<div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">

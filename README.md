@@ -5,9 +5,6 @@
 [![Build](http://img.shields.io/badge/Build-2.1.2-orange.svg)](http://www.shaz3e.com)
 [![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)
 
-
-S3 Responsive Framework for Joomla 2.5 & Joomla 3.x integrated with Bootstrap 3 Responsive Images and Less
-
 ### S3 Framework Base Theme
 The S3 Framework base theme is a clean modern responsive design that is a great place to start when building your custom S3 powered theme.
 
@@ -19,6 +16,10 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - LESS CSS auto-compilation
  - Flexible widgets for template customization
  - Full extensible framework architecture
+ - Responsive elements with [Bootstrap](http://getbootstrap.com/).
+ - Font Icons with [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
+ - Less compiler as [lessphp](http://leafo.net/lessphp/).
+ - Responsive Video with [FitVids.js](https://github.com/davatron5000/FitVids.js).
 
 ### Features
  - 12 Columns Grid System
@@ -39,9 +40,6 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Show or Hide Copyright
  - Show or Hide Framework Logo
  - Use Custom Meta Generator
- - Less compiler as [lessphp](http://leafo.net/lessphp/)
- - Responsive Video with [FitVids.js](https://github.com/davatron5000/FitVids.js).
- - Font Icons [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
  
 ### Style Options
 

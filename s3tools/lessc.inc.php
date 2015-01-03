@@ -1,5 +1,8 @@
 <?php
 
+// restricted access
+defined('_JEXEC') or die;
+
 /**
  * lessphp v0.4.0
  * http://leafo.net/lessphp

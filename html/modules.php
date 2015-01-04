@@ -246,7 +246,7 @@ defined('_JEXEC') or die;
 	
 	function modChrome_s3_header($module, &$params, &$attribs){
 		if (!empty ($module->content)) : ?>
-			<div class="block <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+			<div class="<?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
 				<?php echo $module->content; ?>
 			</div>
 		<?php endif;

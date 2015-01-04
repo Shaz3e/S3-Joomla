@@ -111,20 +111,6 @@
 		<position>header-3</position>
 		<position>header-4</position>
 		
-		<!-- Top grid-header Modules -->
-		<position>grid-header-1</position>
-		<position>grid-header-2</position>
-		<position>grid-header-3</position>
-		<position>grid-header-4</position>
-		<position>grid-header-5</position>
-		<position>grid-header-6</position>
-		<position>grid-header-7</position>
-		<position>grid-header-8</position>
-		<position>grid-header-9</position>
-		<position>grid-header-10</position>
-		<position>grid-header-11</position>
-		<position>grid-header-12</position>
-		
 		<!-- Menu Modules -->
 		<position>menu</position>
 		<position>menu-1</position>
@@ -530,7 +516,6 @@
 	<config>
 		<fields name="params">
 				
-			<!-- STYLE -->
             <fieldset name="STYLE">
 				<field name="sitetitle" class="" type="text" default="" 
 				label="Site Name" description="Type your sitename here, if its black the default will be use" />
@@ -568,7 +553,66 @@
                        description="Hide Component (Body Container) on certain pages which are selected" />
             </fieldset>
 			
+            <fieldset name="LIBRARY">
+				<field name="loadjQuery" type="list" default="0" 
+					label="Use jQuery addScript" 
+					description="If you want to load jQuery as addScript select yes otherwise select no to load jquery before everything. Caution: If you are using addScript fixed header on scroll up/down won't work."> 
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="loadBootstrap" type="list" default="1" 
+					label="Use Bootstrap" 
+					description="Enable or Disable Bootstrap and Theme"> 
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="loadFontAwesome" type="list" default="1" 
+					label="Use Font Awesome" 
+					description="Enable or Disable Font Awesome for Icons"> 
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="ResponsiveVideo" class="" type="list" default="0" label="Use Responsive Video" description="">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+			</fieldset>
+			
 			<fieldset name="LAYOUTS">
+			
+				<field name="logoGridClass" class="" type="list" default="3" label="Set Logo Column" description="Select the number of columns for logo i.e. if 3 is selected for logo columns header modules next to logo will be automatically adjusted to 9">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
+				
+				<field name="sidebarGridClass" class="" type="list" default="3" label="Set Sidebar Column" description="Select the number of columns for left/right sidebars component area will be automatically adjusted with 2 columns or 3 columns layouts">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
 			
 				<field name="copyright" class="" type="list" default="1" label="Show Copyright" description="You can Show or Hide copyright information here.">
 					<option value="0">No</option>
@@ -606,11 +650,6 @@
 				label="Google Analytic" description="Type your Google Analytic code (UA-XXXXXXXX-X) here." />
 
 				<field name="" type="spacer" default="" label="Development Options" description="" />
-				
-				<field name="ResponsiveVideo" class="" type="list" default="0" label="Use Responsive Video" description="">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
-				</field>
 				
 				<field name="developmentMode" type="list" default="0" 
 					label="Development Mode?" 

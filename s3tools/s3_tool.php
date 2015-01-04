@@ -25,13 +25,23 @@ include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_blocks.
 if($this->params->get('LocalCDN')){
 	
 	// Add Stylesheets
-	$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
-	$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css');
-	$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css');
+	if($this->params->get('loadFontAwesome')){
+		$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+	}
+	
+	if($this->params->get('loadBootstrap')){
+		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css');
+		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css');
+	}
 	
 	// Add Javascripts
-	//$doc->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 'text/javascript');
-	$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', 'text/javascript');
+	if($this->params->get('loadjQuery') == 1){
+		$doc->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 'text/javascript');
+	}
+	
+	if($this->params->get('loadBootstrap')){
+		$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', 'text/javascript');
+	}
 	
 	// jQuery FitVIDS
 	if($this->params->get('ResponsiveVideo')){
@@ -41,13 +51,22 @@ if($this->params->get('LocalCDN')){
 }else{
 
 	// Add Stylesheets
-	$doc->addStyleSheet('templates/'.$this->template.'/font-awesome/css/font-awesome.min.css');
-	$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
-	$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
+	if($this->params->get('loadFontAwesome')){
+		$doc->addStyleSheet('templates/'.$this->template.'/font-awesome/css/font-awesome.min.css');
+	}
+		
+	if($this->params->get('loadBootstrap')){
+		$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
+		$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
+	}
 	
 	// Add Javascripts
-	//$doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
-	$doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
+	if($this->params->get('loadjQuery') == 1){
+		$doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
+	}
+	if($this->params->get('loadBootstrap')){
+		$doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
+	}
 	
 	// jQuery FitVIDS
 	if($this->params->get('ResponsiveVideo')){

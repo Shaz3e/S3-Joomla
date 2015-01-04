@@ -48,6 +48,11 @@ $gridTopModules = $this->countModules('grid-top-1') ||
 				  $this->countModules('grid-top-10') || 
 				  $this->countModules('grid-top-11') || 
 				  $this->countModules('grid-top-12');
+// Header Modules
+$headerModules = $this->countModules('header-1') || 
+				$this->countModules('header-2') || 
+				$this->countModules('header-3') || 
+				$this->countModules('header-4');
 
 // Menu Modules
 $menuModules = $this->countModules('menu') || 

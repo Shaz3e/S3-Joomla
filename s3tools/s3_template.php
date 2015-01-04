@@ -101,16 +101,25 @@ defined('_JEXEC') or die;
 <div class="dc-fixed-header">
     <section class="dc-header dc-clear" id="dc-header">
         <div class="row">
-        	
-            <div class="dc-logo"><a href="<?php echo $this->baseurl; ?>"><?php echo $logo; ?></a></div>
+        	<div class="grid-<?php echo $this->params->get('logoGridClass'); ?>">
+            	<div class="block">
+	            	<div class="dc-logo"><a href="<?php echo $this->baseurl; ?>"><?php echo $logo; ?></a></div>
+                </div>
+            </div>
             
-			<?php
-				// column
-            	include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/header.php");
-				
-				// grid
-				include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-header.php");
-			?>
+            <?php if($headerModules): ?>
+                <div class="grid<?php echo $this->params->get('logoGridClass') - 12; ?>">
+                    <div class="block">
+                    <?php
+                        // column
+                        include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/header.php");
+                        
+                        // grid
+                        include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-header.php");
+                    ?>
+                    </div>
+                </div>
+            <?php endif; ?>
             
         </div>
     </section>

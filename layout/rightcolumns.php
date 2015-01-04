@@ -17,7 +17,10 @@
 // restricted access
 defined('_JEXEC') or die;
 	
-	echo '<div class="grid-9">';
+	$grid = 12;
+	$params = $this->params->get('sidebarGridClass');
+	$paramGrid = $params - $grid;
+	echo '<div class="grid'.  $paramGrid .'">';
 	
 	// content top modules
 	require_once("contentTop.php");

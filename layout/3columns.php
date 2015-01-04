@@ -20,7 +20,10 @@ defined('_JEXEC') or die;
 	// left sidebar modules
 	require_once("left.php");
 	
-	echo '<div class="grid-6">';
+	$grid = 12;
+	$params = $this->params->get('sidebarGridClass') + $this->params->get('sidebarGridClass');
+	$paramGrid = $params - $grid;
+	echo '<div class="grid'.  $paramGrid .'">';
 	
 	// content top modules
 	require_once("contentTop.php");

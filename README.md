@@ -1,4 +1,5 @@
-## S3 Framework - Responsive Template System for Joomla
+## S3 Framework
+####Create beautiful responsive Joomla templates more easier and faster.
 
 [![S3Framework](http://img.shields.io/badge/S3Framework-beta-blue.svg)](http://www.shaz3e.com)
 [![Version](http://img.shields.io/badge/Version-3.3_Stable-green.svg)](http://www.shaz3e.com)

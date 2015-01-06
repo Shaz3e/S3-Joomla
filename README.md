@@ -1,9 +1,9 @@
 ## S3 Framework
 ####Create beautiful responsive Joomla templates more easier and faster.
 
-[![S3Framework](http://img.shields.io/badge/S3Framework-beta-blue.svg)](http://www.shaz3e.com)
-[![Version](http://img.shields.io/badge/Version-3.3_Stable-green.svg)](http://www.shaz3e.com)
-[![Build](http://img.shields.io/badge/Build-2.2.2-orange.svg)](http://www.shaz3e.com)
+[![S3Framework](http://img.shields.io/badge/S3Framework-Stable-blue.svg)](http://www.shaz3e.com)
+[![Version](http://img.shields.io/badge/Version-3.3-green.svg)](http://www.shaz3e.com)
+[![Build](http://img.shields.io/badge/Build-225-orange.svg)](http://www.shaz3e.com)
 [![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)
 
 

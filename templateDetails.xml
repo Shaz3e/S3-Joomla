@@ -659,7 +659,7 @@
 				</field>
 				
 				<field name="LocalCDN" type="list" default="0" 
-					label="js Hosted on CDN" 
+					label="Files Hosted on CDN" 
 					description="By disabling this feature template will use all js files locally which may cause slow down your website, we recommend to enable this feature for faster speed."> 
 					<option value="0">Disable</option>
 					<option value="1">Enable</option>

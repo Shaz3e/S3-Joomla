@@ -1,9 +1,10 @@
 ## S3 Framework - Responsive Template System for Joomla
 
 [![S3Framework](http://img.shields.io/badge/S3Framework-beta-blue.svg)](http://www.shaz3e.com)
-[![Version](http://img.shields.io/badge/Version-3.3_Beta-green.svg)](http://www.shaz3e.com)
-[![Build](http://img.shields.io/badge/Build-2.1.2-orange.svg)](http://www.shaz3e.com)
+[![Version](http://img.shields.io/badge/Version-3.3_Stable-green.svg)](http://www.shaz3e.com)
+[![Build](http://img.shields.io/badge/Build-2.2.2-orange.svg)](http://www.shaz3e.com)
 [![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)
+
 
 ### S3 Framework Base Theme
 The S3 Framework base theme is a clean modern responsive design that is a great place to start when building your custom S3 powered theme.
@@ -45,14 +46,22 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
 
  - Custom Sitename
  - Custom Logo
- - Style Settings
+ - **Style Settings**
  - Choose from different Styles
- - Style Switcher on "Default On"
+ - **Front Page Settings**
  - Show Frontpage Articles or Hide it
  - Show Main Body
- - Hide Component
+ - Hide Component (select menu to hide component on specific menu)
+ 
+### Libraries
+ - Use jQuery addScript (No: to load before everything, Yes: to load as addScript)
+ - Use Bootstrap
+ - Use Font Awesome
+ - Use Responsive Menu
 
 ### Layout Settings
+ - Set Logo Column (by selecting logo column header module will be automaticaly adjusted)
+ - Set Sidebar Column (by selecting sidebar column page container will be automatically adjusted)
  - Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion
  - Show Credit "Default Show" (Hide or Show) when its hide the module still be available for this postion 
  - Show Framework Logo "Default Show" (Hide or Show)

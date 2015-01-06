@@ -78,6 +78,12 @@ if($this->params->get('LocalCDN')){
 // font style sheet
 $doc->addStyleSheet('templates/'.$this->template.'/fonts/fonts.css');
 
+/*
+ * responsive menu
+ * @since 3.3
+ */
+$doc->addScript($dcTemplatePath.'/js/menu.js', 'text/javascript');
+
 // Custom JavaScript File
 $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');
 

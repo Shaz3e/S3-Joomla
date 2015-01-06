@@ -31,6 +31,8 @@ if($this->params->get('LocalCDN')){
 	
 	if($this->params->get('loadBootstrap')){
 		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css');
+	}
+	if($this->params->get('loadBootstrapTheme')){
 		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css');
 	}
 	
@@ -57,6 +59,8 @@ if($this->params->get('LocalCDN')){
 		
 	if($this->params->get('loadBootstrap')){
 		$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
+	}
+	if($this->params->get('loadBootstrapTheme')){
 		$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
 	}
 	

@@ -518,7 +518,7 @@
 				
             <fieldset name="STYLE">
 				<field name="sitetitle" class="" type="text" default="" 
-				label="Site Name" description="Type your sitename here, if its black the default will be use" />
+				label="Site Name" description="Type your sitename here, if its black the default will be use. This title will also be used in footer copyright." />
 				
 				<field name="logo" class="" type="media" default="" 
 				label="Logo Image" 
@@ -563,7 +563,14 @@
 				
 				<field name="loadBootstrap" type="list" default="1" 
 					label="Use Bootstrap" 
-					description="Enable or Disable Bootstrap and Theme"> 
+					description="Enable or Disable Bootstrap"> 
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="loadBootstrapTheme" type="list" default="0" 
+					label="Use Bootstrap Theme" 
+					description="Enable or Disable Bootstrap Theme"> 
 					<option value="0">No</option>
 					<option value="1">Yes</option>
 				</field>
@@ -659,7 +666,7 @@
 				</field>
 				
 				<field name="LocalCDN" type="list" default="0" 
-					label="Files Hosted on CDN" 
+					label="Hosted on CDN" 
 					description="By disabling this feature template will use all js files locally which may cause slow down your website, we recommend to enable this feature for faster speed."> 
 					<option value="0">Disable</option>
 					<option value="1">Enable</option>

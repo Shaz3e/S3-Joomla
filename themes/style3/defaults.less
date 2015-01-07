@@ -89,7 +89,7 @@ i.e. top margin or bottom margin for each grid
 .dc-bottom,
 .dc-footer{
 	position:relative;
-	/* margin-top:@gutter * 2; */ /* top margin 10px as block has gutter */
+	/* margin-bottom:@gutter * 2; */ /* top margin 10px as block has gutter */
 }
 
 .dc-top{}
@@ -98,11 +98,10 @@ i.e. top margin or bottom margin for each grid
 .dc-header{
 	.row{
 		.block{
-			background:none !important;
-			padding-left:0;
-			padding-right:0;
-			padding-top:0;
-			padding-bottom:0;
+			background:none;
+			margin-bottom:0 !important;
+			padding-top:0 !important;
+			padding-bottom:0 !important;
 		}
 	}
 	

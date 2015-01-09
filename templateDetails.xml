@@ -518,7 +518,7 @@
 				
             <fieldset name="STYLE">
 				<field name="sitetitle" class="" type="text" default="" 
-				label="Site Name" description="Type your sitename here, if its black the default will be use. This title will also be used in footer copyright." />
+				label="Site Name" description="Type your sitename here, if its blank the default will be use. This title will also be used in footer copyright." />
 				
 				<field name="logo" class="" type="media" default="" 
 				label="Logo Image" 
@@ -667,7 +667,7 @@
 				
 				<field name="LocalCDN" type="list" default="0" 
 					label="Hosted on CDN" 
-					description="By disabling this feature template will use all js files locally which may cause slow down your website, we recommend to enable this feature for faster speed."> 
+					description="By disabling this feature template will use all libraries files locally."> 
 					<option value="0">Disable</option>
 					<option value="1">Enable</option>
 				</field>

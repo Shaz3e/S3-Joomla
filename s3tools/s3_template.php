@@ -113,9 +113,6 @@ defined('_JEXEC') or die;
                     <?php
                         // column
                         include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/header.php");
-                        
-                        // grid
-                        include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-header.php");
                     ?>
                     </div>
                 </div>

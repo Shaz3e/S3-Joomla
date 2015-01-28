@@ -535,8 +535,8 @@
 			<field name="" type="spacer" default="" label="Front Page Settings" description="" />
 			
 				<field name="showFrontPage" type="list" default="1" 
-					label="Show Frontpage Articles" 
-					description="Show or Hide Front Page Article on Main Page if Yes Selected please enable Show main Body"> 
+					label="Show Component" 
+					description="Show or Hide component on Main Page if Yes Selected please enable Show main Body"> 
 					<option value="0">No - Hide it</option>
 					<option value="1">Yes - Show it</option>
 				</field>

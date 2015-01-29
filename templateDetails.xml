@@ -554,6 +554,13 @@
             </fieldset>
 			
             <fieldset name="LIBRARY">
+				<field name="LocalCDN" type="list" default="0" 
+					label="Hosted on CDN" 
+					description="By disabling this feature template will use all libraries files locally."> 
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+				</field>
+				
 				<field name="loadjQuery" type="list" default="0" 
 					label="Use jQuery addScript" 
 					description="If you want to load jQuery as addScript select yes otherwise select no to load jquery before everything. Caution: If you are using addScript fixed header on scroll up/down won't work."> 
@@ -663,13 +670,6 @@
 					description="Enable or Disable development mode for this website."> 
 					<option value="0">Off</option>
 					<option value="1">On</option>
-				</field>
-				
-				<field name="LocalCDN" type="list" default="0" 
-					label="Hosted on CDN" 
-					description="By disabling this feature template will use all libraries files locally."> 
-					<option value="0">Disable</option>
-					<option value="1">Enable</option>
 				</field>
 				
 				<field name="documentGenerator" class="" type="text" default="Shaz3e - The Revealing Paradigm"

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="template">
+<extension version="3.0" type="template">
 	<name>S3Framework</name>
 	<version>3.3.2</version>
 	<creationDate>30 April 2014</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
-	<copyright>Copyright (C) 2005 - 2014 DiligentCreators All rights reserved.</copyright>
+	<copyright>Copyright (C) 2005 - 2015 DiligentCreators All rights reserved.</copyright>
 	<license>
 		GNU General Public License version 2 or later; see LICENSE file.
 	</license>

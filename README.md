@@ -2,7 +2,7 @@
 ####Create beautiful responsive Joomla templates more easier and faster.
 
 [![S3Framework](http://img.shields.io/badge/S3Framework-Stable-blue.svg)](http://www.shaz3e.com)
-[![Version](http://img.shields.io/badge/Version-3.3.2-green.svg)](http://www.shaz3e.com)
+[![Version](http://img.shields.io/badge/Version-3.4-green.svg)](http://www.shaz3e.com)
 [![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)
 
 
@@ -67,9 +67,11 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Show Framework Logo "Default Show" (Hide or Show)
  - **Fixed Header and Menu**
  - Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down enable this option
- - Break Point Type your break point (only number) i.e. (768 for tablet) fixed header will show on larger than break point defined here.
- - Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px)
- - Ease Speed "Default 400" Low Number is Faster and Higher Number will slow down.
+ - Fixed Header Text Color Added in v3.4
+ - Fixed Header Background Color Added in v3.4
+ - Header Height i.e. 150px Added in v3.4
+ - Ease Speed: Define header ease slideUp/slideDown speed in ms default 200
+ - Break Point: Type your break point (only number) i.e. (768 for tablet) fixed header will show on larger than break point defined here.
 
 ### S3 Template Configuration
  - Google Analytics

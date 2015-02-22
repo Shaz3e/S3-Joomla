@@ -195,8 +195,8 @@ if($this->params->get('analytics')): ?>
 <!--[if lt IE 9]>
 	<link href="<?php echo $dcTemplatePath; ?>/css/ie.css" type="text/css" rel="stylesheet">
 <?php if($this->params->get('LocalCDN')): ?>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <?php else: ?>
 	<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/html5.js"></script>
 	<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/respond.js"></script>

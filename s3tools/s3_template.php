@@ -20,7 +20,6 @@ defined('_JEXEC') or die;
 
 ?>
 
-
 <!--[if lt IE 9]>
     <div class="dc-broswer-alert">
     <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/"><strong>upgrade your browser</strong></a> or <a href="http://www.google.com/chromeframe/?redirect=true"><strong>activate Google Chrome Frame</strong></a> to improve your experience.</p>
@@ -98,7 +97,7 @@ defined('_JEXEC') or die;
 </section>
 <?php endif; ?>
 
-<div class="dc-fixed-header">
+<div class="dc-fixed-header<?php if($this->params->get('fixedHeader')){echo ' dc-fixed';}?>">
     <section class="dc-header dc-clear" id="dc-header">
         <div class="row">
         	<div class="grid-<?php echo $this->params->get('logoGridClass'); ?>">

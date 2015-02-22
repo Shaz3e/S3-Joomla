@@ -654,7 +654,7 @@
 				
 				<field name="headerBackgroundColor" class="" type="color" default="#ffffff" label="Background Color" description="Header Background Color i.e. #ffffff" />
 				
-				<field name="fixedHeaderSize" class="" type="text" default="150" label="Header Height" description="Header Height i.e. 150px" />
+				<field name="fixedHeaderSize" class="" type="text" default="150" label="Header Height" description="Change body top padding when using fixed header i.e. 150px" />
 				
 				<field name="fixedHeaderSpeed" class="" type="text" default="200" label="Ease Speed" description="Define header ease slideUp/slideDown speed in ms default 200" />
 				

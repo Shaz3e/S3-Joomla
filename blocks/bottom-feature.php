@@ -17,6 +17,7 @@
 // restricted access
 defined('_JEXEC') or die;
 ?>
+
 <?php
     if($this->countModules('bottom-feature-1')){
         $bottomFeatures["bottom-feature1"] = '<jdoc:include type="modules" name="bottom-feature-1" style="shaz3e" />';

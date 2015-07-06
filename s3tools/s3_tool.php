@@ -38,7 +38,7 @@ if($this->params->get('LocalCDN')){
 	
 	// Add Javascripts
 	if($this->params->get('loadjQuery') == 1){
-		$doc->addScript('https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js', 'text/javascript');
+		$doc->addScript('https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', 'text/javascript');
 	}
 	
 	if($this->params->get('loadBootstrap')){

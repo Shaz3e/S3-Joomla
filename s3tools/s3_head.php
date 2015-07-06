@@ -20,7 +20,7 @@ defined('_JEXEC') or die;
 
 <?php if($this->params->get('LocalCDN')){ ?>
 	<?php if($this->params->get('loadjQuery') == 0): ?>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <?php endif; ?>
 <?php }else{ ?>
 	<?php if($this->params->get('loadjQuery') == 0): ?>

@@ -29,8 +29,23 @@ defined('_JEXEC') or die;
 <?php } ?>
 
 <jdoc:include type="head" />
-<?php
-// Responsive Video
+
+<?php // Less Development Mode
+if($this->params->get('developmentMode')): ?>
+  <link rel="stylesheet/less" type="text/css" href="<?php echo $dcTemplatePath; ?>/themes/style<?php echo $this->params->get('style'); ?>/style.less">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min.js"></script>
+  <?php if($this->params->get('LocalCDN')): ?>
+    <script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/less.js"></script>
+  <?php else: ?>
+  <?php endif; ?>
+    
+  <script type="text/javascript">
+         less.env = "development";
+         less.watch();
+    </script>
+<?php endif; ?>
+
+<?php // Responsive Video
 if($this->params->get('ResponsiveVideo')): ?>
 <script>
   $(document).ready(function(){

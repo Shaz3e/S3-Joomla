@@ -2,7 +2,7 @@
 ####Create beautiful responsive Joomla templates more easier and faster.
 
 [![S3Framework](http://img.shields.io/badge/S3Framework-Stable-blue.svg)](http://www.shaz3e.com)
-[![Version](http://img.shields.io/badge/Version-3.5.2-green.svg)](http://www.shaz3e.com)
+[![Version](http://img.shields.io/badge/Version-3.5.3-green.svg)](http://www.shaz3e.com)
 [![Build Status](https://travis-ci.org/Shaz3e/S3-Joomla.png?branch=S3-Joomla)](https://travis-ci.org/Shaz3e/S3-Joomla)
 
 

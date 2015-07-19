@@ -29,122 +29,6 @@ defined('_JEXEC') or die;
 <?php } ?>
 
 <jdoc:include type="head" />
-
-<?php 
-/**
- * Fixed header on scroll up/down slide up/down
- * hide/show Header and Menu on scroll up/down
- * 
- * @var string
- * @since S3Framework 3.3
- */
-
-if($this->params->get('fixedHeader')):
-	
-	/**
-	 * Enable Height i.e. 100 (Fixed header will be hide after scrolling down 100px) at Joomla back-end/
-	 * 
-	 * $var int
-	 * @since S3Framework 3.3
-	 */
-	$sizeHeight = $this->params->get('fixedHeaderSize');
-	
-	/**
-	 * Define header ease slideUp/slideDown speed in ms default 400 in templateDetails.xml
-	 * 
-	 * $var int
-	 * @since S3Framework 3.3
-	 */
-	$duration = $this->params->get('fixedHeaderSpeed');
-	
-	/**
-	 * Break point fixed header will show on larger than break point devices as defined at Joomla back-end.
-	 * 
-	 * $var int
-	 * @since S3Framework 3.3
-	 */
-	$breakPoint = $this->params->get('breakPoint');
-	
-	/**
-	 * Text Colors for fixed header as defined at Joomla back-end.
-	 * 
-	 * $var string
-	 * @since S3Framework 3.4.1
-	 */
-	$headerTextColor = $this->params->get('headerTextColor');
-	
-	/**
-	 * Background Colors for fixed header as defined at Joomla back-end.
-	 * 
-	 * $var string
-	 * @since S3Framework 3.4.1
-	 */
-	$headerBackgroundColor = $this->params->get('headerBackgroundColor');
-	
-?>
-
-<style type="text/css">
-@media(min-width:<?php echo $breakPoint; ?>px){
-	body{padding-top:<?php echo $sizeHeight; ?>;}
-	.dc-fixed {
-		position: fixed;
-		top: 0px;
-		width:100%;
-		z-index:99;
-		<?php if($this->params->get('headerTextColor')){echo 'color:'. $headerTextColor .';';} ?>
-		<?php if($this->params->get('headerBackgroundColor')){echo 'background-color:'. $headerBackgroundColor .';';} ?>
-	}
-}
-</style>
-
-<script type="text/javascript">
-if (document.documentElement.clientWidth >= <?php echo $breakPoint; ?> || screen.width >= <?php echo $breakPoint; ?>){
-	$(function(){
-		var prevScroll = 0,
-		curDir = 'down',
-		prevDir = 'up';
-		
-		$(window).scroll(function(){
-			if($(this).scrollTop() >= prevScroll){
-				curDir = 'down';
-				if(curDir != prevDir){
-					$('.dc-fixed').stop();
-					$('.dc-fixed').animate({ top: '-100%' }, <?php echo $duration; ?>);
-					prevDir = curDir;
-				}
-			} else {
-				curDir = 'up';
-				
-				if(curDir != prevDir){
-					$('.dc-fixed').stop();
-					$('.dc-fixed').animate({ top: '0px' }, <?php echo $duration; ?>);
-					prevDir = curDir;
-				}
-			}
-			
-			prevScroll = $(this).scrollTop();
-		});
-	})
-}
-</script>
-
-<?php endif; ?>
-
-<?php // Less Development Mode
-if($this->params->get('developmentMode')): ?>
-	<link rel="stylesheet/less" type="text/css" href="<?php echo $dcTemplatePath; ?>/themes/style<?php echo $this->params->get('style'); ?>/style.less">
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
-	<?php if($this->params->get('LocalCDN')): ?>
-		<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/less.js"></script>
-	<?php else: ?>
-	<?php endif; ?>
-    
-	<script type="text/javascript">
-         less.env = "development";
-         less.watch();
-    </script>
-<?php endif; ?>
-
 <?php
 // Responsive Video
 if($this->params->get('ResponsiveVideo')): ?>
@@ -155,7 +39,6 @@ if($this->params->get('ResponsiveVideo')): ?>
   });
 </script>
 <?php endif; ?>
-
 
 <?php
 // Google Analytics
@@ -171,8 +54,6 @@ if($this->params->get('analytics')): ?>
 
 </script>
 <?php endif; ?>
-
-
 
 <link rel="shortcut icon" href="<?php echo $dcTemplatePath; ?>/images/favicon/favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-57x57.png">

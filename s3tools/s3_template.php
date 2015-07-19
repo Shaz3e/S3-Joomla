@@ -395,7 +395,11 @@ defined('_JEXEC') or die;
 </footer>
 <?php endif; ?>
 
-<?php 
+<?php
+    
+    // Show/Hide Scroll on Scroll Up/Down
+    include_once(JPATH_ROOT . "/templates/" . $this->template . "/s3tools/s3_header_fixed.php"); 
+
 	// copyright / credit / framework logo / style switch
 	include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/credit.php"); 
 ?>

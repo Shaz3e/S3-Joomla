@@ -97,7 +97,7 @@ defined('_JEXEC') or die;
 </section>
 <?php endif; ?>
 
-<div class="dc-fixed-header<?php if($this->params->get('fixedHeader')){echo ' dc-fixed';}?>">
+<div class="dc-fixed-header">
     <section class="dc-header dc-clear" id="dc-header">
         <div class="row">
         	<div class="grid-<?php echo $this->params->get('logoGridClass'); ?>">
@@ -397,9 +397,9 @@ defined('_JEXEC') or die;
 
 <?php
     
-	// copyright / credit / framework logo / style switch
-	include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/credit.php"); 
-
     // Show/Hide Scroll on Scroll Up/Down
     include_once(JPATH_ROOT . "/templates/" . $this->template . "/s3tools/s3_header_fixed.php"); 
+
+	// copyright / credit / framework logo / style switch
+	include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/credit.php"); 
 ?>

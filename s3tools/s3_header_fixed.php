@@ -17,6 +17,23 @@
 // restricted access
 defined('_JEXEC') or die;
 
+// Less Development Mode
+if($this->params->get('developmentMode')): ?>
+
+<script type="text/javascript">
+var querystring = '!watch';
+
+$('a').each(function()
+{
+ var href = $(this).attr('href');
+ href += (href.match(/\?/) ? '&' : '#') + querystring;
+ $(this).attr('href', href);
+});
+</script>
+<?php endif; ?>
+
+<?php
+
 /**
  * Fixed header on scroll up/down slide up/down
  * hide/show Header and Menu on scroll up/down

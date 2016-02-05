@@ -532,6 +532,11 @@
 					<option value="1">style 1</option>
 					<option value="2">style 2</option>
 					<option value="3">style 3</option>
+					<option value="4">Style 4</option>
+					<option value="5">Style 5</option>
+					<option value="6">Style 6</option>
+					<option value="7">Style 7</option>
+					<option value="8">Style 8</option>
 				</field>
 				
 			<field name="" type="spacer" default="" label="Front Page Settings" description="" />

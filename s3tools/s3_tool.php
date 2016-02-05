@@ -97,8 +97,8 @@ if($this->params->get('developmentMode') != 1){
 	// less compiler
 	require "lessc.inc.php";
 	
-	$inputFile = JPATH_ROOT . "/templates/" . $this->template ."/themes/style". $this->params->get('style') ."/style.less";
-	$outputFile = JPATH_ROOT . "/templates/" . $this->template ."/themes/style". $this->params->get('style') ."/style.css";
+	$inputFile = JPATH_ROOT . "/templates/" . $this->template ."/themes/styles/theme". $this->params->get('style') .".less";
+	$outputFile = JPATH_ROOT . "/templates/" . $this->template ."/themes/style.css";
 	
 	$less = new lessc;
 	$less->setFormatter("compressed");
@@ -113,7 +113,7 @@ if($this->params->get('developmentMode') != 1){
 		}
 
 	// compiled css file
-	$doc->addStyleSheet($dcTemplatePath.'/themes/style'.$this->params->get('style').'/style.css');
+	$doc->addStyleSheet($dcTemplatePath.'/themes/style.css');
 }
 
 ?>

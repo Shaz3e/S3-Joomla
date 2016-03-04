@@ -1,23 +1,12 @@
-@import "defaults.less";
-/*======================================================================*\
-|| #################################################################### ||
-|| # Package - Joomla Template based on Shaz3e S3 Framework             ||
-|| # Copyright (C) 2010  shaz3e.com. All Rights Reserved.               ||
-|| # Authors - Shahrukh A. Khan (Shaz3e) and DiligentCreators           ||
-|| # license - PHP files are licensed under  GNU/GPL V2                 ||
-|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
-|| # bound by Proprietary License of shaz3e.com                         ||
-|| # for more information visit http://www.shaz3e.com/                  ||
-|| # Redistribution and  modification of this software                  ||
-|| # is bounded by its licenses websites - http://www.shaz3e.com        ||
-|| # A project of DiligentCreators - Construcing Ideas...               ||
-|| #################################################################### ||
-\*======================================================================*/
+@import "../libraries/libraries.less";
+/* Classes to Colorize Elements
+*******************************************/
 *{}
+html,body{}
 html{}
 body{}
 
-a:link,a:visited{text-decoration:none;}
+a:link,a:visited{}
 a:hover{}
 
 h1,h2,h3,h4,h5,h6{}
@@ -128,7 +117,6 @@ i.e. top margin or bottom margin for each grid
 ***********************************************/
 .dc-top,
 .dc-header,
-.dc-menu,
 .dc-breadcrumb,
 .dc-slideshow,
 .dc-showcase,
@@ -149,16 +137,13 @@ i.e. top margin or bottom margin for each grid
 .dc-fixed-header{}
 .dc-fixed{}
 
-/* Header Modules */
-.dc-header{}
-
-/* Header Modules (4 modules) */
-.dc-header1,.dc-header2,.dc-header3,.dc-header4{}
-
-.dc-header1{}
-.dc-header2{}
-.dc-header3{}
-.dc-header4{}
+/**
+ * .dc-header is now .dc-header-0 and it has its own file header.less
+ * Where 0 = header style number selected from s3-theme page
+ * header.less is located under s3framework/themes/header.less
+ * which is called by default.less at line:2 in same directory
+ * @since S3 Framework 2.0
+ */
 
 /* Logo */
 .dc-logo{
@@ -239,11 +224,6 @@ i.e. top margin or bottom margin for each grid
 	img{}
 }
 
-
-/**********************************************
-         Template Color Variant Styles
-***********************************************/
-
 /* Media Queries
 *********************************************/
 /* Retina */
@@ -263,4 +243,3 @@ i.e. top margin or bottom margin for each grid
 
 /* Large desktop */
 @media (min-width: 1024px) {}
-

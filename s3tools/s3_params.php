@@ -50,17 +50,6 @@ $DCActivePageAliasClassName = JFactory::getApplication()->getMenu()->getActive()
 // pageclass_sfx & DCActivePageAliasClassName
 $DCBodyPageClasses = 'Shaz3e '; // Default Class for Shaz3e
 $DCBodyPageClasses .= 'dc-wrapper '; // relative wrapper 
-$DCBodyPageClasses .= $DCActivePageAliasClassName->alias . ' '; // get pageclass_sfx from item menu
+$DCBodyPageClasses .= ($DCActivePageAliasClassName->alias != '' ? $DCActivePageAliasClassName->alias : 'Search '); // get pageclass_sfx from item menu
 $DCBodyPageClasses .= $DCPageClassSuffix->get('pageclass_sfx'); // get active menu alias as a class
-
-
-// Logo Params
-$logoName = $this->params->get('logo');
-
-	// Logo Image
-	if($logoName){
-		$logo = '<img src="'. JURI::root() . $logoName .'" alt="'. $sitetitle .'">';
-	}else{
-		$logo = '<img src="'.$dcTemplatePath.'/themes/images/logo.png'.'" alt="'.$sitetitle.'">';
-	}
 ?>

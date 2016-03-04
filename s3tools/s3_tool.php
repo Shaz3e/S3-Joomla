@@ -26,14 +26,14 @@ if($this->params->get('LocalCDN')){
 	
 	// Add Stylesheets
 	if($this->params->get('loadFontAwesome')){
-		$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+		$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 	}
 	
 	if($this->params->get('loadBootstrap')){
-		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
 	}
 	if($this->params->get('loadBootstrapTheme')){
-		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css');
+		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css');
 	}
 	
 	// Add Javascripts
@@ -42,7 +42,7 @@ if($this->params->get('LocalCDN')){
 	}
 	
 	if($this->params->get('loadBootstrap')){
-		$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', 'text/javascript');
+		$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', 'text/javascript');
 	}
 	
 	// jQuery FitVIDS
@@ -95,25 +95,38 @@ $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');
 // if development mode is off script will generate css file instead less
 if($this->params->get('developmentMode') != 1){
 	// less compiler
-	require "lessc.inc.php";
-	
-	$inputFile = JPATH_ROOT . "/templates/" . $this->template ."/themes/styles/theme". $this->params->get('style') .".less";
-	$outputFile = JPATH_ROOT . "/templates/" . $this->template ."/themes/style.css";
-	
+	require "lessc.inc.php";	
+		
+	$inputFileTheme  = JPATH_ROOT . "/templates/" . $this->template ."/themes/colors/theme". $this->params->get('color_theme') .".less";
+	$inputFileStyle  = JPATH_ROOT . "/templates/" . $this->template ."/themes/styles/style". $this->params->get('style') .".less";
+		
+	$outputFileTheme = JPATH_ROOT . "/templates/" . $this->template ."/themes/colors/color.css";
+	$outputFileStyle = JPATH_ROOT . "/templates/" . $this->template ."/themes/styles/style.css";
+		
 	$less = new lessc;
 	$less->setFormatter("compressed");
-	$cache = $less->cachedCompile($inputFile);
+	$cacheTheme = $less->cachedCompile($inputFileTheme);
+	$cacheStyle = $less->cachedCompile($inputFileStyle);
+		
+	file_put_contents($outputFileTheme, $cacheTheme["compiled"]);
+	file_put_contents($outputFileStyle, $cacheStyle["compiled"]);
 	
-	file_put_contents($outputFile, $cache["compiled"]);
+	$FileThemeUpdated = $cacheTheme["updated"];
+	$FileStyleUpdated = $cacheStyle["updated"];
 	
-	$last_updated = $cache["updated"];
-	$cache = $less->cachedCompile($cache);
-		if ($cache["updated"] > $last_updated) {
-			file_put_contents($outputFile, $cache["compiled"]);
+	$cacheTheme = $less->cachedCompile($cacheTheme);
+	$cacheStyle = $less->cachedCompile($cacheStyle);
+	
+		if ($cacheTheme["updated"] > $FileThemeUpdated) {
+			file_put_contents($outputFileTheme, $cacheTheme["compiled"]);
 		}
-
+		
+		if ($cacheStyle["updated"] > $FileStyleUpdated) {
+			file_put_contents($outputFileStyle, $cacheStyle["compiled"]);
+		}
 	// compiled css file
-	$doc->addStyleSheet($dcTemplatePath.'/themes/style.css');
+	$doc->addStyleSheet($dcTemplatePath.'/themes/colors/color.css');
+	$doc->addStyleSheet($dcTemplatePath.'/themes/styles/style.css');
 }
 
 ?>

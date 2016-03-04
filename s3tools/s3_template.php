@@ -97,53 +97,14 @@ defined('_JEXEC') or die;
 </section>
 <?php endif; ?>
 
-<div class="dc-fixed-header">
-    <section class="dc-header dc-clear" id="dc-header">
-        <div class="row">
-        	<div class="grid-<?php echo $this->params->get('logoGridClass'); ?>">
-            	<div class="block">
-	            	<div class="dc-logo"><a href="<?php echo $this->baseurl; ?>"><?php echo $logo; ?></a></div>
-                </div>
-            </div>
-            
-            <?php if($headerModules): ?>
-                <div class="grid<?php echo $this->params->get('logoGridClass') - 12; ?>">
-                    <div class="block">
-                    <?php
-                        // column
-                        include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/header.php");
-                    ?>
-                    </div>
-                </div>
-            <?php endif; ?>
-            
-        </div>
-    </section>
-
-
-    <?php if($menuModules || $gridMenuModules):?>
-    <section class="dc-menu dc-clear">
-    	
-        <?php // full width module ?>
-        <jdoc:include type="modules" name="menu" style="full_width" />
-        
-        <div class="row" id="dc-menu">
-        	<?php
-				// column
-            	include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/menu.php"); 
-				
-				// grid
-				include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/grid-menu.php");
-			?>
-        </div>
-        
-        <?php // full width module ?>
-        <jdoc:include type="modules" name="menu-bottom" style="full_width" />
-        
-    </section>
-    <?php endif; ?>
-    
-</div> <?php // header fixed ?>
+<?php
+	/**
+	 * All Header Styles
+	 * Logo & Menu included in header
+	 * @since S3 Framework 4.0
+	 */
+	include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3inc/headers/headers.php');
+?>
 
 <?php if($breadcrumbModules || $gridBreadcrumbModules): ?>
 <section class="dc-breadcrumb dc-clear" id="dc-breadcrumb">
@@ -399,7 +360,11 @@ defined('_JEXEC') or die;
     
     // Show/Hide Scroll on Scroll Up/Down
     include_once(JPATH_ROOT . "/templates/" . $this->template . "/s3tools/s3_header_fixed.php"); 
-
-	// copyright / credit / framework logo / style switch
-	include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/credit.php"); 
+	
+	/**
+	 * copyright / credit / framework logo / Custom Logo / style switch
+	 * Logo & Menu included in header
+	 * @since S3 Framework 4.0
+	 */
+	include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3inc/s3cc/s3cc.php'); 
 ?>

@@ -26,7 +26,7 @@ if($this->params->get('LocalCDN')){
 	
 	// Add Stylesheets
 	if($this->params->get('loadFontAwesome')){
-		$doc->addStyleSheet('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 	}
 	
 	if($this->params->get('loadBootstrap')){
@@ -38,7 +38,7 @@ if($this->params->get('LocalCDN')){
 	
 	// Add Javascripts
 	if($this->params->get('loadjQuery') == 1){
-		$doc->addScript('https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', 'text/javascript');
+		$doc->addScript('https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', 'text/javascript');
 	}
 	
 	if($this->params->get('loadBootstrap')){

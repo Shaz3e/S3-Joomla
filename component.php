@@ -26,7 +26,7 @@ include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_tool.ph
 <meta charset="utf-8">
 <?php include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_head.php'); ?>
 </head>
-<body class="<?php echo $DCBodyPageClasses; ?>">
+<body>
 	<jdoc:include type="message" />
 	<jdoc:include type="component" />
 </body>

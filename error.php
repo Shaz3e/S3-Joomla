@@ -52,6 +52,7 @@ $dcTemplatePath = $this->baseurl.'/templates/'.$this->template;
 
 <link rel="stylesheet/less" type="text/css" href="<?php echo $dcTemplatePath; ?>/themes/style1/style.less">
 <script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/less.js"></script>
+
 <link rel="shortcut icon" href="<?php echo $dcTemplatePath; ?>/images/favicon/favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="114x114" href="<?php echo $dcTemplatePath; ?>/images/favicon/apple-touch-icon-114x114.png">

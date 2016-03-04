@@ -243,12 +243,4 @@ defined('_JEXEC') or die;
 			</div>
 		<?php endif;
 	}
-	
-	function modChrome_s3_header($module, &$params, &$attribs){
-		if (!empty ($module->content)) : ?>
-			<div class="<?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
-				<?php echo $module->content; ?>
-			</div>
-		<?php endif;
-	}
 ?>

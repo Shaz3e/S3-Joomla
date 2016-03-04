@@ -23,6 +23,7 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Responsive Video with [FitVids.js](https://github.com/davatron5000/FitVids.js).
 
 ### Features
+ - 10+ Different Header Styles
  - 12 Columns Grid System
  - 300+ Module Positions
  - Full width Modules Added in v3.2
@@ -42,44 +43,52 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Show or Hide Framework Logo
  - Use Custom Meta Generator
  
-### Style Options
-
+### S3 Theme Configurations
  - Custom Sitename
- - Custom Logo
- - **Style Settings**
- - Choose from different Styles
- - **Front Page Settings**
- - Show Frontpage Articles or Hide it
- - Show Main Body
- - Hide Component (select menu to hide component on specific menu)
- 
-### Libraries
- - Use jQuery addScript (No: to load before everything, Yes: to load as addScript)
- - Use Bootstrap
- - Use Font Awesome
- - Use Responsive Menu
+ - Choose from 8 Different Themes (Since 4.0)
+ - Choose from Different Theme Styles (Since 4.0)
+ - Google Analytics
+ - Enable / Disable development mode
+ - Custom Meta Generator
+ - Show/Hide Admin Toolbar
+ - Set Thumbnail - Width/Height/Crop (Since 4.0)
+ - Excerpt Length (Since 4.0)
+ - Change Read More (Since 4.0)
+
+### Header Settings
+ - Custom Site Logo
+ - 14 different header styles
+ - Enable/Diable Search Option
+ - Custom Social Links
+ - Phone Number
+ - Email
+ - Call to Action
+
+### CC Settings - Copyright & Credit Settings
+ - Change Style - Choose from 3 different styles
+ - Show Copyright "Default Show" (Hide or Show) when its hide you cannot use sidebar
+ - Show Credit "Default Show" (Hide or Show) when its hide you cannot use sidebar 
+ - Show/Hide Framework Logo
+  - Custom Footer Logo - instead of Framework logo
 
 ### Layout Settings
  - Set Logo Column (by selecting logo column header module will be automaticaly adjusted)
+ - Set Columns in one row (by selecting this option only the 'n' side will be displayed in a row)
  - Set Sidebar Column (by selecting sidebar column page container will be automatically adjusted)
- - Show Copyright "Default Show" (Hide or Show) when its hide the module still be available for this postion
- - Show Credit "Default Show" (Hide or Show) when its hide the module still be available for this postion 
- - Show Framework Logo "Default Show" (Hide or Show)
  - **Fixed Header and Menu**
  - Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down enable this option
- - Fixed Header Text Color Added in v3.4
- - Fixed Header Background Color Added in v3.4
- - Header Height i.e. 150px Added in v3.4
+ - Fixed Header Text Color - Color Picker Added
+ - Fixed Header Background Color - Color Picker Added
+ - Header Height Change body top padding when using fixed header i.e. 150px
  - Ease Speed: Define header ease slideUp/slideDown speed in ms default 200
  - Break Point: Type your break point (only number) i.e. (768 for tablet) fixed header will show on larger than break point defined here.
 
-### S3 Template Configuration
- - Google Analytics
- - **Development Options**
- - Use Responsive Video "Default Off"
- - Development Mode "Default Off" (CSS will be auto-compilation when off)
- - js Hosted on CDN "Enable or Disable" By disabling this feature template will use all js files locally.
- - Type Meta Generator
+### Libraries
+ - Hosted on CDN (external libraries option)
+ - Use Bootstrap
+ - Use Bootstrap Theme
+ - Use Font Awesome
+ - Use Responsive Video
 
 
 ### How To Use

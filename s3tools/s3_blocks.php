@@ -1,6 +1,4 @@
 <?php
-
-
 /*======================================================================*\
 || #################################################################### ||
 || # Package - Joomla Template based on Shaz3e S3 Framework             ||
@@ -18,6 +16,15 @@
 
 // restricted access
 defined('_JEXEC') or die;
+
+/**
+ * Header Modules i.e. Search Box | Phone | Email | Social Icons
+ * @since S3 Framework 4.0
+ */
+$headerModules = $this->params->get('s3_search_box') || 
+				 $this->params->get('s3_phone_box') || 
+				 $this->params->get('s3_email_box') || 
+				 $this->params->get('s3_social_icon');
 
 // Top Module
 $topModules = $this->countModules('top') || 
@@ -48,11 +55,6 @@ $gridTopModules = $this->countModules('grid-top-1') ||
 				  $this->countModules('grid-top-10') || 
 				  $this->countModules('grid-top-11') || 
 				  $this->countModules('grid-top-12');
-// Header Modules
-$headerModules = $this->countModules('header-1') || 
-				$this->countModules('header-2') || 
-				$this->countModules('header-3') || 
-				$this->countModules('header-4');
 
 // Menu Modules
 $menuModules = $this->countModules('menu') || 

@@ -521,9 +521,9 @@
 					<option value="0">Custom</option>
 				</field>
 
-				<field name="analytics" class="" type="text" default="" 
+				<field name="analytics" class="" type="textarea" default="" 
 					label="Google Analytic" 
-					description="Type your Google Analytic code (UA-XXXXXXXX-X) here." />
+					description="Type your Google Analytic code (UA-XXXXXXXX-X) here." filter="raw" />
 				
 				<field name="developmentMode" type="radio" default="0" class="btn-group btn-group-yesno"
 					label="Development Mode?" 
@@ -588,22 +588,19 @@
 					<option value="0">Diable</option>
 					<option value="1">Enable</option>
 				</field>
+				
+				<field name="s3_social_icon" type="text" default="" 
+				label="Social Icons" description="Please enable or disable social icons in header by default its disabled, Remember to use Font Awesome library." filter="raw" />
 	
 				<field name="s3_phone_box" class="" type="text" default="" label="Type your Phone No" 
-					description="Please type phone number here" />
+					description="Please type phone number here" filter="raw" />
 					
 				<field name="s3_email_box" class="" type="text" default="" label="Type your email" 
 					description="Please type your email address here" />
 					
 				<field name="s3_calltoaction" class="" type="text" default="" label="Text for Call to Action" 
-					description="Please write for call to action option" />
-				
-				<!-- Social Icons -->
-				
-				<field name="" type="spacer" default="" label="Social Icon Settings" description="" />
-				
-				<field name="s3_social_icon" type="text" default="" 
-				label="Social Icons" description="Please enable or disable social icons in header by default its disabled, Remember to use Font Awesome library." />
+					description="Please write for call to action option" filter="raw" />
+					
 			</fieldset>
 				
 			<!-- Copyright & Credit Settings -->

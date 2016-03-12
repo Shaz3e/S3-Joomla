@@ -59,67 +59,79 @@ if(isset($bottoms)){
     $result = count($bottoms);
     foreach($bottoms as $bottom => $name){
 
-
-        if($result == 12){
-            echo '<div class="col-12">';
-	            echo $name;
-            echo '</div>';
-        }
-        if($result == 11){
-            echo '<div class="col-11">';
-            	echo $name;
-            echo '</div>';
-        }
-        if($result == 10){
-            echo '<div class="col-10">';
-        	    echo $name;
-            echo '</div>';
-        }
-        if($result == 9){
-            echo '<div class="col-9">';
-    	        echo $name;
-            echo '</div>';
-        }
-        if($result == 8){
-            echo '<div class="col-8">';
-	            echo $name;
-            echo '</div>';
-        }
-        if($result == 7){
-            echo '<div class="col-7">';
+		/**
+		 * Count Modules in a row
+		 * 12+ Modules will be displayed according to int other wise depands the number of modules enabled
+		 *
+		 * @retun int
+		 * @since S3 Framework 4.0
+		 */			
+		if( $this->params->get('bottomModuleCount') >= 12 ){
+			if($result == 12){
+				echo '<div class="col-12">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 11){
+				echo '<div class="col-11">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 10){
+				echo '<div class="col-10">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 9){
+				echo '<div class="col-9">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 8){
+				echo '<div class="col-8">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 7){
+				echo '<div class="col-7">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 6){
+				echo '<div class="col-6">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 5){
+				echo '<div class="col-5">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 4){
+				echo '<div class="col-4">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 3){
+				echo '<div class="col-3">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 2){
+				echo '<div class="col-2">';
+					echo $name;
+				echo '</div>';
+			}
+			if($result == 1){
+				echo '<div class="col-1">';
+					echo $name;
+				echo '</div>';
+			}
+		}else{
+			echo '<div class="col-'.$this->params->get('bottomModuleCount').'">';
 				echo $name;
-            echo '</div>';
-        }
-        if($result == 6){
-            echo '<div class="col-6">';
-            	echo $name;
-            echo '</div>';
-        }
-        if($result == 5){
-            echo '<div class="col-5">';
-            	echo $name;
-            echo '</div>';
-        }
-        if($result == 4){
-            echo '<div class="col-4">';
-            	echo $name;
-            echo '</div>';
-        }
-        if($result == 3){
-            echo '<div class="col-3">';
-            	echo $name;
-            echo '</div>';
-        }
-        if($result == 2){
-            echo '<div class="col-2">';
-            	echo $name;
-            echo '</div>';
-        }
-        if($result == 1){
-            echo '<div class="col-1">';
-            	echo $name;
-            echo '</div>';
-        }
+			echo '</div>';
+		}
     }
 }
 

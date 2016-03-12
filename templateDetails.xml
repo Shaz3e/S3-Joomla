@@ -601,6 +601,28 @@
 				<field name="s3_calltoaction" class="" type="text" default="" label="Text for Call to Action" 
 					description="Please write for call to action option" filter="raw" />
 					
+				<field name="" type="spacer" default="" label="Fixed Header and Menu" description="" />
+				
+				<field name="fixedHeader" 
+					type="radio" 
+					default="0" 
+					class="btn-group btn-group-yesno"
+					label="Fixed Header and Menu?" 
+					description="If you want to hide/show header and Menu on scroll up/down">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="headerTextColor" class="" type="color" default="" label="Text Color" description="Header Text Color i.e. #000000" />
+				
+				<field name="headerBackgroundColor" class="" type="color" default="#ffffff" label="Background Color" description="Header Background Color i.e. #ffffff" />
+				
+				<field name="fixedHeaderSize" class="" type="text" default="100" label="Header Height" description="Change body top padding when using fixed header i.e. 200" />
+				
+				<field name="fixedHeaderSpeed" type="text" default="0" label="Ease Speed" description="Define header ease slideUp/slideDown speed in ms default 0" />
+				
+				<field name="breakPoint" class="" type="text" default="979" label="Break Point" description="Type your break point (only number) i.e. (768 for tablet) fixed header will show on larger than break point defined here." />
+					
 			</fieldset>
 				
 			<!-- Copyright & Credit Settings -->
@@ -689,29 +711,174 @@
 					<option value="11">11</option>
 					<option value="12">12</option>
 				</field>
-
-				<field name="" type="spacer" default="" label="Fixed Header and Menu" description="" />
 				
-				<field name="fixedHeader" 
-					type="radio" 
-					default="0" 
-					class="btn-group btn-group-yesno"
-					label="Fixed Header and Menu?" 
-					description="If you want to hide/show header and Menu on scroll up/down">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
+				<field name="" type="spacer" default="" label="Grid Settings" description="" />
+				
+				<field name="topModuleCount" class="" type="list" default="12" label="Set Top Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
 				</field>
 				
-				<field name="headerTextColor" class="" type="color" default="" label="Text Color" description="Header Text Color i.e. #000000" />
+				<field name="slideshowModuleCount" class="" type="list" default="12" label="Set Slideshow Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
 				
-				<field name="headerBackgroundColor" class="" type="color" default="#ffffff" label="Background Color" description="Header Background Color i.e. #ffffff" />
+				<field name="showcaseModuleCount" class="" type="list" default="12" label="Set Showcase Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
 				
-				<field name="fixedHeaderSize" class="" type="text" default="100" label="Header Height" description="Change body top padding when using fixed header i.e. 200" />
+				<field name="featureModuleCount" class="" type="list" default="12" label="Set Feature Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
 				
-				<field name="fixedHeaderSpeed" type="text" default="0" label="Ease Speed" description="Define header ease slideUp/slideDown speed in ms default 0" />
+				<field name="bottomFeatureModuleCount" class="" type="list" default="12" label="Set Bottom Feature Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
 				
-				<field name="breakPoint" class="" type="text" default="979" label="Break Point" description="Type your break point (only number) i.e. (768 for tablet) fixed header will show on larger than break point defined here." />
+				<field name="utilityModuleCount" class="" type="list" default="12" label="Set Utility Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
 				
+				<field name="scrollerModuleCount" class="" type="list" default="12" label="Set Scroller Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
+				
+				<field name="extensionModuleCount" class="" type="list" default="12" label="Set Extension Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
+				
+				<field name="bottomModuleCount" class="" type="list" default="12" label="Set Bottom Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
+				
+				<field name="footerModuleCount" class="" type="list" default="12" label="Set Footer Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
+				
+				<field name="bottomFooterModuleCount" class="" type="list" default="12" label="Set Bottom Footer Column" description="How many columns should be in one row. i.e. if you select 3 Columns and you have enabled 4 modules in one row the 4th module will be in next row">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
+
 			</fieldset>
 			
 			<!-- Library Settings -->

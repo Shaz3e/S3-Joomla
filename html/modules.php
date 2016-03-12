@@ -30,8 +30,8 @@ defined('_JEXEC') or die;
 		return $title;
 	}
 
-	/** Grid Module Style
-	 * 
+	/**
+	 * Grid Module Style
 	 * @since v3.3
 	 */
 	function modChrome_grid_1($module, &$params, &$attribs){
@@ -59,7 +59,7 @@ defined('_JEXEC') or die;
             </div>
 		<?php endif;
 	}
-	
+
 	function modChrome_grid_3($module, &$params, &$attribs){
 		if (!empty ($module->content)) : ?>
         	<div class="grid-3">

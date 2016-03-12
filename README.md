@@ -33,6 +33,7 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Custom Sitename
  - Custom Logo
  - Choose from Different Styles
+ - Choose from DIfferent Colors - added in 4.0
  - Enable Modules (component / component-top / component-(1 to 12) / component-bottom) to hide Component
  - Show or hide component area on front page
  - Show or hide main body container
@@ -42,6 +43,8 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Show or Hide Copyright
  - Show or Hide Framework Logo
  - Use Custom Meta Generator
+ - Mod_Chrome Updated to create complex grid all modules starts with grid-
+ - Set Columns for Modules - added in 4.0
  
 ### S3 Theme Configurations
  - Custom Sitename
@@ -63,6 +66,13 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Phone Number
  - Email
  - Call to Action
+ - **Fixed Header and Menu**
+ - Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down enable this option
+ - Fixed Header Text Color - Color Picker Added
+ - Fixed Header Background Color - Color Picker Added
+ - Header Height Change body top padding when using fixed header i.e. 150px
+ - Ease Speed: Define header ease slideUp/slideDown speed in ms default 200
+ - Break Point: Type your break point (only number) i.e. (768 for tablet) fixed header will show on larger than break point defined here.
 
 ### CC Settings - Copyright & Credit Settings
  - Change Style - Choose from 3 different styles
@@ -73,18 +83,25 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
 
 ### Layout Settings
  - Set Logo Column (by selecting logo column header module will be automaticaly adjusted)
- - Set Columns in one row (by selecting this option only the 'n' side will be displayed in a row)
  - Set Sidebar Column (by selecting sidebar column page container will be automatically adjusted)
- - **Fixed Header and Menu**
- - Fixed Header "Default Off" If you want to hide/show header and Menu on scroll up/down enable this option
- - Fixed Header Text Color - Color Picker Added
- - Fixed Header Background Color - Color Picker Added
- - Header Height Change body top padding when using fixed header i.e. 150px
- - Ease Speed: Define header ease slideUp/slideDown speed in ms default 200
- - Break Point: Type your break point (only number) i.e. (768 for tablet) fixed header will show on larger than break point defined here.
+ - **Grid Settings**
+ - Set All Modles Columns (added in 4.0)
+  - [+] Set Top Column
+  - [+] Set Slideshow Column
+  - [+] Set Showcase Column
+  - [+] Set Feature Column
+  - [+] Set Bottom Feature Column
+  - [+] Set Utility Column
+  - [+] Set Scroller Column
+  - [+] Set Extension Column
+  - [+] Set Bottom Column
+  - [+] Set Footer Column
+  - [+] Set Bottom Footer Column
+
 
 ### Libraries
  - Hosted on CDN (external libraries option)
+ - Use jQUery as addScript() joomla default functionality
  - Use Bootstrap
  - Use Bootstrap Theme
  - Use Font Awesome

@@ -522,8 +522,8 @@
 				</field>
 
 				<field name="analytics" class="" type="textarea" default="" 
-					label="Google Analytic" 
-					description="Type your Google Analytic code (UA-XXXXXXXX-X) here." filter="raw" />
+					label="Analytic Code" 
+					description="Copy & Paste your javascript code" filter="raw" />
 				
 				<field name="developmentMode" type="radio" default="0" class="btn-group btn-group-yesno"
 					label="Development Mode?" 
@@ -615,7 +615,7 @@
 				
 				<field name="headerTextColor" class="" type="color" default="" label="Text Color" description="Header Text Color i.e. #000000" />
 				
-				<field name="headerBackgroundColor" class="" type="color" default="#ffffff" label="Background Color" description="Header Background Color i.e. #ffffff" />
+				<field name="headerBackgroundColor" class="" type="color" default="" label="Background Color" description="Header Background Color i.e. #ffffff" />
 				
 				<field name="fixedHeaderSize" class="" type="text" default="100" label="Header Height" description="Change body top padding when using fixed header i.e. 200" />
 				

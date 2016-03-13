@@ -30,16 +30,17 @@ $sitename = $app->getCfg('sitename');
 $sitetitle = htmlspecialchars($this->params->get('sitetitle'));
 
 // meta generator
-$documentGenerator = $this->params->get('documentGenerator');
-	if($documentGenerator){
-		$document = JFactory::getDocument();
-		$document->setGenerator($this->params->get('documentGenerator'));
-	}else{
-		$document = JFactory::getDocument();
-		$document->setGenerator('Shaz3e - The Revealing Paradigm');
-	}
+if($this->params->get('documentGenerator')){
+	$document = JFactory::getDocument();
+	$document->setGenerator($this->params->get('documentGenerator'));
+}else{
+	$document = JFactory::getDocument();
+	$document->setGenerator('Shaz3e - The Revealing Paradigm');
+}
 
-
+/**
+ * pageclass_sfx & DCActivePageAliasClassName
+ */
 
 // Add pageclass_sfx from menu item
 $DCPageClassSuffix = $app->getParams('com_content');
@@ -47,9 +48,15 @@ $DCPageClassSuffix = $app->getParams('com_content');
 // Get Active Menu Alias as a body.class
 $DCActivePageAliasClassName = JFactory::getApplication()->getMenu()->getActive();
 
-// pageclass_sfx & DCActivePageAliasClassName
-$DCBodyPageClasses = 'Shaz3e '; // Default Class for Shaz3e
-$DCBodyPageClasses .= 'dc-wrapper '; // relative wrapper 
-$DCBodyPageClasses .= ($DCActivePageAliasClassName->alias != '' ? $DCActivePageAliasClassName->alias : 'Search '); // get pageclass_sfx from item menu
-$DCBodyPageClasses .= $DCPageClassSuffix->get('pageclass_sfx'); // get active menu alias as a class
+// Default Class for Shaz3e
+$DCBodyPageClasses = 'Shaz3e ';
+
+// relative wrapper 
+$DCBodyPageClasses .= 'dc-wrapper ';
+
+// get pageclass_sfx from item menu
+$DCBodyPageClasses .= ($DCActivePageAliasClassName->alias != '' ? $DCActivePageAliasClassName->alias : 'Search ');
+
+// get active menu alias as a class
+$DCBodyPageClasses .= $DCPageClassSuffix->get('pageclass_sfx');
 ?>

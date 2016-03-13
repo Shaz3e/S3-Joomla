@@ -532,7 +532,7 @@
 					<option value="1">On</option>
 				</field>
 				
-				<field name="documentGenerator" class="" type="text" default="Shaz3e - The Revealing Paradigm"
+				<field name="documentGenerator" class="" type="text" default=""
 				label="Type Meta Generator" description="Type your custom meta generator text here." />
 				
 				<field name="" type="spacer" default="" label="Front Page Settings" description="" />

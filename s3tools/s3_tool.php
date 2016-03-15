@@ -88,6 +88,9 @@ $doc->addStyleSheet('templates/'.$this->template.'/fonts/fonts.css');
  */
 $doc->addScript($dcTemplatePath.'/js/menu.js', 'text/javascript');
 
+// Search Script
+$doc->addScript($dcTemplatePath.'/js/search.js', 'text/javascript');
+
 // Custom JavaScript File
 $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');
 
@@ -100,8 +103,8 @@ if($this->params->get('developmentMode') != 1){
 	$inputFileTheme  = JPATH_ROOT . "/templates/" . $this->template ."/themes/colors/theme". $this->params->get('color_theme') .".less";
 	$inputFileStyle  = JPATH_ROOT . "/templates/" . $this->template ."/themes/styles/style". $this->params->get('style') .".less";
 		
-	$outputFileTheme = JPATH_ROOT . "/templates/" . $this->template ."/themes/colors/color.css";
-	$outputFileStyle = JPATH_ROOT . "/templates/" . $this->template ."/themes/styles/style.css";
+	$outputFileTheme = JPATH_ROOT . "/templates/" . $this->template ."/themes/colors/theme". $this->params->get('color_theme') .".css";
+	$outputFileStyle = JPATH_ROOT . "/templates/" . $this->template ."/themes/styles/style". $this->params->get('style') .".css";
 		
 	$less = new lessc;
 	$less->setFormatter("compressed");
@@ -125,8 +128,8 @@ if($this->params->get('developmentMode') != 1){
 			file_put_contents($outputFileStyle, $cacheStyle["compiled"]);
 		}
 	// compiled css file
-	$doc->addStyleSheet($dcTemplatePath.'/themes/colors/color.css');
-	$doc->addStyleSheet($dcTemplatePath.'/themes/styles/style.css');
+	$doc->addStyleSheet($dcTemplatePath."/themes/colors/theme". $this->params->get('color_theme') .".css");
+	$doc->addStyleSheet($dcTemplatePath."/themes/styles/style". $this->params->get('style') .".css");
 }
 
 ?>

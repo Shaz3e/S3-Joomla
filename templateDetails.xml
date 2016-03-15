@@ -522,8 +522,7 @@
 				</field>
 
 				<field name="analytics" class="" type="textarea" default="" 
-					label="Analytic Code" 
-					description="Copy & Paste your javascript code" filter="raw" />
+					label="Analytic Code" description="Copy and Paste your javascript code" filter="raw" />
 				
 				<field name="developmentMode" type="radio" default="0" class="btn-group btn-group-yesno"
 					label="Development Mode?" 
@@ -582,13 +581,6 @@
 					<option value="13">Center 3</option>
 				</field>
 				
-				<field name="s3_search_box" type="radio" default="1" class="btn-group btn-group-yesno"
-					label="Enable Search Box"
-					description="Please enable or disable search box in header by default its enable">
-					<option value="0">Diable</option>
-					<option value="1">Enable</option>
-				</field>
-				
 				<field name="s3_social_icon" type="text" default="" 
 				label="Social Icons" description="Please enable or disable social icons in header by default its disabled, Remember to use Font Awesome library." filter="raw" />
 	
@@ -600,7 +592,28 @@
 					
 				<field name="s3_calltoaction" class="" type="text" default="" label="Text for Call to Action" 
 					description="Please write for call to action option" filter="raw" />
-					
+				
+				<!-- Search Settings -->	
+				<field name="" type="spacer" default="" label="Search Options" description="" />
+				
+				<field name="s3_search_box" type="radio" default="1" class="btn-group btn-group-yesno"
+					label="Enable Search Box"
+					description="Please enable or disable search box in header by default its enable">
+					<option value="0">Diable</option>
+					<option value="1">Enable</option>
+				</field>
+				
+				<field name="s3_search_type" 
+					type="list" 
+					default="0" 
+					class=""
+					label="Select Search Type" 
+					description="Select the type of search box to appear on your website">
+					<option value="0">Normal Search Form</option>
+					<option value="1">Full Screen Search</option>
+				</field>
+
+				<!-- Fixed Header Settings -->
 				<field name="" type="spacer" default="" label="Fixed Header and Menu" description="" />
 				
 				<field name="fixedHeader" 

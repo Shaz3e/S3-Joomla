@@ -10,7 +10,7 @@ defined('_JEXEC') or die;
 	 */
 ?>
 <?php if($this->params->get('credit') || $this->params->get('copyright') || $this->params->get('shaz3e')): ?>
-<section class="DiligentCreators s3cc-<?php echo $this->params->get('s3_ccstyle'); ?> dc-clear" id="DiligentCreators">
+<section class="DiligentCreators s3cc-<?php echo $this->params->get('s3_ccstyle'); ?><?php echo ($this->params->get('s3cc_fixed') == '' ? '' : ' s3cc-fixed'); ?> dc-clear" id="DiligentCreators">
 	<div class="row">
 	<?php if($this->params->get('credit') && $this->params->get('copyright')): ?>
     	<div class="grid-6 dc-copyright" id="dc-copyright">

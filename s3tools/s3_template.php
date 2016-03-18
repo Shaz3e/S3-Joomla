@@ -356,15 +356,22 @@ defined('_JEXEC') or die;
 </footer>
 <?php endif; ?>
 
-<?php
-    
-    // Show/Hide Scroll on Scroll Up/Down
-    include_once(JPATH_ROOT . "/templates/" . $this->template . "/s3tools/s3_header_fixed.php"); 
-	
-	/**
-	 * copyright / credit / framework logo / Custom Logo / style switch
-	 * Logo & Menu included in header
-	 * @since S3 Framework 4.0
-	 */
-	include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3inc/s3cc/s3cc.php'); 
+<?php	
+/**
+ * copyright / credit / framework logo / Custom Logo / style switch
+ * Logo & Menu included in header
+ * @since S3 Framework 4.0
+ */
+include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3inc/s3cc/s3cc.php'); 
+
+/**
+ * Show/Hide Header on Scroll Up/Down
+ */
+include_once(JPATH_ROOT . "/templates/" . $this->template . "/s3tools/s3_header_fixed.php"); 
+
+/**
+ * Fixed Footer 
+ * @param int
+ */
+include_once(JPATH_ROOT . "/templates/" . $this->template . "/s3tools/s3_cc_fixed.php"); 
 ?>

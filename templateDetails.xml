@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="template" client="site">
 	<name>S3Framework</name>
-	<version>3.5.3</version>
+	<version>4.0</version>
 	<creationDate>30 April 2014</creationDate>
 	<author>Team DC - Shaz3e</author>
 	<authorEmail>iam@shaz3e.com</authorEmail>
@@ -689,6 +689,19 @@
 					<option value="_blank">Other Window</option>
 					<option value="_self">Same Window</option>
 				</field>
+				
+				<field name="s3cc_fixed" 
+					type="radio" 
+					default="0" 
+					class="btn-group btn-group-yesno"
+					label="Fixed CC Area?" description="Enable or Disable Sticky Copyright and Credit. This will only work on larget than 980px devices.">
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+				</field>
+				
+				<field name="s3cc_text_color" class="" type="color" default="" label="Text Color" description="CC Text Color i.e. #000000" />
+				
+				<field name="s3cc_background_color" class="" type="color" default="" label="Background Color" description="CC Background Color i.e. #000000" />
 				
 			</fieldset>
 

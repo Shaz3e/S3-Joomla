@@ -136,5 +136,4 @@ if (document.documentElement.clientWidth >= <?php echo $breakPoint; ?> || screen
 	});
 }
 </script>
-
 <?php endif; ?>

@@ -10,7 +10,7 @@ defined('_JEXEC') or die;
 ?>
 <div class="dc-fixed-header">
     <section class="dc-header dc-header-<?php echo $this->params->get('header_style'); ?> dc-clear" id="dc-header">
-        <div class="row">
+        <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
             <div class="grid-<?php echo $this->params->get('logoGridClass'); ?>">
                 <div class="block">
                     <div class="dc-logo">
@@ -31,7 +31,7 @@ defined('_JEXEC') or die;
 
         <?php if( $headerModules ): ?>
             <div class="s3-header-<?php echo $this->params->get('header_style'); ?>">
-            	<div class="row">
+            	<div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
                     <div class="grid-12">
                     	<div class="block">
                             <div class="dc-header-boxes">

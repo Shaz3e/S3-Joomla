@@ -30,7 +30,7 @@ defined('_JEXEC') or die;
                 return;
             }else{ ?>
                 <section class="dc-container dc-clear" id="container">
-                	<div class="row">
+                	<div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
 					<?php
                         // Left Sidebar
                         $left = ($this->countModules('left'));

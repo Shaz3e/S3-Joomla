@@ -80,7 +80,7 @@ defined('_JEXEC') or die;
     <?php // full width module ?>
     <jdoc:include type="modules" name="top" style="full_width" />
     
-    <div class="row">
+    <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
     
     	<?php 
 			// column
@@ -112,7 +112,7 @@ defined('_JEXEC') or die;
 	<?php // full width module ?>
     <jdoc:include type="modules" name="breadcrumb" style="full_width" />
 
-    <div class="row">
+    <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
     <?php
     	// column
 		include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/breadcrumb.php");
@@ -136,7 +136,7 @@ defined('_JEXEC') or die;
     <?php // full width module ?>
     <jdoc:include type="modules" name="slideshow" style="full_width" />
     
-    <div class="row">
+    <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
 	
     	<?php
         	// column
@@ -160,7 +160,7 @@ defined('_JEXEC') or die;
 	<?php // full width module ?>
     <jdoc:include type="modules" name="showcase" style="full_width" />
     
-    <div class="row">
+    <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
     	<?php
         	// column
 			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/showcase.php");
@@ -183,7 +183,7 @@ defined('_JEXEC') or die;
     <jdoc:include type="modules" name="feature" style="full_width" />
     
     
-    <div class="row">
+    <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
     
 		<?php
         	if($featureModules || $gridFeatureModules):
@@ -235,7 +235,7 @@ defined('_JEXEC') or die;
     <?php // full width module ?>
     <jdoc:include type="modules" name="utility" style="full_width" />
     
-    <div class="row">
+    <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
     	<?php
         	// column
 			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/utility.php");
@@ -256,7 +256,7 @@ defined('_JEXEC') or die;
 
 	<?php // full width module ?>
     <jdoc:include type="modules" name="scroller" style="full_width" />
-    <div class="row">
+    <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
     	<?php
 			// column
 			include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/scroller.php");
@@ -278,7 +278,7 @@ defined('_JEXEC') or die;
 	<?php // full width module ?>
     <jdoc:include type="modules" name="extension" style="full_width" />
     
-    <div class="row">
+    <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
     <?php
     
 		// column
@@ -301,7 +301,7 @@ defined('_JEXEC') or die;
 
 	<?php // full width module ?>
     <jdoc:include type="modules" name="bottom" style="full_width" />
-    <div class="row">
+    <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
     <?php
     	// column
 		include_once(JPATH_ROOT . "/templates/" . $this->template . "/blocks/bottom.php");
@@ -323,7 +323,7 @@ defined('_JEXEC') or die;
 	<?php // full width module ?>
     <jdoc:include type="modules" name="footer" style="full_width" />
     
-    <div class="row">
+    <div class="<?php echo( $this->params->get('fluidContainer') == 1 ? 'container-fluid' : 'row' ); ?>">
     
 	<?php
     	if($footerModules || $gridFooterModules):

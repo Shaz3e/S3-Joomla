@@ -1,0 +1,365 @@
+.s3-center{text-align:center;}
+.s3-demo-module{
+    background:#f1f1f1;
+}
+.s3-download a{
+  text-align:center;
+  display:block;
+  padding:0.5em;
+  color:#fff;
+  background:#3071a9;
+}
+.s3-slideshow{
+	padding:5em 0;
+	border-bottom:solid 1px #e7e7e7;
+	display:block;
+	h1{
+		font-size:700%;
+		@media(max-width:979px){
+			font-size:300%;
+		}
+	}
+	h3{}
+	a{
+		font-size:200%;
+		display:inline-block;
+		padding:0.5em 2em;
+		margin:2em 0 0 0;
+		color:#fafafa;
+		background:#428bca;
+		
+		&:hover{
+			color:#fff;
+			background:#3071a9;
+		}
+	}
+}
+.block.s3-showcase{
+	padding:5em 0;
+	border-bottom:solid 1px #e7e7e7;
+	display:block;
+
+	h1{
+		font-size:250%;
+		color:#3071a9;
+		@media(max-width:979px){
+			font-size:300%;
+		}
+	}
+}
+.block.s3-feature{
+  margin-bottom:5em;
+}
+.block.s3-feature{
+	padding:5em 0;
+	border-bottom:solid 1px #e7e7e7;
+	display:block;
+
+	display:block;
+	border-bottom:solid 1px #e7e7e7;
+	h1{
+		font-size:500%;
+		@media(max-width:979px){
+			font-size:300%;
+		}
+	}
+	h3{}
+	p{}
+}
+.block.s3-showcase-block{
+	padding:1em;
+	background: rgba(255,255,255,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+	h2{
+		color:#3071a9;
+		font-size:150%;
+		padding-bottom:0.5em;
+		border-bottom:dashed 1px #3071a9;
+	}
+}
+.s3-footer{
+	padding:5em 0;
+	border-bottom:solid 1px #e7e7e7;
+	display:block;
+
+	h1{
+		font-size:300%;
+		@media(max-width:979px){
+			font-size:300%;
+		}
+	}
+	h3{}
+	a{
+		font-size:200%;
+		display:inline-block;
+		padding:0.5em 2em;
+		margin:2em 0 0 0;
+		color:#fafafa;
+		background:#428bca;
+		
+		&:hover{
+			color:#fff;
+			background:#3071a9;
+		}
+	}
+}
+/**********************************************
+			Template Styles
+***********************************************/
+*{}
+html{}
+body{}
+
+a:link,a:visited{text-decoration:none;}
+a:hover{}
+
+h1,h2,h3,h4,h5,h6{}
+/**********************************************
+Default Wrapper
+***********************************************/
+.dc-wrapper{}
+
+/**********************************************
+IE Warnings
+***********************************************/
+.dc-broswer-alert{
+	p{
+		a{}
+		a:hover{}
+	}
+}
+
+/**********************************************
+Module Default Styles
+***********************************************/
+.block{
+	h3{
+		span{
+		}
+	}
+	p{}
+	
+	a{
+		/* href specific grid styles */
+		&:hover{
+		}
+	}
+	
+	ul{
+		/* unordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+	
+	ol{
+		/* ordered list specific grid styles */
+		li{
+			/* href list specific grid styles */
+			a{
+				&:first-child{}
+				&:last-child{}
+				&:hover{
+					&:first-child{}
+					&:last-child{}
+				}
+			}
+			&:first-child{}
+			&:last-child{}
+		}
+	}
+}
+
+/**********************************************
+Relative Default Style Modules
+***********************************************/
+.right-panel,
+.left-panel,
+.top-left-panel,
+.top-right-panel,
+.bottom-left-panel,
+.bottom-right-panel{}
+
+
+.right-panel{
+	#right-panel{}
+}
+
+.left-panel{
+	#left-panel{}
+}
+
+.top-left-panel{
+	#top-left-panel{}
+}
+
+.top-right-panel{
+	#top-right-panel{}
+}
+
+.bottom-left-panel{
+	#bottom-left-panel{}
+}
+
+.bottom-right-panel{
+	#bottom-right-panel{}
+}
+
+/**********************************************
+Margin or Padding for to each grid 
+i.e. top margin or bottom margin for each grid
+***********************************************/
+.dc-top,
+.dc-header,
+.dc-menu,
+.dc-breadcrumb,
+.dc-slideshow,
+.dc-showcase,
+.dc-feature,
+.dc-container,
+.dc-utility,
+.dc-scroller,
+.dc-extension,
+.dc-bottom,
+.dc-footer{
+	/* margin-top:@gutter * 2; */ /* top margin 10px as block has gutter */
+}
+
+/* Top Modules */
+.dc-top{}
+
+/* Fixed Header which works on scroll up/down */
+.dc-fixed-header{}
+.dc-fixed{}
+
+/* Header Modules */
+.dc-header{}
+
+/* Header Modules (4 modules) */
+.dc-header1,.dc-header2,.dc-header3,.dc-header4{}
+
+.dc-header1{}
+.dc-header2{}
+.dc-header3{}
+.dc-header4{}
+
+/* Logo */
+.dc-logo{
+	img{}
+	img:hover{}
+}
+
+/* Menu Modules */
+.dc-menu{}
+
+/* Breadcrumb Modules */
+.dc-breadcrumb{}
+
+/* Slideshow Modules */
+.dc-slideshow{}
+
+/* Showcase Modules */
+.dc-showcase{}
+
+/* Feature Modules */
+.dc-feature{}
+
+/* Main Container  */
+.dc-container{}
+
+/* Component Area */
+.dc-page-content{
+	article{}
+}
+
+/* Sidebar (left+right) */
+.dc-sidebar{}
+
+/* left Sidebar */
+.dc-left-sidebar{
+	#dc-left-sidebar{
+		.dc-sidebar{}
+	}
+}
+
+/* right Sidebar */
+.dc-right-sidebar{
+	#dc-right-sidebar{
+		.dc-sidebar{}
+	}
+}
+
+/* Content Top Modules */
+.dc-content-top{}
+
+/* Content Bottom Modules */
+.dc-content-bottom{}
+
+/* Utility Modules */
+.dc-utility{}
+
+/* Scroller Modules */
+.dc-scroller{}
+
+/* Extension Modules */
+.dc-extension{}
+
+/* Bottom Modules */
+.dc-bottom{}
+
+/* Footer Modules */
+.dc-footer{}
+
+/* Powered by DiligentCreators */
+.DiligentCreators{
+	border-top:solid 2px #fafafa;
+	background:#f1f1f1;
+}
+
+.dc-copyright{}
+.dc-credits{}
+/* Shaz3e logo */
+.shaz3e{
+	img{}
+}
+
+
+/**********************************************
+         Template Color Variant Styles
+***********************************************/
+
+/* Media Queries
+*********************************************/
+/* Retina */
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {}
+
+/* old desktop */
+@media (min-width: 980px){}
+
+/* Large desktop */
+@media (min-width: 1024px) {}

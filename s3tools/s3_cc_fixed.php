@@ -30,4 +30,13 @@ if( $this->params->get('s3cc_fixed') == 1 || $this->params->get('s3cc_text_color
 	}
 }
 </style>
+<script type="text/javascript">
+	$(window).scroll(function(){
+		if($(window).scrollTop() + $(window).height() == $(document).height()) {
+			$('.s3cc-fixed').css('position','static');
+		}else{
+			$('.s3cc-fixed').css('position','fixed');
+		}
+	});
+</script>
 <?php } ?>

@@ -706,6 +706,9 @@
 					<option value="1">Enable</option>
 				</field>
 				
+				<field name="s3cc_fixed_trigger" class="" type="number" default="" 
+					label="Fixed Trigger" description="just adjust this to whatever pixel from the bottom you want to trigger on." />
+				
 				<field name="s3cc_text_color" class="" type="color" default="" label="Text Color" description="CC Text Color i.e. #000000" />
 				
 				<field name="s3cc_background_color" class="" type="color" default="" label="Background Color" description="CC Background Color i.e. #000000" />

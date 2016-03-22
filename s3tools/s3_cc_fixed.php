@@ -23,7 +23,7 @@ if( $this->params->get('s3cc_fixed') == 1 || $this->params->get('s3cc_text_color
 @media(min-width:980px){
 	.s3cc-fixed{
 	<?php
-	echo ( $this->params->get('s3cc_fixed') == 0 ? '' : 'position:fixed;bottom:0;width:100%;z-index:100;' );
+	echo ( $this->params->get('s3cc_fixed') == 0 ? '' : 'position:fixed;bottom:0;width:100%;z-index:9999999999;' );
 	echo ( $this->params->get('s3cc_text_color') == '' ? '' : 'color:'.$this->params->get('s3cc_text_color').';' );
 	echo ( $this->params->get('s3cc_background_color') == '' ? '' : 'background-color:'.$this->params->get('s3cc_background_color').';' );
 	?>
@@ -32,7 +32,7 @@ if( $this->params->get('s3cc_fixed') == 1 || $this->params->get('s3cc_text_color
 </style>
 <script type="text/javascript">
 	$(window).scroll(function(){
-		if($(window).scrollTop() + $(window).height() == $(document).height()) {
+		if($(window).scrollTop() + $(window).height() > $(document).height() - <?php echo( $this->params->get('s3cc_fixed_trigger') == '' ? 100 : $this->params->get('s3cc_fixed_trigger') );?>) {
 			$('.s3cc-fixed').css('position','static');
 		}else{
 			$('.s3cc-fixed').css('position','fixed');

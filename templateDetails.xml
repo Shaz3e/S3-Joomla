@@ -662,6 +662,9 @@
 					<option value="1">Yes</option>
 				</field>
 				
+				<field name="copyright_text" class="" type="textarea" default="" 
+					label="Copyright Text" description="Type your own copyright text i.e. All copyright reserved by Shaz3e" filter="raw" />
+				
 				<field name="credit" type="radio" default="1" 
 					class="btn-group btn-group-yesno"
 					label="Show Credit" 
@@ -669,6 +672,9 @@
 					<option value="0">No</option>
 					<option value="1">Yes</option>
 				</field>
+				
+				<field name="credit_text" class="" type="textarea" default="" 
+					label="Credit Text" description="Type your own credit text i.e. Designed by Shaz3e" filter="raw" />
 
 				<field name="shaz3e" type="radio" default="1" 
 					class="btn-group btn-group-yesno"
@@ -712,6 +718,10 @@
 				<field name="s3cc_text_color" class="" type="color" default="" label="Text Color" description="CC Text Color i.e. #000000" />
 				
 				<field name="s3cc_background_color" class="" type="color" default="" label="Background Color" description="CC Background Color i.e. #000000" />
+				
+				<field name="s3cc_link_color" class="" type="color" default="" label="Link Color" description="CC Link Color i.e. #000000" />
+				
+				<field name="s3cc_link_hover_color" class="" type="color" default="" label="Link Hover Color" description="CC Link Hover Color i.e. #000000" />
 				
 			</fieldset>
 

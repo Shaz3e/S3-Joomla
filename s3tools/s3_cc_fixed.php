@@ -28,6 +28,8 @@ if( $this->params->get('s3cc_fixed') == 1 || $this->params->get('s3cc_text_color
 	echo ( $this->params->get('s3cc_background_color') == '' ? '' : 'background-color:'.$this->params->get('s3cc_background_color').';' );
 	?>
 	}
+	<?php echo( $this->params->get('s3cc_link_color') == '' ? '' : '.s3cc-fixed a{ color: ' .$this->params->get('s3cc_link_color') . '}'); ?>
+	<?php echo( $this->params->get('s3cc_link_hover_color') == '' ? '' : '.s3cc-fixed a:hover{ color: ' .$this->params->get('s3cc_link_hover_color') . '}'); ?>
 }
 </style>
 <script type="text/javascript">

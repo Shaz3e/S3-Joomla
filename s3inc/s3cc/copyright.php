@@ -10,6 +10,11 @@ defined('_JEXEC') or die;
 
 if($this->countModules('copyright')): ?>
 	<jdoc:include type="modules" name="copyright" style="s3_none" />
+
+<?php elseif( $this->params->get('copyright_text') ): ?>
+
+	<p><?php echo $this->params->get('copyright_text'); ?></p>
+
 <?php else: ?>
 	<p>&copy; <?php echo date('Y'); ?> 
     <a href="<?php echo $this->baseurl; ?>" title="<?php echo $sitetitle; ?>"> 

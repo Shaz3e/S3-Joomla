@@ -563,6 +563,30 @@
 					   
             </fieldset>
 			
+			<!-- TYPOGRAPHY -->
+            <fieldset name="TYPOGRAPHY">
+			
+				<field name="gfont_config" type="radio" default="0" class="btn-group btn-group-yesno"
+					label="Use Google Font?" 
+					description="Enable/Disable Google Web Fonts"> 
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+				</field>
+				
+				<field name="gfont_body" class="" type="text" default=""
+				label="Choose Body Font" description="You can choose your default font here. i.e. Open Sans Condensed" />
+				
+				<field name="gfont_body_styles" class="" type="text" default=""
+				label="Body Font Weight" description="Choose the styles you want. i.e. 300,400,700" />
+				
+				<field name="gfont_heading" class="" type="text" default=""
+				label="Choose Heading Font" description="You can choose your default headings font here for h1,h2,h3,h4,h5,h6 tags. i.e. Oswald" />
+				
+				<field name="gfont_heading_styles" class="" type="text" default=""
+				label="Heading Font Weight" description="Choose the styles you want. i.e. 300,400,700" />
+				
+			</fieldset>
+			
 			<!-- Header Settings -->
 			<fieldset name="S3HEADERSETTINGS">
 				<field name="logo" class="" type="media" default="" 

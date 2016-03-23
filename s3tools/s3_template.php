@@ -374,4 +374,10 @@ include_once(JPATH_ROOT . "/templates/" . $this->template . "/s3tools/s3_header_
  * @param int
  */
 include_once(JPATH_ROOT . "/templates/" . $this->template . "/s3tools/s3_cc_fixed.php"); 
+
+/**
+ * Google Web Fonts
+ * @since S3 Framework 4.0
+ */
+include_once(JPATH_ROOT . "/templates/" . $this->template . "/s3tools/s3_google_fonts.php"); 
 ?>

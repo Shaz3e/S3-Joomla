@@ -46,6 +46,7 @@ S3 is a sophisticated framework with the sole intention of being the best platfo
  - Use Custom Meta Generator
  - Mod_Chrome Updated to create complex grid all modules starts with grid-
  - Set Columns for Modules - added in 4.0
+ - Custom Google Fonts (Since 4.0)
  
 ### S3 Theme Configurations
  - Custom Sitename

@@ -79,8 +79,15 @@ if($this->params->get('LocalCDN')){
 
 }
 
-// font style sheet
-$doc->addStyleSheet('templates/'.$this->template.'/fonts/fonts.css');
+/**
+ * load user fonts only when google fonts are disabled
+ * Google Fonts Added
+ * 
+ * @since S3 Framework 4.0
+ */
+if( $this->params->get('gfont_config') == 0 ){
+	$doc->addStyleSheet('templates/'.$this->template.'/fonts/fonts.css');
+}
 
 /*
  * responsive menu

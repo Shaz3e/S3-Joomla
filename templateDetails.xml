@@ -2083,13 +2083,13 @@
 					<option value="12">Center 2</option>
 					<option value="13">Center 3</option>
 					<!-- Small Headers -->
-					<option value="14">Small Header RTLA</option> <!-- Alignment Right -->
-					<option value="15">Small Header LTRA</option> <!-- Alignment Left -->
+					<option value="14">Small Header Right</option> <!-- Alignment Right -->
+					<option value="15">Small Header Left</option> <!-- Alignment Left -->
 					<option value="16">Small Header Center</option>   <!-- Alignment Center -->
 					<!-- Small Headers w/ Menu -->
-					<option value="17">Small Header &amp; Menu RTLA</option> <!-- Alignment Right -->
-					<option value="18">Small Header &amp; Menu LTRA</option> <!-- Alignment Left -->
-					<option value="19">Small Header RTLA Menu LTRA</option>  <!-- Header Right Menu Left Alignment -->
+					<option value="17">Small Header &amp; Menu Right</option> <!-- Alignment Right -->
+					<option value="18">Small Header &amp; Menu Left</option> <!-- Alignment Left -->
+					<option value="19">Small Header Right Menu Left</option>  <!-- Header Right Menu Left Alignment -->
 				</field>
 				
 				<field name="s3_social_icon" type="text" default="" 

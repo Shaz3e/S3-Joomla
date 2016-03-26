@@ -19,10 +19,10 @@ defined('_JEXEC') or die;
                 </div>
             </div><?php // .grid-3 ?>
             
-            <?php if( $headerModules ): ?>
             <div class="grid<?php echo $this->params->get('logoGridClass') - 12; ?>">
             	<div class="block">
                     <div class="dc-header-boxes">
+                    	<?php if( $headerModules ): ?>
 						<?php
 							include_once("params/phone.php");
 							include_once("params/email.php");
@@ -31,13 +31,13 @@ defined('_JEXEC') or die;
 							include_once("params/calltoaction.php");
 						?>
                         <div class="dc-clear"></div>
+                        <?php endif; ?>
                         <div class="dc-menu">
                         	<?php include_once("params/menu.php"); ?>
                         </div>
                     </div>
 				</div>
             </div>
-            <?php endif; ?>
         </div><?php // .row ?>
     </section>
 </div>

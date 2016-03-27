@@ -2467,8 +2467,18 @@
 					<option value="0">No</option>
 					<option value="1">Yes</option>
 				</field>
+
+				<field name="loadAnimateCSS" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="0" 
+					label="Use animate.css" 
+					description="Enable this library to use animatation in your website">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
 				
-				<field name="ResponsiveVideo" 
+				<field name="loadResponsiveVideo" 
 					type="radio" 
 					class="btn-group btn-group-yesno"
 					default="0" 

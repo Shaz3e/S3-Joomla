@@ -22,58 +22,89 @@ defined('_JEXEC') or die;
 include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_params.php');
 include_once(JPATH_ROOT . "/templates/" . $this->template . '/s3tools/s3_blocks.php');
 
+
+/**
+ * Load Files from CDN or Locally
+ */
 if($this->params->get('LocalCDN')){
-	
-	// Add Stylesheets
+
+	/**
+	 * Load Files from CDN
+	 */
+	 
+	// Load Font Awesome
 	if($this->params->get('loadFontAwesome')){
 		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 	}
 	
+	// Load Boostrap
 	if($this->params->get('loadBootstrap')){
 		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
 	}
+	
+	// Load Bootstrap Theme
 	if($this->params->get('loadBootstrapTheme')){
 		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css');
 	}
 	
-	// Add Javascripts
+	// Load animate.css
+	if($this->params->get('loadAnimateCSS')){
+		$doc->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css');
+	}
+	
+	// Load jQuery
 	if($this->params->get('loadjQuery') == 1){
 		$doc->addScript('https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', 'text/javascript');
 	}
 	
+	// Load Bootstrap
 	if($this->params->get('loadBootstrap')){
 		$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', 'text/javascript');
 	}
 	
 	// jQuery FitVIDS
-	if($this->params->get('ResponsiveVideo')){
+	if($this->params->get('loadResponsiveVideo')){
 		$doc->addScript('//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js', 'text/javascript');
 	}
 
 }else{
 
-	// Add Stylesheets
+	/**
+	 * Load Files Locally
+	 */
+	
+	// Load Font Awesome
 	if($this->params->get('loadFontAwesome')){
 		$doc->addStyleSheet('templates/'.$this->template.'/font-awesome/css/font-awesome.min.css');
 	}
-		
+	
+	// Load Bootstrap
 	if($this->params->get('loadBootstrap')){
 		$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
 	}
+	
+	// Load Bootstrap Theme
 	if($this->params->get('loadBootstrapTheme')){
 		$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
 	}
+	
+	// Load animate.css
+	if($this->params->get('loadAnimateCSS')){
+		$doc->addStyleSheet('templates/'.$this->template.'/css/animate.css');
+	}	
 	
 	// Add Javascripts
 	if($this->params->get('loadjQuery') == 1){
 		$doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
 	}
+	
+	// Load Bootstrap
 	if($this->params->get('loadBootstrap')){
 		$doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
 	}
 	
 	// jQuery FitVIDS
-	if($this->params->get('ResponsiveVideo')){
+	if($this->params->get('loadResponsiveVideo')){
 		$doc->addScript($dcTemplatePath.'/js/jquery.fitvids.js', 'text/javascript');
 	}
 
@@ -89,16 +120,22 @@ if( $this->params->get('gfont_config') == 0 ){
 	$doc->addStyleSheet('templates/'.$this->template.'/fonts/fonts.css');
 }
 
-/*
+/**
  * responsive menu
  * @since 3.3
  */
 $doc->addScript($dcTemplatePath.'/js/menu.js', 'text/javascript');
 
-// Search Script
+/**
+ * Search Script
+ * @since 4.0
+ */
 $doc->addScript($dcTemplatePath.'/js/search.js', 'text/javascript');
 
-// Custom JavaScript File
+/**
+ * Custom JavaScript File
+ * @since 1.0
+ */
 $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');
 
 

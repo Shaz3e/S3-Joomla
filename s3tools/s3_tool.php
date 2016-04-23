@@ -34,7 +34,7 @@ if($this->params->get('LocalCDN')){
 	 
 	// Load Font Awesome
 	if($this->params->get('loadFontAwesome')){
-		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
 	}
 	
 	// Load Boostrap

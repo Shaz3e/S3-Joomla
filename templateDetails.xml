@@ -2075,6 +2075,7 @@
 					<option value="6">Top 1</option>
 					<option value="7">Top 2</option>
 					<option value="8">Top 3</option>
+					<option value="20">Top 4</option>
 					<!-- Bottom Headers -->
 					<option value="9">Bottom 1</option>
 					<option value="10">Bottom 2</option>

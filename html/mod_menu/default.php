@@ -14,7 +14,7 @@ defined('_JEXEC') or die;
 <?php // The menu class is deprecated. Use nav instead. ?>
 <div class="dcMenu">
     <div id="dcToggleNav" class="dcToggleNav">
-    	<a href="#"><span>|||</span></a>
+    	<a href="#"><span></span></a>
     </div>
     <nav>
     <ul class="menu<?php echo $class_sfx;?>"<?php

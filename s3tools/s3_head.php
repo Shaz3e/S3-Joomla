@@ -46,7 +46,7 @@ if($this->params->get('developmentMode')): ?>
 <?php endif; ?>
 
 <?php // Responsive Video
-if($this->params->get('ResponsiveVideo')): ?>
+if($this->params->get('loadResponsiveVideo')): ?>
 <script>
   $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.

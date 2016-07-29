@@ -34,17 +34,17 @@ if($this->params->get('LocalCDN')){
 	 
 	// Load Font Awesome
 	if($this->params->get('loadFontAwesome')){
-		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
+		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 	}
 	
 	// Load Boostrap
 	if($this->params->get('loadBootstrap')){
-		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 	}
 	
 	// Load Bootstrap Theme
 	if($this->params->get('loadBootstrapTheme')){
-		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css');
+		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css');
 	}
 	
 	// Load animate.css
@@ -59,7 +59,7 @@ if($this->params->get('LocalCDN')){
 	
 	// Load Bootstrap
 	if($this->params->get('loadBootstrap')){
-		$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', 'text/javascript');
+		$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', 'text/javascript');
 	}
 	
 	// jQuery FitVIDS

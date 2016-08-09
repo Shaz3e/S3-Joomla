@@ -142,7 +142,10 @@ $doc->addScript($dcTemplatePath.'/js/scripts.js', 'text/javascript');
 // if development mode is off script will generate css file instead less
 if($this->params->get('developmentMode') != 1){
 	// less compiler
-	require "lessc.inc.php";	
+	
+	if ( !class_exists( 'lessc' ) ) {
+		require "lessc.inc.php";
+	}
 		
 	$inputFileTheme  = JPATH_ROOT . "/templates/" . $this->template ."/themes/colors/theme". $this->params->get('color_theme') .".less";
 	$inputFileStyle  = JPATH_ROOT . "/templates/" . $this->template ."/themes/styles/style". $this->params->get('style') .".less";

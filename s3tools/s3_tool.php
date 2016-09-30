@@ -130,7 +130,9 @@ $doc->addScript($dcTemplatePath.'/js/menu.js', 'text/javascript');
  * Search Script
  * @since 4.0
  */
-$doc->addScript($dcTemplatePath.'/js/search.js', 'text/javascript');
+if($this->params->get('s3_search_box') == 1){
+	$doc->addScript($dcTemplatePath.'/js/search.js', 'text/javascript');
+}
 
 /**
  * Custom JavaScript File

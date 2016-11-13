@@ -116,7 +116,7 @@ if($this->params->get('LocalCDN')){
  * 
  * @since S3 Framework 4.0
  */
-if( $this->params->get('gfont_config') == 0 ){
+if( $this->params->get('css_custom_font') == 1 ){
 	$doc->addStyleSheet('templates/'.$this->template.'/fonts/fonts.css');
 }
 

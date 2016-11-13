@@ -565,6 +565,13 @@
 			
 			<!-- TYPOGRAPHY -->
             <fieldset name="TYPOGRAPHY">
+
+				<field name="css_custom_font" type="radio" default="0" class="btn-group btn-group-yesno"
+					label="Use Custom Font?" 
+					description="Would you like to use custom font enable this option and update your font styles under /fonts/fonts.css"> 
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+				</field>
 			
 				<field name="gfont_config" type="radio" default="0" class="btn-group btn-group-yesno"
 					label="Use Google Font?" 

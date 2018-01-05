@@ -13,7 +13,7 @@
 	   <![CDATA[
 	   	
 		<h1>S3 Responsive Template System</h1>
-		<p>Get more help and find out more at <a href="http://www.shaz3e.com" target="_blank">http://www.Sha3e.com</a></p>
+		<p>Get more help and find out more at <a href="http://www.shaz3e.com/?utm_source=<?php echo $_SERVER[HTTP_HOST];?>&utm_medium=S3WP&utm_campaign=WPDashboard">www.shaz3e.com</a></p>
 				
 			<h2>Key Features</h2>
 				<ul>

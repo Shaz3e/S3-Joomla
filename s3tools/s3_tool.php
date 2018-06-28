@@ -34,32 +34,27 @@ if($this->params->get('LocalCDN')){
 	 
 	// Load Font Awesome
 	if($this->params->get('loadFontAwesome')){
-		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+		$doc->addStyleSheet('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 	}
 	
 	// Load Boostrap
 	if($this->params->get('loadBootstrap')){
-		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-	}
-	
-	// Load Bootstrap Theme
-	if($this->params->get('loadBootstrapTheme')){
-		$doc->addStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css');
+		$doc->addStyleSheet('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
 	}
 	
 	// Load animate.css
 	if($this->params->get('loadAnimateCSS')){
-		$doc->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css');
+		$doc->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
 	}
 	
 	// Load jQuery
 	if($this->params->get('loadjQuery') == 1){
-		$doc->addScript('https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', 'text/javascript');
+		$doc->addScript('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', 'text/javascript');
 	}
 	
 	// Load Bootstrap
 	if($this->params->get('loadBootstrap')){
-		$doc->addScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', 'text/javascript');
+		$doc->addScript('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', 'text/javascript');
 	}
 	
 	// jQuery FitVIDS
@@ -72,11 +67,6 @@ if($this->params->get('LocalCDN')){
 	/**
 	 * Load Files Locally
 	 */
-	
-	// Load Font Awesome
-	if($this->params->get('loadFontAwesome')){
-		$doc->addStyleSheet('templates/'.$this->template.'/font-awesome/css/font-awesome.min.css');
-	}
 	
 	// Load Bootstrap
 	if($this->params->get('loadBootstrap')){
@@ -97,10 +87,16 @@ if($this->params->get('LocalCDN')){
 	if($this->params->get('loadjQuery') == 1){
 		$doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
 	}
+
+	
+	// Load Font Awesome
+	if($this->params->get('loadFontAwesome')){
+		$doc->addScript('/font-awesome/js/all.js', 'text/javascript');
+	}
 	
 	// Load Bootstrap
 	if($this->params->get('loadBootstrap')){
-		$doc->addScript($dcTemplatePath.'/js/bootstrap.min.js', 'text/javascript');
+		$doc->addScript($dcTemplatePath.'/js/bootstrap.bundle.min.js', 'text/javascript');
 	}
 	
 	// jQuery FitVIDS

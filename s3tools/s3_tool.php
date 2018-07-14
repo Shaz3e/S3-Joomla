@@ -31,6 +31,11 @@ if($this->params->get('LocalCDN')){
 	/**
 	 * Load Files from CDN
 	 */
+
+	// Load jQuery
+	if($this->params->get('loadjQuery') == 1){
+		$doc->addScript('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', 'text/javascript');
+	}
 	 
 	// Load Font Awesome
 	if($this->params->get('loadFontAwesome')){
@@ -39,22 +44,12 @@ if($this->params->get('LocalCDN')){
 	
 	// Load Boostrap
 	if($this->params->get('loadBootstrap')){
-		$doc->addStyleSheet('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
+		$doc->addStyleSheet('https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css');
 	}
 	
 	// Load animate.css
 	if($this->params->get('loadAnimateCSS')){
 		$doc->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
-	}
-	
-	// Load jQuery
-	if($this->params->get('loadjQuery') == 1){
-		$doc->addScript('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', 'text/javascript');
-	}
-	
-	// Load Bootstrap
-	if($this->params->get('loadBootstrap')){
-		$doc->addScript('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', 'text/javascript');
 	}
 	
 	// jQuery FitVIDS
@@ -66,7 +61,12 @@ if($this->params->get('LocalCDN')){
 
 	/**
 	 * Load Files Locally
-	 */
+	 */	
+	
+	// Add Javascripts
+	if($this->params->get('loadjQuery') == 1){
+		$doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
+	}
 	
 	// Load Bootstrap
 	if($this->params->get('loadBootstrap')){
@@ -81,13 +81,7 @@ if($this->params->get('LocalCDN')){
 	// Load animate.css
 	if($this->params->get('loadAnimateCSS')){
 		$doc->addStyleSheet('templates/'.$this->template.'/css/animate.css');
-	}	
-	
-	// Add Javascripts
-	if($this->params->get('loadjQuery') == 1){
-		$doc->addScript($dcTemplatePath.'/js/jquery.min.js', 'text/javascript');
 	}
-
 	
 	// Load Font Awesome
 	if($this->params->get('loadFontAwesome')){

@@ -44,7 +44,8 @@ if($this->params->get('LocalCDN')){
 	
 	// Load Boostrap
 	if($this->params->get('loadBootstrap')){
-		$doc->addStyleSheet('https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css');
+		$doc->addStyleSheet('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
+		$doc->addScript('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
 	}
 	
 	// Load animate.css
@@ -70,7 +71,7 @@ if($this->params->get('LocalCDN')){
 	
 	// Load Bootstrap
 	if($this->params->get('loadBootstrap')){
-		$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
+		$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.min.css');
 	}
 	
 	// Load Bootstrap Theme

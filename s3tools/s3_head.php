@@ -35,14 +35,14 @@ if($this->params->get('developmentMode')): ?>
 	<link rel="stylesheet/less" type="text/css" href="<?php echo $dcTemplatePath; ?>/themes/colors/theme<?php echo $this->params->get('color_theme'); ?>.less">
     <link rel="stylesheet/less" type="text/css" href="<?php echo $dcTemplatePath; ?>/themes/styles/style<?php echo $this->params->get('style'); ?>.less">
 	<?php if($this->params->get('LocalCDN')): ?>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
+		<script>less = { env: 'development'};</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js"></script>
+		<script>less.watch();</script>
 	<?php else: ?>
-		<script type="text/javascript" src="<?php echo $dcTemplatePath; ?>/js/less.js"></script>
+		<script>less = { env: 'development'};</script>
+		<script src="<?php echo $dcTemplatePath; ?>/js/less.js"></script>
+		<script>less.watch();</script>
 	<?php endif; ?>
-  		<script type="text/javascript">
-			less.env = "development";
-			less.watch();
-		</script>
 <?php endif; ?>
 
 <?php // Responsive Video
